@@ -8,12 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		186045D623E7C1B700285A86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186045D523E7C1B700285A86 /* AppDelegate.swift */; };
-		186045D823E7C1B700285A86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186045D723E7C1B700285A86 /* SceneDelegate.swift */; };
 		186045DA23E7C1B700285A86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186045D923E7C1B700285A86 /* ViewController.swift */; };
-		186045DD23E7C1B700285A86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186045DB23E7C1B700285A86 /* Main.storyboard */; };
 		186045DF23E7C1BA00285A86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186045DE23E7C1BA00285A86 /* Assets.xcassets */; };
 		186045E223E7C1BA00285A86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186045E023E7C1BA00285A86 /* LaunchScreen.storyboard */; };
-		186045F023E7CE5000285A86 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186045EF23E7CE5000285A86 /* View.xib */; };
+		186045F223E7D70000285A86 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186045F123E7D70000285A86 /* ViewController.xib */; };
 		3CD7D633E809AF7278E94FCB /* libPods-Youtube.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EE470038169E0D4A8868EC /* libPods-Youtube.a */; };
 /* End PBXBuildFile section */
 
@@ -21,13 +19,11 @@
 		14EE470038169E0D4A8868EC /* libPods-Youtube.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Youtube.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		186045D223E7C1B700285A86 /* Youtube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Youtube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186045D523E7C1B700285A86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		186045D723E7C1B700285A86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		186045D923E7C1B700285A86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		186045DC23E7C1B700285A86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		186045DE23E7C1BA00285A86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		186045E123E7C1BA00285A86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		186045E323E7C1BA00285A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		186045EF23E7CE5000285A86 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		186045F123E7D70000285A86 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		99B1AA03730E6C1C9B9D3D66 /* Pods-Youtube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youtube.release.xcconfig"; path = "Target Support Files/Pods-Youtube/Pods-Youtube.release.xcconfig"; sourceTree = "<group>"; };
 		FD6959D38DB1D960876156A7 /* Pods-Youtube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youtube.debug.xcconfig"; path = "Target Support Files/Pods-Youtube/Pods-Youtube.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,10 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				186045E023E7C1BA00285A86 /* LaunchScreen.storyboard */,
-				186045D723E7C1B700285A86 /* SceneDelegate.swift */,
-				186045DB23E7C1B700285A86 /* Main.storyboard */,
 				186045D923E7C1B700285A86 /* ViewController.swift */,
-				186045EF23E7CE5000285A86 /* View.xib */,
+				186045F123E7D70000285A86 /* ViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -194,10 +188,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				186045F023E7CE5000285A86 /* View.xib in Resources */,
 				186045E223E7C1BA00285A86 /* LaunchScreen.storyboard in Resources */,
+				186045F223E7D70000285A86 /* ViewController.xib in Resources */,
 				186045DF23E7C1BA00285A86 /* Assets.xcassets in Resources */,
-				186045DD23E7C1B700285A86 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,21 +245,12 @@
 			files = (
 				186045DA23E7C1B700285A86 /* ViewController.swift in Sources */,
 				186045D623E7C1B700285A86 /* AppDelegate.swift in Sources */,
-				186045D823E7C1B700285A86 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		186045DB23E7C1B700285A86 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				186045DC23E7C1B700285A86 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		186045E023E7C1BA00285A86 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

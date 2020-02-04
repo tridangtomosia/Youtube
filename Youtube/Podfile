@@ -4,5 +4,7 @@
 target 'Youtube' do
 	
   pod 'GoogleSignIn', '~> 5.0'
+  pod 'YouTubePlayer', '~> 0.4'
+
 
 end

@@ -1,30 +1,34 @@
-//
-//  ProfileViewController.swift
-//  Youtube
-//
-//  Created by apple on 2/3/20.
-//  Copyright © 2020 apple. All rights reserved.
-//
 
 import UIKit
+import GoogleSignIn
 
 class ProfileViewController: UIViewController {
-
+    @IBOutlet weak var inputNameTextField: UITextField!
+    @IBOutlet weak var inputIDTextField: UITextField!
+    @IBOutlet weak var inputEmailTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        inputIDTextField.text = GIDSignIn.sharedInstance()?.currentUser.userID
+        inputNameTextField.text = GIDSignIn.sharedInstance()?.currentUser.profile.name
+        inputEmailTextField.text = GIDSignIn.sharedInstance()?.currentUser.profile.email
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func didtapClose(sender: UIButton) {
+        dismiss(animated: true) {
+            
+        }
     }
-    */
-
+    
+    @IBAction func didTapSignOut(sender: UIButton) {
+        GIDSignIn.sharedInstance()?.signOut()
+        UserDefaults.setIsLogin(value: false)
+        AppDelegate.shared?.createLoginVC()
+        dismiss(animated: true) {
+        }
+    }
+    @IBAction func didtapSave(sender: UIButton) {
+        dismiss(animated: true) {
+            
+        }
+    }
 }

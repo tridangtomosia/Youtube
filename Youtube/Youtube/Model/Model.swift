@@ -1,12 +1,6 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-}
-
 class User {
     var name = ""
     var identification = ""

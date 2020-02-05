@@ -1,16 +1,6 @@
 
 import UIKit
 
-//class HistoryViewController: BaseViewController {
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        navigationController?.navigationBar.isHidden = true
-//        tableView.delegate = self
-//        tableView.dataSource = self
-//        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
-//    }
-//
-//}
 class HistoryViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -39,9 +29,11 @@ class HistoryViewController: BaseViewController {
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
     }
 }
+
 extension HistoryViewController: UITableViewDelegate {
     
 }
+
 extension HistoryViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 30
@@ -53,23 +45,19 @@ extension HistoryViewController: UITableViewDataSource {
         }
         return TableViewCell()
     }
-    
-    
 }
 
 extension HistoryViewController: HeaderViewDelegate {
     func headerViewDidSelecButton(view: HeaderView, acction: SelectedAcction) {
+        let searchViewController = SearchViewController()
+        let profileViewController = ProfileViewController()
         switch acction {
-        case .search:
-            present(SearchViewController(), animated: true) {
-
-            }
-        default:
-            present(ProfileViewController(), animated: true) {
-
-            }
+            case .search:
+                present(searchViewController, animated: true) {
+                }
+            default:
+                present(profileViewController, animated: true) {
+                }
         }
     }
-
-
 }

@@ -50,7 +50,7 @@
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="didtapSaveWithSender:" destination="-1" eventType="touchUpInside" id="2lW-4J-Fu8"/>
+                        <action selector="didTapSaveWithSender:" destination="-1" eventType="touchUpInside" id="2lW-4J-Fu8"/>
                     </connections>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="thG-ms-MvX">
@@ -76,7 +76,7 @@
                     </constraints>
                     <state key="normal" title="Button" image="ico_close"/>
                     <connections>
-                        <action selector="didtapCloseWithSender:" destination="-1" eventType="touchUpInside" id="O0n-5F-7hV"/>
+                        <action selector="didTapCloseWithSender:" destination="-1" eventType="touchUpInside" id="O0n-5F-7hV"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gO-Gb-bZz">

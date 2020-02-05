@@ -51,15 +51,15 @@ extension TrendingViewController: UITableViewDelegate {
 
 extension TrendingViewController: HeaderViewDelegate {
     func headerViewDidSelecButton(view: HeaderView, acction: SelectedAcction) {
+        let searchViewController = SearchViewController()
+        let profileViewController = ProfileViewController()
         switch acction {
-        case .search:
-            present(SearchViewController(), animated: true) {
-                
-            }
-        default:
-            present(ProfileViewController(), animated: true) {
-                
-            }
+            case .search:
+                present(searchViewController, animated: true) {
+                }
+            default:
+                present(profileViewController, animated: true) {
+                }
         }
     }
 }

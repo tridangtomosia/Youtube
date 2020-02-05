@@ -58,15 +58,16 @@ extension HomeViewController: UITableViewDelegate {
 
 extension HomeViewController: HeaderViewDelegate {
     func headerViewDidSelecButton(view: HeaderView, acction: SelectedAcction) {
+        let searchViewController = SearchViewController()
+        let profileViewController = ProfileViewController()
         switch acction {
-        case .search:
-            present(SearchViewController(), animated: true) {
+            case .search:
+                present(searchViewController, animated: true) {
                 
-            }
-        default:
-            present(ProfileViewController(), animated: true) {
-                
-            }
+                }
+            default:
+                present(profileViewController, animated: true) {
+                }
         }
     }
 }

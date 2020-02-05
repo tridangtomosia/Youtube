@@ -2,7 +2,7 @@
 import UIKit
 import GoogleSignIn
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: BaseViewController {
     @IBOutlet weak var inputNameTextField: UITextField!
     @IBOutlet weak var inputIDTextField: UITextField!
     @IBOutlet weak var inputEmailTextField: UITextField!
@@ -13,7 +13,7 @@ class ProfileViewController: UIViewController {
         inputEmailTextField.text = GIDSignIn.sharedInstance()?.currentUser.profile.email
     }
     
-    @IBAction func didtapClose(sender: UIButton) {
+    @IBAction func didTapClose(sender: UIButton) {
         dismiss(animated: true) {
             
         }
@@ -26,7 +26,7 @@ class ProfileViewController: UIViewController {
         dismiss(animated: true) {
         }
     }
-    @IBAction func didtapSave(sender: UIButton) {
+    @IBAction func didTapSave(sender: UIButton) {
         dismiss(animated: true) {
             
         }

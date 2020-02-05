@@ -7,10 +7,7 @@ import GoogleSignIn
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window : UIWindow?
-    var homeNavigationViewcontroller: UINavigationController!
-    var trendingNavigationViewController: UINavigationController!
-    var historyNavigationViewController: UINavigationController!
-    let tabarController = UITabBarController()
+    let tabarController = BaseTabbarController()
     
     static var shared: AppDelegate? {
         return UIApplication.shared.delegate as? AppDelegate
@@ -32,17 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         return true
     }
-    
-    
+
     func createHomeVC() {
-        homeNavigationViewcontroller = UINavigationController(rootViewController: HomeViewController())
-        trendingNavigationViewController = UINavigationController(rootViewController: TrendingViewController())
-        historyNavigationViewController = UINavigationController(rootViewController: HistoryViewController())
-        homeNavigationViewcontroller?.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "ico_home"), tag: 0)
-        trendingNavigationViewController?.tabBarItem = UITabBarItem(title: "Trending", image: UIImage(named: "ico_trending"), tag: 1)
-        historyNavigationViewController?.tabBarItem = UITabBarItem(title: "History", image: UIImage(named: "ico_history"), tag: 2)
-        tabarController.viewControllers = [homeNavigationViewcontroller,trendingNavigationViewController,historyNavigationViewController]
-        UITabBar.appearance().tintColor = .red
+        tabarController.create()
         window?.rootViewController = tabarController
     }
     
@@ -54,6 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return GIDSignIn.sharedInstance().handle(url)
     }
 }
+
 extension AppDelegate : GIDSignInDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
@@ -62,24 +52,10 @@ extension AppDelegate : GIDSignInDelegate {
             } else {
                 print("\(error.localizedDescription)")
             }
-            NotificationCenter.default.post( name: Notification.Name(rawValue: "ToggleAuthUINotification"), object: nil, userInfo: nil)
             return
         }
-        
-        let user = User(name: user.profile.name, identification: user.userID, email: user.profile.email)
-        
         UserDefaults.setIsLogin(value: true)
-        NotificationCenter.default.post( name: Notification.Name(rawValue: "ToggleAuthUINotification"), object: nil,
-                                         userInfo: ["statusText": "Signed in user:\n\(user.name)"])
-        
         createHomeVC()
-    }
-    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
-              withError error: Error!) {
-        NotificationCenter.default.post(
-            name: Notification.Name(rawValue: "ToggleAuthUINotification"),
-            object: nil,
-            userInfo: ["statusText": "User has disconnected."])
     }
 }
 

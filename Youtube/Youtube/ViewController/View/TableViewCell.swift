@@ -1,12 +1,7 @@
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
-    
-    func baseTableViewCell() {
-        
-    }
-    
+class TableViewCell: BaseTableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }

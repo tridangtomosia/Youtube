@@ -12,8 +12,22 @@ class User {
     }
 }
 
+class HomePage {
+    var idVideo = ""
+    var nameChanel = ""
+    var dic = [String: Any]()
+    init(dictionary: [String:Any]) {
+        self.idVideo = dictionary["id"] as? String ?? ""
+        self.dic = dictionary["snippet"] as? [String: Any] ?? ["":""]
+        self.nameChanel = dic["title"] as? String ?? ""
+    }
+}
+
 class Chanel {
-    
+    var videoID = ""
+    init(videoID: String) {
+        self.videoID = videoID
+    }
 }
 
 class Trend {

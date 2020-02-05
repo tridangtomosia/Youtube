@@ -37,7 +37,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FL3-dP-I1l">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FL3-dP-I1l" customClass="YouTubePlayerView" customModule="YouTubePlayer_Swift">
                                 <rect key="frame" x="10" y="10" width="213" height="131"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -70,6 +70,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameChanelLabel" destination="wtA-MY-qZ3" id="AV4-js-a1I"/>
+                <outlet property="videoPlayer" destination="FL3-dP-I1l" id="jRX-kC-pVD"/>
+            </connections>
             <point key="canvasLocation" x="-330.43478260869568" y="42.522321428571423"/>
         </tableViewCell>
     </objects>

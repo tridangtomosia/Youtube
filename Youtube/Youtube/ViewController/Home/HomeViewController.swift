@@ -3,7 +3,6 @@ import UIKit
 import GoogleSignIn
 
 class HomeViewController: BaseViewController {
-
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
@@ -12,7 +11,7 @@ class HomeViewController: BaseViewController {
             return HeaderView()
         }
         view.translatesAutoresizingMaskIntoConstraints = false
-            return view
+        return view
     }()
     
     override func viewDidLoad() {
@@ -28,6 +27,7 @@ class HomeViewController: BaseViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
+        
     }
 }
 
@@ -38,12 +38,12 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as? TableViewCell {
+//            cell.video = homeVideos[indexPath.row].idVideo
+//            cell.nameChanelLabel.text = homeVideos[indexPath.row].nameChanel
             return cell
         }
         return TableViewCell()
     }
-    
-    
 }
 
 extension HomeViewController: UITableViewDelegate {

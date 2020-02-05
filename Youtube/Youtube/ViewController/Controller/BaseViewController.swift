@@ -6,7 +6,7 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    func requestAPI(key: String, params: [String: String])-> [HomePage] {
+    func requestAPI(key: String, params: [String: String], view: BaseViewController) {
         ManagerAPI.shared.requestAPI(url: "https://www.googleapis.com/youtube/v3/"+key, params: params, method: .get, header: nil) { (APIResult) in
             switch APIResult {
             case .success(let dictionary):
@@ -14,13 +14,12 @@ class BaseViewController: UIViewController {
                     let pages = resultDictionary.map { (dic) in
                         return HomePage(dictionary: dic)
                     }
-                    self.homeVideos = pages
+                    view.homeVideos = pages
                 }
                 
             case .failure(_):
                 print(1)
             }
         }
-        return homeVideos
     }
 }

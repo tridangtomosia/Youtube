@@ -1,9 +1,12 @@
-//
-//  BaseTableViewCellController.swift
-//  Youtube
-//
-//  Created by apple on 2/5/20.
-//  Copyright © 2020 apple. All rights reserved.
-//
 
-import Foundation
+import UIKit
+
+class BaseTableViewCell: UITableViewCell {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+}

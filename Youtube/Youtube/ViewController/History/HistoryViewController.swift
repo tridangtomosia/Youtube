@@ -11,7 +11,7 @@ class HistoryViewController: BaseViewController {
             return HeaderView()
         }
         view.translatesAutoresizingMaskIntoConstraints = false
-            return view
+        return view
     }()
 
     override func viewDidLoad() {

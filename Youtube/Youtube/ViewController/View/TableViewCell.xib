@@ -19,46 +19,51 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBs-fM-wms">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="151"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iih-rm-Inm">
-                                <rect key="frame" x="257" y="20" width="43" height="23.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iih-rm-Inm">
+                                <rect key="frame" x="231" y="20" width="69" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="view" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fg3-C1-fzI">
-                                <rect key="frame" x="265" y="63.5" width="35" height="24"/>
+                                <rect key="frame" x="231" y="80" width="69" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="chanel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtA-MY-qZ3">
-                                <rect key="frame" x="249" y="107.5" width="51" height="23.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="chanel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtA-MY-qZ3">
+                                <rect key="frame" x="231" y="110.5" width="69" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wtA-MY-qZ3" secondAttribute="height" multiplier="67:20" id="yf9-kc-qsn"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FL3-dP-I1l" customClass="YouTubePlayerView" customModule="YouTubePlayer_Swift">
-                                <rect key="frame" x="10" y="10" width="213" height="131"/>
+                                <rect key="frame" x="10" y="10" width="211" height="131"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="FL3-dP-I1l" secondAttribute="height" multiplier="13:8" id="7I3-0T-kK2"/>
+                                    <constraint firstAttribute="width" secondItem="FL3-dP-I1l" secondAttribute="height" multiplier="211:131" id="jUw-4t-xtb"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="FL3-dP-I1l" secondAttribute="bottom" constant="10" id="2oc-IY-dmN"/>
-                            <constraint firstAttribute="trailing" secondItem="Fg3-C1-fzI" secondAttribute="trailing" constant="20" id="ADY-v0-m6a"/>
-                            <constraint firstItem="FL3-dP-I1l" firstAttribute="top" secondItem="CBs-fM-wms" secondAttribute="top" constant="10" id="Gh3-v2-y78"/>
-                            <constraint firstAttribute="trailing" secondItem="wtA-MY-qZ3" secondAttribute="trailing" constant="20" id="HQP-BR-GaT"/>
+                            <constraint firstItem="Fg3-C1-fzI" firstAttribute="trailing" secondItem="Iih-rm-Inm" secondAttribute="trailing" id="1LR-QY-e7Z"/>
+                            <constraint firstItem="FL3-dP-I1l" firstAttribute="centerY" secondItem="CBs-fM-wms" secondAttribute="centerY" id="1YG-ni-4L8"/>
+                            <constraint firstItem="Fg3-C1-fzI" firstAttribute="top" relation="lessThanOrEqual" secondItem="Iih-rm-Inm" secondAttribute="bottom" constant="30" id="68w-k9-pxr"/>
+                            <constraint firstItem="Fg3-C1-fzI" firstAttribute="leading" secondItem="Iih-rm-Inm" secondAttribute="leading" id="8fk-T6-Y00"/>
+                            <constraint firstItem="wtA-MY-qZ3" firstAttribute="leading" secondItem="Iih-rm-Inm" secondAttribute="leading" id="AnF-IX-bFi"/>
+                            <constraint firstAttribute="bottom" secondItem="wtA-MY-qZ3" secondAttribute="bottom" constant="20" id="DIA-ff-1eX"/>
                             <constraint firstItem="FL3-dP-I1l" firstAttribute="leading" secondItem="CBs-fM-wms" secondAttribute="leading" constant="10" id="Igr-sQ-cLT"/>
-                            <constraint firstAttribute="bottom" secondItem="wtA-MY-qZ3" secondAttribute="bottom" constant="20" id="RbT-pb-iOv"/>
-                            <constraint firstItem="wtA-MY-qZ3" firstAttribute="top" secondItem="Fg3-C1-fzI" secondAttribute="bottom" constant="20" id="TJw-C6-4V0"/>
-                            <constraint firstItem="Iih-rm-Inm" firstAttribute="top" secondItem="CBs-fM-wms" secondAttribute="top" constant="20" id="Wo8-Iy-tpv"/>
-                            <constraint firstItem="wtA-MY-qZ3" firstAttribute="height" secondItem="Iih-rm-Inm" secondAttribute="height" id="bwA-qM-SW6"/>
-                            <constraint firstItem="Fg3-C1-fzI" firstAttribute="height" secondItem="Iih-rm-Inm" secondAttribute="height" id="hv2-rf-Y1Q"/>
-                            <constraint firstItem="Fg3-C1-fzI" firstAttribute="top" secondItem="Iih-rm-Inm" secondAttribute="bottom" constant="20" id="tom-il-Aem"/>
-                            <constraint firstAttribute="trailing" secondItem="Iih-rm-Inm" secondAttribute="trailing" constant="20" id="xsH-fv-hxs"/>
+                            <constraint firstAttribute="trailing" secondItem="Iih-rm-Inm" secondAttribute="trailing" constant="20" id="Onc-yI-MSh"/>
+                            <constraint firstItem="wtA-MY-qZ3" firstAttribute="height" secondItem="Fg3-C1-fzI" secondAttribute="height" id="WuE-ez-BX7"/>
+                            <constraint firstItem="Iih-rm-Inm" firstAttribute="leading" secondItem="FL3-dP-I1l" secondAttribute="trailing" constant="10" id="Zav-AV-e1k"/>
+                            <constraint firstItem="wtA-MY-qZ3" firstAttribute="trailing" secondItem="Iih-rm-Inm" secondAttribute="trailing" id="h7v-Sq-ZxC"/>
+                            <constraint firstItem="Iih-rm-Inm" firstAttribute="top" secondItem="CBs-fM-wms" secondAttribute="top" constant="20" id="jRh-X0-KjM"/>
+                            <constraint firstItem="FL3-dP-I1l" firstAttribute="top" secondItem="CBs-fM-wms" secondAttribute="top" constant="10" id="qXV-oX-98z"/>
+                            <constraint firstItem="wtA-MY-qZ3" firstAttribute="top" secondItem="Fg3-C1-fzI" secondAttribute="bottom" constant="10" id="zob-ku-1Yz"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -71,7 +76,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="nameChanelLabel" destination="wtA-MY-qZ3" id="AV4-js-a1I"/>
+                <outlet property="nameChanelLabel" destination="Iih-rm-Inm" id="b6l-aN-gTg"/>
                 <outlet property="videoPlayer" destination="FL3-dP-I1l" id="jRX-kC-pVD"/>
             </connections>
             <point key="canvasLocation" x="-330.43478260869568" y="42.522321428571423"/>

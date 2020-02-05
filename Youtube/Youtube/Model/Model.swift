@@ -11,15 +11,23 @@ class User {
         self.email = email
     }
 }
+class Snippet {
+    var title = ""
+    init(dictionary: [String: Any]) {
+        self.title = dictionary["title"] as? String ?? ""
+    }
+}
 
-class HomePage {
-    var idVideo = ""
-    var nameChanel = ""
-    var dic = [String: Any]()
+class Video {
+    var id = ""
+    var snippet : Snippet?
+    
     init(dictionary: [String:Any]) {
-        self.idVideo = dictionary["id"] as? String ?? ""
-        self.dic = dictionary["snippet"] as? [String: Any] ?? ["":""]
-        self.nameChanel = dic["title"] as? String ?? ""
+        self.id = dictionary["id"] as? String ?? ""
+        if let snippetDic =  dictionary["snippet"] as? [String: Any] {
+            self.snippet = Snippet(dictionary: snippetDic)
+        }
+        
     }
 }
 

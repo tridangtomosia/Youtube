@@ -13,9 +13,12 @@ class HomeViewController: BaseViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    var playList = [Video]()
+    let network = NetWorkLayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getVideos()
         navigationController?.navigationBar.isHidden = true
         topView.addSubview(headerView)
         NSLayoutConstraint.activate([
@@ -29,17 +32,32 @@ class HomeViewController: BaseViewController {
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
         
     }
+    
+    func getVideos() {
+        network.getVideos(params: ["chart" : "mostpopular"]) { (result) in
+            switch result {
+            case .success(let videos):
+                self.playList = videos
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
 }
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+        return playList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as? TableViewCell {
-//            cell.video = homeVideos[indexPath.row].idVideo
-//            cell.nameChanelLabel.text = homeVideos[indexPath.row].nameChanel
+            cell.videoPlayer.loadVideoID(playList[indexPath.row].id)
+            cell.nameChanelLabel.text = playList[indexPath.row].snippet?.title
             return cell
         }
         return TableViewCell()
@@ -48,7 +66,7 @@ extension HomeViewController: UITableViewDataSource {
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        return 150
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

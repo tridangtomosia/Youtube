@@ -6,6 +6,29 @@ class NetWorkLayer {
     let api = "https://www.googleapis.com/youtube/v3/"
     let googleKey = "AIzaSyAMbElh4mHvZpEzBsI_HweoPvSuvs6qvng"
     
+    func getStatistic(params: [String: String]?, completion: ((ServiceResult<[Statistic]>)->())?) {
+        let url = api + "videos"
+        var parameter = params
+        if params == nil {
+            parameter = [:]
+        }
+        parameter?["key"] = googleKey
+        parameter?["part"] = "statistics"
+        ManagerAPI.shared.requestAPI(url: url, params: parameter, method: .get, header: nil) { (results) in
+            switch results {
+            case .success(let data):
+                if let items = data["items"] as? [[String: Any]] {
+                    let statistics = items.map { Statistic(dictionary: $0) }
+                    completion?(.success(statistics))
+                } else {
+                    print("1")
+                }
+            case .failure(let error):
+                completion?(.failure(error))
+            }
+        }
+    }
+    
     func getVideos(params: [String: String]?, completion: ((ServiceResult<[Video]>) -> ())?) {
         let url = api + "videos"
         var parameter = params
@@ -19,7 +42,8 @@ class NetWorkLayer {
             switch result {
             case .success(let data):
                 if let items = data["items"] as? [[String: Any]] {
-                    let videos = items.map { Video(dictionary: $0) }
+                    let videos = items.map { Video(dictionary: $0)
+                    }
                     completion?(.success(videos))
                 } else {
                     

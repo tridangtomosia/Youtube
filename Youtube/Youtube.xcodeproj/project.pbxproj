@@ -105,6 +105,7 @@
 		186045D423E7C1B700285A86 /* Youtube */ = {
 			isa = PBXGroup;
 			children = (
+				1860462723E7F69A00285A86 /* View */,
 				186045EE23E7C41C00285A86 /* Extension */,
 				186045ED23E7C41500285A86 /* Model */,
 				186045EC23E7C40000285A86 /* Resource */,
@@ -119,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				18BA422C23EA50300088E0C1 /* Controller */,
-				1860462723E7F69A00285A86 /* View */,
 				1860460423E7DB7A00285A86 /* ProfileUser */,
 				1860460323E7DB6B00285A86 /* Search */,
 				186045FA23E7DAF900285A86 /* History */,

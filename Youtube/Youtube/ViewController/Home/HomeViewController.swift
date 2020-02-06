@@ -15,6 +15,7 @@ class HomeViewController: BaseViewController {
     }()
     var playList = [Video]()
     let network = NetWorkLayer()
+    var statistics = [Statistic]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,7 @@ class HomeViewController: BaseViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
-        
+//        getStatistic(withId: "eVjzv0dEP0I")
     }
     
     func getVideos() {
@@ -47,6 +48,20 @@ class HomeViewController: BaseViewController {
         }
     }
     
+    func getStatistic(withId string: String) {
+        network.getStatistic(params: ["id": string]) { (results) in
+            switch results {
+            case .success(let videos):
+                self.statistics = videos
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
 }
 
 extension HomeViewController: UITableViewDataSource {
@@ -56,8 +71,11 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as? TableViewCell {
-            cell.videoPlayer.loadVideoID(playList[indexPath.row].id)
-            cell.nameChanelLabel.text = playList[indexPath.row].snippet?.title
+//            getStatistic(withId: playList[indexPath.row].id)
+//            cell.viewCountLabel.text = statistics[0].statistic?.view
+//            playList[indexPath.row].statistic = statistics[0]
+            cell.setLocal(withVideo: playList[indexPath.row])
+//            getStatistic(withId: playList[indexPath.row].videoId?.id ?? "")
             return cell
         }
         return TableViewCell()
@@ -66,7 +84,7 @@ extension HomeViewController: UITableViewDataSource {
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 330
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -77,11 +95,13 @@ extension HomeViewController: UITableViewDelegate {
 extension HomeViewController: HeaderViewDelegate {
     func headerViewDidSelecButton(view: HeaderView, acction: SelectedAcction) {
         let searchViewController = SearchViewController()
+        searchViewController.modalPresentationStyle = .fullScreen
         let profileViewController = ProfileViewController()
+        profileViewController.modalPresentationStyle = .fullScreen
         switch acction {
             case .search:
                 present(searchViewController, animated: true) {
-                
+                    
                 }
             default:
                 present(profileViewController, animated: true) {

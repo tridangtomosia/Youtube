@@ -5,6 +5,7 @@ class TrendingViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var topView: UIView!
     
+    
      lazy var headerView : HeaderView = {
         guard let view = Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)?.first as? HeaderView else {
             return HeaderView()

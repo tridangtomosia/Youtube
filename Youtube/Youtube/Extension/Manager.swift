@@ -25,7 +25,7 @@ class ManagerAPI {
     func requestAPI(url: String, params: [String: String]?, method : Method , header: [String: String]?, completion: @escaping (APIResult) -> ()) {
         var tempURL = url
         if method == .get, let params = params {
-            tempURL += "?" + params.map { "\($0.key)=\($0.value)"}.joined(separator: "&")
+            tempURL += "?" + params.map { "\($0.key)=\($0.value.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")"}.joined(separator: "&")
         }
         guard let url = URL(string: tempURL) else { return }
         var urlRequest = URLRequest(url: url)

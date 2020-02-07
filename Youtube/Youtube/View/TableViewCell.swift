@@ -25,7 +25,7 @@ class TableViewCell: BaseTableViewCell {
         } else {
             videoPlayer.loadVideoID(video.id)
         }
-        viewCountLabel.text = "View :" + (video.statistic?.statistic?.view ?? "")
+        viewCountLabel.text = "View :" + (video.statistic?.view ?? "")
         nameVideoLabel.text = video.snippet?.title
         nameChanelLabel.text = video.snippet?.nameChannel
 //        likeCountLabel.text = statistic.like

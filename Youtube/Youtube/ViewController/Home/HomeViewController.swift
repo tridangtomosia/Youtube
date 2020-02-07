@@ -13,13 +13,11 @@ class HomeViewController: BaseViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    var movies : [Video] = []
+    var movies: [Video] = []
     let network = NetWorkLayer()
-    var statistic : [Statistic] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getVideos()
         navigationController?.navigationBar.isHidden = true
         topView.addSubview(headerView)
         NSLayoutConstraint.activate([
@@ -31,6 +29,7 @@ class HomeViewController: BaseViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
+        getVideos()
     }
     
     func getVideos() {
@@ -38,21 +37,7 @@ class HomeViewController: BaseViewController {
             switch result {
             case .success(let videos):
                 self.movies = videos
-                for i in 0..<self.movies.count {
-                    self.network.getStatisticDictionary(params: ["id": self.movies[i].id]) { (results) in
-                        switch results {
-                            case .success(let statisticDic):
-                                if let dic = statisticDic.first {
-                                    self.movies[i].statistic = Statistic(dictionary: dic)
-                                }
-                            case .failure(_):
-                                print(1)
-                        }
-                        }
-                }
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
+                self.tableView.reloadData()
             case .failure(let error):
                 self.alert(withTitle: "Error", withMessage: error.localizedDescription)
             }

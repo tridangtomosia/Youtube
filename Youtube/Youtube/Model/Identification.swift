@@ -1,7 +1,7 @@
 
 import Foundation
 
-class Id {
+class Identification {
     var id = ""
     init(dictionary: [String: Any]) {
         self.id = dictionary["videoId"] as? String ?? ""

@@ -14,21 +14,17 @@ class ProfileViewController: BaseViewController {
     }
     
     @IBAction func didTapClose(sender: UIButton) {
-        dismiss(animated: true) {
-            
-        }
+        dismiss(animated: true) { }
     }
     
     @IBAction func didTapSignOut(sender: UIButton) {
         GIDSignIn.sharedInstance()?.signOut()
         UserDefaults.setIsLogin(value: false)
         AppDelegate.shared?.createLoginVC()
-        dismiss(animated: true) {
-        }
+        dismiss(animated: true) { }
     }
+    
     @IBAction func didTapSave(sender: UIButton) {
-        dismiss(animated: true) {
-            
-        }
+        dismiss(animated: true) { }
     }
 }

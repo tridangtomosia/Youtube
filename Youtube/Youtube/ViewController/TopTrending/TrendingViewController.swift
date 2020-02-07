@@ -5,8 +5,7 @@ class TrendingViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var topView: UIView!
     
-    
-     lazy var headerView : HeaderView = {
+    lazy var headerView : HeaderView = {
         guard let view = Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)?.first as? HeaderView else {
             return HeaderView()
         }
@@ -28,7 +27,6 @@ class TrendingViewController: BaseViewController {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
     }
-    
 }
 
 extension TrendingViewController: UITableViewDataSource {
@@ -42,8 +40,6 @@ extension TrendingViewController: UITableViewDataSource {
         }
         return TableViewCell()
     }
-    
-    
 }
 
 extension TrendingViewController: UITableViewDelegate {
@@ -53,7 +49,9 @@ extension TrendingViewController: UITableViewDelegate {
 extension TrendingViewController: HeaderViewDelegate {
     func headerViewDidSelecButton(view: HeaderView, acction: SelectedAcction) {
         let searchViewController = SearchViewController()
+        searchViewController.modalPresentationStyle = .fullScreen
         let profileViewController = ProfileViewController()
+        profileViewController.modalPresentationStyle = .fullScreen
         switch acction {
             case .search:
                 present(searchViewController, animated: true) {

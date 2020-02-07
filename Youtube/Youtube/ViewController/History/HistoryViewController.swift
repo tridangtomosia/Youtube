@@ -50,7 +50,9 @@ extension HistoryViewController: UITableViewDataSource {
 extension HistoryViewController: HeaderViewDelegate {
     func headerViewDidSelecButton(view: HeaderView, acction: SelectedAcction) {
         let searchViewController = SearchViewController()
+        searchViewController.modalPresentationStyle = .fullScreen
         let profileViewController = ProfileViewController()
+        profileViewController.modalPresentationStyle = .fullScreen
         switch acction {
             case .search:
                 present(searchViewController, animated: true) {

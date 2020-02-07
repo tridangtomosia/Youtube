@@ -8,6 +8,20 @@ enum Method: String {
     case delete
 }
 
+enum APIError: Error {
+    case json
+    case network
+    case custom(String)
+    
+    var localizedDescription: String {
+        switch self {
+        case .json: return "JSON format has error"
+        case .network: return "The network connection was lost"
+        case .custom(let message): return message
+        }
+    }
+}
+
 enum APIResult {
     case success([String: Any])
     case failure(Error)
@@ -15,7 +29,7 @@ enum APIResult {
 
 enum ServiceResult<T> {
     case success(T)
-    case failure(Error)
+    case failure(APIError)
 }
 
 class ManagerAPI {
@@ -43,9 +57,13 @@ class ManagerAPI {
 
         let task = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
             if let data = data, let dictionnary = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] {
-                completion(APIResult.success(dictionnary))
+                DispatchQueue.main.async {
+                    completion(APIResult.success(dictionnary))
+                }
             } else if let error = error {
-                completion(APIResult.failure(error))
+                DispatchQueue.main.async {
+                    completion(APIResult.failure(error))
+                }
             }
         }
         dequeue.async {

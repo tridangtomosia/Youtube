@@ -12,7 +12,6 @@ class TableViewCell: BaseTableViewCell {
     
     var video : Video?
     
-    var network = NetWorkLayer()
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -26,7 +25,7 @@ class TableViewCell: BaseTableViewCell {
         } else {
             videoPlayer.loadVideoID(video.id)
         }
-//        viewCountLabel.text = statistic.statistic?.view 
+        viewCountLabel.text = "View :" + (video.statistic?.statistic?.view ?? "")
         nameVideoLabel.text = video.snippet?.title
         nameChanelLabel.text = video.snippet?.nameChannel
 //        likeCountLabel.text = statistic.like

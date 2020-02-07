@@ -13,9 +13,9 @@ class HomeViewController: BaseViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    var playList = [Video]()
+    var movies : [Video] = []
     let network = NetWorkLayer()
-    var statistics = [Statistic]()
+    var statistic : [Statistic] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,51 +31,43 @@ class HomeViewController: BaseViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
-//        getStatistic(withId: "eVjzv0dEP0I")
     }
     
     func getVideos() {
         network.getVideos(params: ["chart" : "mostpopular"]) { (result) in
             switch result {
             case .success(let videos):
-                self.playList = videos
+                self.movies = videos
+                for i in 0..<self.movies.count {
+                    self.network.getStatisticDictionary(params: ["id": self.movies[i].id]) { (results) in
+                        switch results {
+                            case .success(let statisticDic):
+                                if let dic = statisticDic.first {
+                                    self.movies[i].statistic = Statistic(dictionary: dic)
+                                }
+                            case .failure(_):
+                                print(1)
+                        }
+                        }
+                }
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
             case .failure(let error):
-                print(error.localizedDescription)
+                self.alert(withTitle: "Error", withMessage: error.localizedDescription)
             }
         }
     }
-    
-    func getStatistic(withId string: String) {
-        network.getStatistic(params: ["id": string]) { (results) in
-            switch results {
-            case .success(let videos):
-                self.statistics = videos
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-            case .failure(let error):
-                print(error)
-            }
-        }
-    }
-    
 }
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return playList.count
+        return movies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as? TableViewCell {
-//            getStatistic(withId: playList[indexPath.row].id)
-//            cell.viewCountLabel.text = statistics[0].statistic?.view
-//            playList[indexPath.row].statistic = statistics[0]
-            cell.setLocal(withVideo: playList[indexPath.row])
-//            getStatistic(withId: playList[indexPath.row].videoId?.id ?? "")
+            cell.setLocal(withVideo: movies[indexPath.row])
             return cell
         }
         return TableViewCell()

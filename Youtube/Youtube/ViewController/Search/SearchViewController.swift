@@ -60,11 +60,8 @@ extension SearchViewController: UITableViewDataSource {
         return TableViewCell()
     }
 }
+
 extension SearchViewController: UITextFieldDelegate {
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        getVideo(withTextResearch: "funny")
-    }
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         view.endEditing(true)
         getVideo(withTextResearch: inputTextField.text)

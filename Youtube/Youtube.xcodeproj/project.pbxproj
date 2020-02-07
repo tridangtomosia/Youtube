@@ -24,13 +24,18 @@
 		1860462C23E80E7A00285A86 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860462A23E80E7A00285A86 /* TableViewCell.swift */; };
 		1860462D23E80E7A00285A86 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1860462B23E80E7A00285A86 /* TableViewCell.xib */; };
 		1860463723E909F400285A86 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1860463623E909F400285A86 /* HistoryViewController.xib */; };
-		1860463923E90B1C00285A86 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860463823E90B1C00285A86 /* Model.swift */; };
+		1860463923E90B1C00285A86 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860463823E90B1C00285A86 /* Video.swift */; };
 		18BA422E23EA504B0088E0C1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA422D23EA504B0088E0C1 /* BaseViewController.swift */; };
 		18BA423023EA66C90088E0C1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA422F23EA66C90088E0C1 /* Extension.swift */; };
 		18BA423223EA67F00088E0C1 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA423123EA67F00088E0C1 /* Manager.swift */; };
 		18BA423423EA7BF40088E0C1 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA423323EA7BF40088E0C1 /* BaseTabBarController.swift */; };
 		18BA423623EA7C320088E0C1 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA423523EA7C320088E0C1 /* BaseTableViewCell.swift */; };
 		18BA423823EA9DBB0088E0C1 /* NetWorkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA423723EA9DBB0088E0C1 /* NetWorkLayer.swift */; };
+		18BA423C23ED22210088E0C1 /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA423B23ED22210088E0C1 /* Statistic.swift */; };
+		18BA423E23ED228D0088E0C1 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA423D23ED228D0088E0C1 /* Image.swift */; };
+		18BA424023ED22C20088E0C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA423F23ED22C20088E0C1 /* User.swift */; };
+		18BA424223ED232C0088E0C1 /* Identification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA424123ED232C0088E0C1 /* Identification.swift */; };
+		18BA424423ED235E0088E0C1 /* Snippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BA424323ED235E0088E0C1 /* Snippet.swift */; };
 		18C751B723E95BD8008FF005 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C751B623E95BD8008FF005 /* UserDefault.swift */; };
 		18C751BA23E9670A008FF005 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C751B823E9670A008FF005 /* LoginViewController.swift */; };
 		18C751BB23E9670A008FF005 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C751B923E9670A008FF005 /* LoginViewController.xib */; };
@@ -58,13 +63,18 @@
 		1860462A23E80E7A00285A86 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		1860462B23E80E7A00285A86 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		1860463623E909F400285A86 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
-		1860463823E90B1C00285A86 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		1860463823E90B1C00285A86 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		18BA422D23EA504B0088E0C1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		18BA422F23EA66C90088E0C1 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		18BA423123EA67F00088E0C1 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		18BA423323EA7BF40088E0C1 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		18BA423523EA7C320088E0C1 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		18BA423723EA9DBB0088E0C1 /* NetWorkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkLayer.swift; sourceTree = "<group>"; };
+		18BA423B23ED22210088E0C1 /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
+		18BA423D23ED228D0088E0C1 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		18BA423F23ED22C20088E0C1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		18BA424123ED232C0088E0C1 /* Identification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identification.swift; sourceTree = "<group>"; };
+		18BA424323ED235E0088E0C1 /* Snippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snippet.swift; sourceTree = "<group>"; };
 		18C751B623E95BD8008FF005 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		18C751B823E9670A008FF005 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		18C751B923E9670A008FF005 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -150,8 +160,13 @@
 		186045ED23E7C41500285A86 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1860463823E90B1C00285A86 /* Model.swift */,
+				1860463823E90B1C00285A86 /* Video.swift */,
 				18BA423723EA9DBB0088E0C1 /* NetWorkLayer.swift */,
+				18BA423B23ED22210088E0C1 /* Statistic.swift */,
+				18BA423D23ED228D0088E0C1 /* Image.swift */,
+				18BA423F23ED22C20088E0C1 /* User.swift */,
+				18BA424123ED232C0088E0C1 /* Identification.swift */,
+				18BA424323ED235E0088E0C1 /* Snippet.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -380,14 +395,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BA423C23ED22210088E0C1 /* Statistic.swift in Sources */,
 				18BA422E23EA504B0088E0C1 /* BaseViewController.swift in Sources */,
 				1860461323E7DE3F00285A86 /* TrendingViewController.swift in Sources */,
 				18BA423423EA7BF40088E0C1 /* BaseTabBarController.swift in Sources */,
 				1860461B23E7DE8100285A86 /* SearchViewController.swift in Sources */,
 				18C751B723E95BD8008FF005 /* UserDefault.swift in Sources */,
 				1860462C23E80E7A00285A86 /* TableViewCell.swift in Sources */,
+				18BA423E23ED228D0088E0C1 /* Image.swift in Sources */,
+				18BA424023ED22C20088E0C1 /* User.swift in Sources */,
+				18BA424423ED235E0088E0C1 /* Snippet.swift in Sources */,
 				186045D623E7C1B700285A86 /* AppDelegate.swift in Sources */,
-				1860463923E90B1C00285A86 /* Model.swift in Sources */,
+				1860463923E90B1C00285A86 /* Video.swift in Sources */,
 				1860462323E7DF0000285A86 /* ProfileViewController.swift in Sources */,
 				1860461F23E7DE9B00285A86 /* HomeViewController.swift in Sources */,
 				18BA423623EA7C320088E0C1 /* BaseTableViewCell.swift in Sources */,
@@ -395,6 +414,7 @@
 				1860461723E7DE5F00285A86 /* HistoryViewController.swift in Sources */,
 				18BA423223EA67F00088E0C1 /* Manager.swift in Sources */,
 				18BA423823EA9DBB0088E0C1 /* NetWorkLayer.swift in Sources */,
+				18BA424223ED232C0088E0C1 /* Identification.swift in Sources */,
 				1860462623E7F69400285A86 /* HeaderView.swift in Sources */,
 				18C751BA23E9670A008FF005 /* LoginViewController.swift in Sources */,
 			);

@@ -29,8 +29,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="view" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fg3-C1-fzI">
-                                <rect key="frame" x="130" y="305" width="35" height="15"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="230" y="305" width="35" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="qHO-Vg-yld"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -48,12 +51,12 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="chanel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtA-MY-qZ3">
-                                <rect key="frame" x="60" y="305" width="65" height="15"/>
+                                <rect key="frame" x="60" y="305" width="165" height="15"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="15" id="GhU-ti-W3A"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="GhU-ti-W3A"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="Nrg-cM-LOp"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -62,8 +65,10 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Iih-rm-Inm" secondAttribute="trailing" constant="15" id="2Gy-Ey-Sdh"/>
                             <constraint firstAttribute="trailing" secondItem="FL3-dP-I1l" secondAttribute="trailing" id="327-Gf-H4x"/>
+                            <constraint firstItem="Fg3-C1-fzI" firstAttribute="centerX" secondItem="CBs-fM-wms" secondAttribute="centerX" constant="60" id="5aI-1i-vWd"/>
                             <constraint firstItem="lRw-w4-zN9" firstAttribute="leading" secondItem="CBs-fM-wms" secondAttribute="leading" constant="10" id="7jW-uk-N4P"/>
                             <constraint firstItem="wtA-MY-qZ3" firstAttribute="top" secondItem="Iih-rm-Inm" secondAttribute="bottom" constant="5" id="7ov-bZ-Wwa"/>
+                            <constraint firstItem="Fg3-C1-fzI" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Iih-rm-Inm" secondAttribute="trailing" id="Ac3-ec-GVK"/>
                             <constraint firstItem="lRw-w4-zN9" firstAttribute="top" secondItem="Iih-rm-Inm" secondAttribute="top" id="Gqc-aB-J4a"/>
                             <constraint firstItem="Iih-rm-Inm" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="lRw-w4-zN9" secondAttribute="bottom" id="QXV-ag-UST"/>
                             <constraint firstAttribute="bottom" secondItem="wtA-MY-qZ3" secondAttribute="bottom" constant="10" id="S8p-q7-6DF"/>

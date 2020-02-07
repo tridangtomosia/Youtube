@@ -7,16 +7,16 @@ enum SelectedAcction {
 }
 
 protocol HeaderViewDelegate: class {
-    func headerViewDidSelecButton(view: HeaderView, acction: SelectedAcction)
+    func headerViewDidSelecButton(view: HeaderView, action: SelectedAcction)
 }
 
 class HeaderView: UIView {
     weak var delegate: HeaderViewDelegate?
     
     @IBAction func didTapSearch(sender: UIButton) {
-        delegate?.headerViewDidSelecButton(view: self, acction: .search)
+        delegate?.headerViewDidSelecButton(view: self, action: .search)
     }
     @IBAction func didtapUser(sender: UIButton) {
-        delegate?.headerViewDidSelecButton(view: self, acction: .user)
+        delegate?.headerViewDidSelecButton(view: self, action: .user)
     }
 }

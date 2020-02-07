@@ -70,19 +70,17 @@ extension HomeViewController: UITableViewDelegate {
 }
 
 extension HomeViewController: HeaderViewDelegate {
-    func headerViewDidSelecButton(view: HeaderView, acction: SelectedAcction) {
-        let searchViewController = SearchViewController()
-        searchViewController.modalPresentationStyle = .fullScreen
-        let profileViewController = ProfileViewController()
-        profileViewController.modalPresentationStyle = .fullScreen
-        switch acction {
+    func headerViewDidSelecButton(view: HeaderView, action: SelectedAcction) {
+
+        switch action {
             case .search:
-                present(searchViewController, animated: true) {
-                    
-                }
+                let searchViewController = SearchViewController()
+                searchViewController.modalPresentationStyle = .fullScreen
+                present(searchViewController, animated: true) { }
             default:
-                present(profileViewController, animated: true) {
-                }
+                let profileViewController = ProfileViewController()
+                profileViewController.modalPresentationStyle = .fullScreen
+                present(profileViewController, animated: true) { }
         }
     }
 }

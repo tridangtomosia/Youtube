@@ -21,7 +21,7 @@ class SearchViewController: BaseViewController {
             case .success(let videos):
                 self.listVideos = videos
             case .failure(let error):
-                print(error)
+                self.alert(withTitle: "Error", withMessage: error.localizedDescription)
             }
         }
     }

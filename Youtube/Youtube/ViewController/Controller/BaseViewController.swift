@@ -7,10 +7,11 @@ class BaseViewController: UIViewController {
     }
     
     func alert(withTitle title: String, withMessage message: String ) {
-        let alertViewController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertViewController = UIAlertController(title: title,
+                                                    message: message,
+                                                    preferredStyle: .alert)
         let cancelButton = UIAlertAction(title: "Cancel", style: .default)
         alertViewController.addAction(cancelButton)
-        present(alertViewController, animated: true) {
-        }
+        present(alertViewController, animated: true)
     }
 }

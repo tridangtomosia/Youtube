@@ -1,6 +1,5 @@
 
 import UIKit
-import GoogleSignIn
 
 class HomeViewController: BaseViewController {
     @IBOutlet weak var topView: UIView!
@@ -13,7 +12,7 @@ class HomeViewController: BaseViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    var movies: [Video] = []
+    var listVideos: [Video] = []
     let network = NetWorkLayer()
     
     override func viewDidLoad() {
@@ -33,13 +32,14 @@ class HomeViewController: BaseViewController {
     }
     
     func getVideos() {
-        network.getVideos(params: ["chart" : "mostpopular"]) { (result) in
+        network.getVideos(params: ["chart" : "mostpopular"]) { [weak self] (result) in
+            guard let self = self else { return }
             switch result {
-            case .success(let videos):
-                self.movies = videos
-                self.tableView.reloadData()
-            case .failure(let error):
-                self.alert(withTitle: "Error", withMessage: error.localizedDescription)
+                case .success(let videos):
+                    self.listVideos = videos
+                    self.tableView.reloadData()
+                case .failure(let error):
+                    self.alert(withTitle: "Error", withMessage: error.localizedDescription)
             }
         }
     }
@@ -47,12 +47,12 @@ class HomeViewController: BaseViewController {
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return movies.count
+        return listVideos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as? TableViewCell {
-            cell.setLocal(withVideo: movies[indexPath.row])
+            cell.setLocal(withVideo: listVideos[indexPath.row])
             return cell
         }
         return TableViewCell()
@@ -65,13 +65,15 @@ extension HomeViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let videoViewController = VideoViewController()
+        videoViewController.modalPresentationStyle = .fullScreen
+        videoViewController.video = listVideos[indexPath.row]
+        present(videoViewController, animated: true) { }
     }
 }
 
 extension HomeViewController: HeaderViewDelegate {
     func headerViewDidSelecButton(view: HeaderView, action: SelectedAcction) {
-
         switch action {
             case .search:
                 let searchViewController = SearchViewController()

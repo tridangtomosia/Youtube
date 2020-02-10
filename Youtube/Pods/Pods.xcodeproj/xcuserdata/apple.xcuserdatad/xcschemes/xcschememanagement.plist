@@ -39,7 +39,7 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
-		<key>YouTubePlayer-Swift.xcscheme</key>
+		<key>YoutubePlayerView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

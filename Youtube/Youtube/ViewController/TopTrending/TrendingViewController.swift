@@ -12,6 +12,8 @@ class TrendingViewController: BaseViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    var network = NetWorkLayer()
+    var listVideos: [Video] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,16 +28,32 @@ class TrendingViewController: BaseViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
+        getVideos(withRegions: "VN")
     }
+    
+    func getVideos(withRegions region: String) {
+        self.network.getTrendVideo(params: ["regionCode": region]) { [weak self] (results) in
+            guard let self = self else { return }
+            switch results {
+                case .success(let videos):
+                    self.listVideos = videos
+                    self.tableView.reloadData()
+                case .failure(let error):
+                    self.alert(withTitle: "Error", withMessage: error.localizedDescription)
+            }
+        }
+    }
+    
 }
 
 extension TrendingViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+        return listVideos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as? TableViewCell {
+            cell.setLocal(withVideo: listVideos[indexPath.row])
             return cell
         }
         return TableViewCell()
@@ -43,7 +61,9 @@ extension TrendingViewController: UITableViewDataSource {
 }
 
 extension TrendingViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 300.scale
+    }
 }
 
 extension TrendingViewController: HeaderViewDelegate {

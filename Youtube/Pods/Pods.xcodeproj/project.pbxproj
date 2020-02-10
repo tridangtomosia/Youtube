@@ -22,103 +22,104 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		008177D0F7976046D07BBF0BD6EF9830 /* OIDAuthorizationService.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B62F413EA79C998A7C0AAA6E255CC36 /* OIDAuthorizationService.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		00C216FFCDCF00EE37F892187017A26F /* OIDServiceConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFE22F616183C41B8DC956C960160F3 /* OIDServiceConfiguration.m */; };
-		0197D29CA9367975F79F64C9E7FBE2C2 /* GTMReadMonitorInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F276206B04130CA43A04CFE90C1791C /* GTMReadMonitorInputStream.m */; };
-		0556C00B979E10C2B037ED00230581B6 /* OIDErrorUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0672D3F5CE6B8E465CB485CD5F2EBAF1 /* OIDErrorUtilities.m */; };
-		097EF7325882799B1B4D97A472A0A605 /* OIDError.h in Headers */ = {isa = PBXBuildFile; fileRef = DD987310507D1FDC90E3B25698F073DE /* OIDError.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		09A3ED1B6761DC4666C55A32DC9222E5 /* YouTubePlayer-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DE785FD3D76F7026DD74873B532B30 /* YouTubePlayer-Swift-dummy.m */; };
-		0A13C06F8C285F14A0AFAEDE92462C6A /* OIDFieldMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6364A62EFA33F5F6FB10AF1E540E43 /* OIDFieldMapping.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0E116491080B3291E2D6165292859312 /* OIDEndSessionResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 06780708C0238E22C5059006AA666C11 /* OIDEndSessionResponse.m */; };
-		0F450C3FD65B2B0070981FC07C9FA738 /* GTMAppAuthFetcherAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0FFBD02E6CE5E9D24BEE2A12145303 /* GTMAppAuthFetcherAuthorization.m */; };
-		148E2B7C527BC33F10CDD9FF832EDE79 /* OIDRegistrationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C10FD67CCD75F5DA3980F5D5672F90 /* OIDRegistrationResponse.m */; };
-		1ABA3ABA530411283001334E90E61CDF /* GTMReadMonitorInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = EED268FBC2EC4A06541A481F613C58F5 /* GTMReadMonitorInputStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1B308D3D2FB0CFBDD7B9961F28E296D1 /* OIDAuthStateErrorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 27C0A1532C60AA2E7912D8687996AAB3 /* OIDAuthStateErrorDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1CBAC840CEC1F207490446BBC49F8925 /* GTMMIMEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BFB096DF363C4DCC5AA5C68D7C8A0B /* GTMMIMEDocument.m */; };
-		22A0409B3A6E58331D61C9070EE13D5D /* OIDAuthState.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1D2B3339AAED7A5327C5D377C215AF /* OIDAuthState.m */; };
-		26263F4CB49D41C60965D725DC3BCC33 /* OIDExternalUserAgentCatalyst.h in Headers */ = {isa = PBXBuildFile; fileRef = C5BAC0FAEC0950BB4215184198E0E4BC /* OIDExternalUserAgentCatalyst.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		277C64427D086ABACEA3A78BFA7B5FB2 /* GTMSessionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AD7A5F14792EFBF6467A2FBCFD2A31 /* GTMSessionFetcher.m */; };
-		2958817A1E275653AC50CAFBEEEF76E5 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AEF909D299A8B5857C1FB5F91904E6 /* VideoPlayerView.swift */; };
-		30846928D515A31D381300E2B47412FC /* GTMSessionUploadFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9954482F49FD5B40DF4AC6D438F6F0 /* GTMSessionUploadFetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3BCC19E51809677B704560479FD7451C /* GTMSessionFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 721F68AB7A73053670FC1D96A1481F23 /* GTMSessionFetcherLogging.m */; };
-		40782DCC7AA39E0E984416B602A576D0 /* GTMKeychain_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0C9632C2BEC1EC136BA8668EE79AE /* GTMKeychain_iOS.m */; };
-		4120EF11193D0E404D28691E193A0753 /* OIDEndSessionResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = A76FA4FCEBD483DE4A3EAF38655DE426 /* OIDEndSessionResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		44BD005E1971FE86DC7A541923CF053B /* OIDExternalUserAgentIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D33D51EC3A759EEDBA2604A0C5D608 /* OIDExternalUserAgentIOS.m */; };
-		44DD1CDA4C76B9260B5EF3A237FF5540 /* GTMGatherInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 84840AAC48EE7C8788AC81D3497FFF48 /* GTMGatherInputStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4877E1DFD13544FDFC2DE9891D8AADA8 /* OIDTokenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E22F53274572CCDB79068C5189878F43 /* OIDTokenRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		48E7B52A255DFE8AE87B988E5037796F /* Pods-Youtube-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7AEB4B7796DABB04F62D74194EFF9 /* Pods-Youtube-dummy.m */; };
-		4B5A2CF12CF045E9D651B99E9F3BC74A /* OIDErrorUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B71E8CFAA73BCAB93BB4161D324DADEC /* OIDErrorUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4CE3AB4C56666D236A45E9B8FFA5598A /* OIDDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FB13DC37E0F32DD2A3A09F54350AF73 /* OIDDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4E1DD8838C303E1B7385A4BC5BF1552A /* OIDResponseTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BC83E981733AE8D677BFFF41F5A782 /* OIDResponseTypes.m */; };
-		4E25A7014259878A3B2C90D487869416 /* GTMAppAuthFetcherAuthorization+Keychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 34716B2ECAD584DD3502D0DF1A0185BD /* GTMAppAuthFetcherAuthorization+Keychain.m */; };
-		521AB2D4E68F458FB192A095D8C339E6 /* OIDGrantTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C77859D73E6E2617B694C5958962442 /* OIDGrantTypes.m */; };
-		56AA538933BFFB46E90E3AF4BE81BD88 /* OIDEndSessionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E38D9D9BF3F01A593C33427DFAA3DAF /* OIDEndSessionRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		56F7A309117EF36ADE10E617AD1732F8 /* OIDScopes.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B97B53F6CB385DABD52B08455545FA7 /* OIDScopes.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5F8A14AA39CDA5050D31FCC4FDFED8BF /* OIDIDToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 80D5467B4BBA44881560C02D72CDFAC9 /* OIDIDToken.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		63C373548F276406DE607EE04DB6F23D /* OIDURLSessionProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = AE1B2454549CB5C273169EFDB08BCC6D /* OIDURLSessionProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		67508E4BC79BA30FCA9DF8664F4F8461 /* GTMSessionFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 887418930CF06065B366CF914AFF8F3C /* GTMSessionFetcherService.m */; };
-		6814689C9618A41B064AE0587092BE1D /* GTMGatherInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = A2665AEBF9AB7F11BD2EC703012C51ED /* GTMGatherInputStream.m */; };
-		686A4A9D353604B91C0FE8B0B8FC60E2 /* GTMSessionFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EB52813A8013E8830EFB6D727FB2C0 /* GTMSessionFetcher-dummy.m */; };
-		69F93BF06B0CD6A5EA379695A54EBF79 /* OIDIDToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 691C3C6997CC64BED980F5EBEA0477FF /* OIDIDToken.m */; };
-		6AA4C6C92E294E2DFB6C7C03B6B7E3B6 /* AppAuthCore.h in Headers */ = {isa = PBXBuildFile; fileRef = C32B873A927169F7277DB495B485F2AB /* AppAuthCore.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6BEB8662C93FCCA59F60F5A3C197DDA4 /* OIDScopeUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 46014914E21D98C874410D1794FE72DC /* OIDScopeUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6CDD8BD6ADE3122ECEEFD699C922845B /* OIDAuthorizationService.m in Sources */ = {isa = PBXBuildFile; fileRef = F21ABD6B0C301EBA83667E7599375B1F /* OIDAuthorizationService.m */; };
-		6F1FA76436D35798691666312597B249 /* OIDAuthorizationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBAE4743D76800897DCB5E8565BD3AE /* OIDAuthorizationRequest.m */; };
-		6FFF1E8A8B66FF01ED0CFCF541E142D0 /* AppAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC04FC586E506BE7E651A18FB027BB1A /* AppAuth-dummy.m */; };
-		710BDE54D9705AB21D699051FF208D6E /* OIDAuthorizationService+IOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F5330679125FEB786ECA490477C745 /* OIDAuthorizationService+IOS.m */; };
-		728041B6CCAB782342F6114F46788340 /* GTMAppAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC0A6382A0402FE0C254874F756AFB1 /* GTMAppAuth.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		73B44CF0EF098BCDBF40D10E9481A587 /* OIDServiceDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCBB846F31B937C1BF5E710F6B5F228 /* OIDServiceDiscovery.m */; };
-		746AC8C3C5FE2D7AFBF645E8027D3E4C /* AppAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = AFA95738BC54CC73624C9461AFBEAC83 /* AppAuth.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		774B22683E6D64B7C113BFA192533CFF /* OIDAuthorizationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 13128FD5DB032740B626FB8EECD7E686 /* OIDAuthorizationResponse.m */; };
-		7B004EFF5E0369DB2D498B21F9A67C52 /* GTMAppAuthFetcherAuthorization+Keychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 49A1945F4EF1C6C67BF5ECE76BDD5A91 /* GTMAppAuthFetcherAuthorization+Keychain.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7C6C30320ED520E1B763142B84AC69CE /* OIDExternalUserAgentIOSCustomBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 269968CAB7F53948C3F77F1BDB54D056 /* OIDExternalUserAgentIOSCustomBrowser.m */; };
-		7C89756B58D9AFD312C58A0B29B91DC8 /* OIDError.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF5047B07DD5F5575E683D405F34D52 /* OIDError.m */; };
-		803D1DD273F47E3F09B4FC7F75A3B195 /* GTMMIMEDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = C98E9F0CCD26CA2715A68922C8A991E8 /* GTMMIMEDocument.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		849D6D6CBDF67B89CF899661FF9522A4 /* OIDAuthorizationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E689BEED9F2A682AABDE8EE9B4D168C /* OIDAuthorizationResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		89B99F37B589AC5F00C1B0B1BEFDBD11 /* OIDExternalUserAgentSession.h in Headers */ = {isa = PBXBuildFile; fileRef = AE01332E277764A4093BBEF0ECC747E9 /* OIDExternalUserAgentSession.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8B65B67F7EFBC7042A8B1A4F2C133261 /* OIDTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F6FD477567F30EA492E2CE21BA573FB4 /* OIDTokenResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8FA2677CC39A1E1D7CA01B7A176CD257 /* OIDAuthState.h in Headers */ = {isa = PBXBuildFile; fileRef = 3318EE96AD9212A3248F6DCCE8F12D4D /* OIDAuthState.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		90F746C285B0567933E2B81347A454CD /* GTMAppAuthFetcherAuthorization.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FCB4D05FF94218653B003500DF21DD3 /* GTMAppAuthFetcherAuthorization.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		92DEE77A6C3DB65AEEAD7F202585E922 /* OIDEndSessionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 529A6C2C09DBC9D0BBA477E4D020133D /* OIDEndSessionRequest.m */; };
-		932DFBE82888E3A89719BE2899D5A3EC /* GTMSessionFetcherService.h in Headers */ = {isa = PBXBuildFile; fileRef = B255DD60A3BC997039BF4BEDC001D65F /* GTMSessionFetcherService.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		96F286D25F19C86FCE048C03A1B503BF /* OIDScopes.m in Sources */ = {isa = PBXBuildFile; fileRef = B0350D25F4DE8CD7183D26FA51DD409C /* OIDScopes.m */; };
-		985BA0963E67F8DFEE9AE82C31B18548 /* OIDRegistrationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D452F13F3D6943B6A37116AF00851F3 /* OIDRegistrationRequest.m */; };
-		9BB6373E6F2D0B2FEE1EDA7C683ADF62 /* OIDTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EECE0A439B024CEC7E5811DF7A43D /* OIDTokenResponse.m */; };
-		9F1700CD5E28BD24268FDBEC950F9F71 /* OIDAuthorizationService+IOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 369209106C8A7AA4E96FCE5D03AA8F75 /* OIDAuthorizationService+IOS.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A21F86796F3B89E82EF7EDD192B1630D /* GTMKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC6AA396A13E4732AF3FDD7298CAD2D /* GTMKeychain.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A44AEE785D945C71048565C18163B58A /* YouTubePlayer-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D95ACA0D1A2DDA2565580FF30068EA /* YouTubePlayer-Swift-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A7150A149E51BE01BCA75D37FF05E745 /* Pods-Youtube-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 397E840F33AF7826802A0A52B34F6681 /* Pods-Youtube-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A8E2E2EC479B884C4D31FB1ABD5D9899 /* OIDTokenUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE6DEF78CFB5F279EDA172629E85993 /* OIDTokenUtilities.m */; };
-		AF33FD538D0A7AE82CFA6B31043E5FC0 /* GTMOAuth2KeychainCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 6925214893F6E8551ADFBFEC4B5F972D /* GTMOAuth2KeychainCompatibility.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B7AA76270AC6EF44CF960C56A0E493C1 /* OIDExternalUserAgentIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 39A8C111B5B186D90C177A12D903DC59 /* OIDExternalUserAgentIOS.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B9F3C757BB152EC0D36491D7DC534260 /* OIDExternalUserAgentCatalyst.m in Sources */ = {isa = PBXBuildFile; fileRef = 40092A4C55DFFD12E5C630B9AECF30D5 /* OIDExternalUserAgentCatalyst.m */; };
-		BC6846C1FAD633FDC9EF8AF5CF952E61 /* OIDAuthorizationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BDC32E570AFFAEDC541D1B559782D562 /* OIDAuthorizationRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BE65F0B1FD6F542EA5795F9DD65B2983 /* OIDClientMetadataParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE158A3038F84D3BB1D73BDB936CBAC /* OIDClientMetadataParameters.m */; };
-		C2D291E381C7788911E282424DB41BE9 /* OIDClientMetadataParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EBEDF5F1EAEBD0FE547D7085A078D01 /* OIDClientMetadataParameters.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C859356B41B1895E24569DEA62F30A28 /* OIDExternalUserAgentIOSCustomBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = BA1B78D2AF00936CE0D7C90793358F2C /* OIDExternalUserAgentIOSCustomBrowser.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CD8B32EE7981F00D7081C5F52B7B6ECA /* GTMAppAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9077F9EBB7A2234A761C3B9BC462CE /* GTMAppAuth-dummy.m */; };
-		CEB648BCB8FA1A689B8EA0E3535F23EE /* OIDGrantTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = D12FB3CE82DE1514B30D0F0F2BDF2370 /* OIDGrantTypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D05897572139A7A945233AE3890E7298 /* OIDURLQueryComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = F00B5126BF6202451E7BB63DAEBCA778 /* OIDURLQueryComponent.m */; };
-		D2872720DAE45D47B475207A656CBE87 /* OIDExternalUserAgentRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 94FA7AE0B21BDE651B8A4049F52BC753 /* OIDExternalUserAgentRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D2B690A078535AEFD4B0CE9FC5A5FF24 /* OIDRegistrationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC77F84711FAA8A87E43075EBC67664 /* OIDRegistrationRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D51B110A1B250FC321824A4C0AF9E312 /* OIDResponseTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F9AF03C39DB13ED8D685D0391DAB6080 /* OIDResponseTypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D54C1934DD18677894A647701360A6B9 /* OIDServiceConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 7617FFB91E7F688D62FEA8221A90091D /* OIDServiceConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D5D88228D094B5282ED7CF7316A72654 /* OIDURLSessionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B3191833A1F7EA43F08705BE5538A4 /* OIDURLSessionProvider.m */; };
-		DCFB90928DA7D3E0363BAEF1FADC1A6D /* OIDScopeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7190AA871E8988CF248421200838EBF3 /* OIDScopeUtilities.m */; };
-		DD2C19E5FDBD953EAD957AA7622BD0C0 /* OIDExternalUserAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = B587ED808DB16E42C11072346DE5B4E4 /* OIDExternalUserAgent.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DEAECEC42C05837DB479E40FB812FCA1 /* OIDAuthState+IOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D64AE442792DB2996B77794B3E142C86 /* OIDAuthState+IOS.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E4244B96C14310BE261635057FF9863A /* OIDURLQueryComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D9E4C10B69788E05F8B4D068415A007 /* OIDURLQueryComponent.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E65FE16DDDCD62AD3B9E24190B0E1831 /* OIDRegistrationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BB934B4B2C62BF6A08A4E89FEB07E175 /* OIDRegistrationResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E752C88BB3B9F00B819B0B704715849A /* OIDAuthStateChangeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C5E87363C8700484759F0D217A47765E /* OIDAuthStateChangeDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E77FC396CA62195FB99447A583128666 /* OIDTokenUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC509169EBE64D4B0C97BCEB3B666F7 /* OIDTokenUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E82DB4EF6F36AE53765FEF86DD5B377F /* OIDTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E53AB923F3F88685E61AB83E001FC0A /* OIDTokenRequest.m */; };
-		E83A50563E2422FFF7A3D7E52B68BBAA /* GTMSessionUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DE1DBC6AD07080828620A452467327 /* GTMSessionUploadFetcher.m */; };
-		EF241F0F0FE69ADCEBE70C7EA7D840D3 /* OIDAuthState+IOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A5D628CBD59B3DD9293EDDF10B08B8 /* OIDAuthState+IOS.m */; };
-		EF43B17BFB471608ABEF9D543051F247 /* GTMSessionFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 9272AA4CCA18DE372B52935D14DFFDD5 /* GTMSessionFetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EF651E5664A2BEB28D3D630E4A8AFAA3 /* GTMOAuth2KeychainCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = AE281A166B6470DFCEE97D16CE296AD4 /* GTMOAuth2KeychainCompatibility.m */; };
-		F457CB799F2692B47E141775965C944E /* OIDFieldMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A13262366BF19294C9EE3F2022F1F3A /* OIDFieldMapping.m */; };
-		FA5921AFF1FE1B731A6E92B903F32104 /* OIDServiceDiscovery.h in Headers */ = {isa = PBXBuildFile; fileRef = F2917F359147A743EA7890D7DD3AFC2D /* OIDServiceDiscovery.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FBAC3945C3C35BA221A473A74FAE780C /* GTMSessionFetcherLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F814E0123349E7482918483FD3C8016 /* GTMSessionFetcherLogging.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		008177D0F7976046D07BBF0BD6EF9830 /* OIDAuthorizationService.h in Headers */ = {isa = PBXBuildFile; fileRef = D830517930EA641140BA04ECAEA80F2C /* OIDAuthorizationService.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		00C216FFCDCF00EE37F892187017A26F /* OIDServiceConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DED3160FF72E5CF9747B960A89D5B972 /* OIDServiceConfiguration.m */; };
+		0197D29CA9367975F79F64C9E7FBE2C2 /* GTMReadMonitorInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B790AE5FF6C1DE814F0181E5287FF33 /* GTMReadMonitorInputStream.m */; };
+		0556C00B979E10C2B037ED00230581B6 /* OIDErrorUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CF743BA2AB7ACF100AC8A58EFC12ED /* OIDErrorUtilities.m */; };
+		097EF7325882799B1B4D97A472A0A605 /* OIDError.h in Headers */ = {isa = PBXBuildFile; fileRef = BA08B26C2DD0ACF3D0E405BA2DB38D55 /* OIDError.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0A13C06F8C285F14A0AFAEDE92462C6A /* OIDFieldMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = B63C113FFBEE9E00B90947DB1115673E /* OIDFieldMapping.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0E116491080B3291E2D6165292859312 /* OIDEndSessionResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD04C4AAC52C4C68C41B2ECDF966917 /* OIDEndSessionResponse.m */; };
+		0F450C3FD65B2B0070981FC07C9FA738 /* GTMAppAuthFetcherAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 638AEE5EC7479EB011755D6059203435 /* GTMAppAuthFetcherAuthorization.m */; };
+		148E2B7C527BC33F10CDD9FF832EDE79 /* OIDRegistrationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1BD17B5734C341B383895926144DF8 /* OIDRegistrationResponse.m */; };
+		1ABA3ABA530411283001334E90E61CDF /* GTMReadMonitorInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A9926B47F4A4ED50CC3A9EE4FB32448 /* GTMReadMonitorInputStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1B308D3D2FB0CFBDD7B9961F28E296D1 /* OIDAuthStateErrorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DB187153428CE9D919A465A3E4835F6B /* OIDAuthStateErrorDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1CBAC840CEC1F207490446BBC49F8925 /* GTMMIMEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB35B0770FD855571A9AD50C931A8C /* GTMMIMEDocument.m */; };
+		22A0409B3A6E58331D61C9070EE13D5D /* OIDAuthState.m in Sources */ = {isa = PBXBuildFile; fileRef = 062EF99F5932013545027855354CC25D /* OIDAuthState.m */; };
+		26263F4CB49D41C60965D725DC3BCC33 /* OIDExternalUserAgentCatalyst.h in Headers */ = {isa = PBXBuildFile; fileRef = 60BA4EAF037D773049D4BCA215DD9C0B /* OIDExternalUserAgentCatalyst.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		277C64427D086ABACEA3A78BFA7B5FB2 /* GTMSessionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7976DBAAEBB1A420ADE5F33D9950B /* GTMSessionFetcher.m */; };
+		30846928D515A31D381300E2B47412FC /* GTMSessionUploadFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = CDA6AC7BD4FD36E9D6C59534BB32B2ED /* GTMSessionUploadFetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3BCC19E51809677B704560479FD7451C /* GTMSessionFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A4ACC363EB34AD1224E7DC5A5D6D12 /* GTMSessionFetcherLogging.m */; };
+		40782DCC7AA39E0E984416B602A576D0 /* GTMKeychain_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 152B2221CE025B9DEAF62EDE8414DBA9 /* GTMKeychain_iOS.m */; };
+		4120EF11193D0E404D28691E193A0753 /* OIDEndSessionResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 63F7226D0F58711BBFA2A1C2218EF2A7 /* OIDEndSessionResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		44BD005E1971FE86DC7A541923CF053B /* OIDExternalUserAgentIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BFC81ADDD5EABDC505EE90CB4F623F /* OIDExternalUserAgentIOS.m */; };
+		44DD1CDA4C76B9260B5EF3A237FF5540 /* GTMGatherInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 8689225A7FFC46D6AD37E8C314770B8F /* GTMGatherInputStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4877E1DFD13544FDFC2DE9891D8AADA8 /* OIDTokenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = EBB92538DE02AF62D4C77A69D5034134 /* OIDTokenRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4B5A2CF12CF045E9D651B99E9F3BC74A /* OIDErrorUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 88AE780A58EC58CA532D623C35095E04 /* OIDErrorUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4CE3AB4C56666D236A45E9B8FFA5598A /* OIDDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B3597C9923BF7C1F2F368440E0024C4 /* OIDDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4E1DD8838C303E1B7385A4BC5BF1552A /* OIDResponseTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E23D449BFE1FC85DC269A29D5867CB /* OIDResponseTypes.m */; };
+		4E25A7014259878A3B2C90D487869416 /* GTMAppAuthFetcherAuthorization+Keychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C91CC41F962A761B422402B86AB3D3B /* GTMAppAuthFetcherAuthorization+Keychain.m */; };
+		521AB2D4E68F458FB192A095D8C339E6 /* OIDGrantTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = D305AEAC07B25146CF2385242BDB96FF /* OIDGrantTypes.m */; };
+		56AA538933BFFB46E90E3AF4BE81BD88 /* OIDEndSessionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B366754A1575874B0D84A6615EF76547 /* OIDEndSessionRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		56C44B5C5B2AE102BF7534DDCCDA9445 /* YoutubePlayerExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CB2911603FD78703BEB9B9D77CD95 /* YoutubePlayerExtras.swift */; };
+		56F7A309117EF36ADE10E617AD1732F8 /* OIDScopes.h in Headers */ = {isa = PBXBuildFile; fileRef = 00FF58FB1FB89242761635090E89E951 /* OIDScopes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		57EF564B146853DA6A67EF800C7375E5 /* YoutubePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F100081E6A67E5AC8647EE88101BC5 /* YoutubePlayerView.swift */; };
+		5DC90E84D5947AE22DEE7A1241B83C49 /* Pods-Youtube-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 397E840F33AF7826802A0A52B34F6681 /* Pods-Youtube-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5F8A14AA39CDA5050D31FCC4FDFED8BF /* OIDIDToken.h in Headers */ = {isa = PBXBuildFile; fileRef = AE8D531B64F592E416D23CC13588F52F /* OIDIDToken.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		63C373548F276406DE607EE04DB6F23D /* OIDURLSessionProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB8F4E8C47903550AB9804B2AB480B1 /* OIDURLSessionProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		67508E4BC79BA30FCA9DF8664F4F8461 /* GTMSessionFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 46AB5C0322DE8C295ED648D737380009 /* GTMSessionFetcherService.m */; };
+		6814689C9618A41B064AE0587092BE1D /* GTMGatherInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BF3ABF6DC9C66D0E3034A37649F915 /* GTMGatherInputStream.m */; };
+		686A4A9D353604B91C0FE8B0B8FC60E2 /* GTMSessionFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D3BDAD9E48F2EAB5004138B261B3F6 /* GTMSessionFetcher-dummy.m */; };
+		69F93BF06B0CD6A5EA379695A54EBF79 /* OIDIDToken.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6F8BC63F8C51B9D6FCEFE9CE01584D /* OIDIDToken.m */; };
+		6AA4C6C92E294E2DFB6C7C03B6B7E3B6 /* AppAuthCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BC9E563F4385229660784E50672BD306 /* AppAuthCore.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6BEB8662C93FCCA59F60F5A3C197DDA4 /* OIDScopeUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = D5E09E3935AB64AD9057EA7F2524C9D7 /* OIDScopeUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6CDD8BD6ADE3122ECEEFD699C922845B /* OIDAuthorizationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A3F0FDC22340E2175D1F90779A3024 /* OIDAuthorizationService.m */; };
+		6F1FA76436D35798691666312597B249 /* OIDAuthorizationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C61504957CBD184275FB431E37AB763 /* OIDAuthorizationRequest.m */; };
+		6FFF1E8A8B66FF01ED0CFCF541E142D0 /* AppAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E58B04D3E641B840D0196072F280E3 /* AppAuth-dummy.m */; };
+		710BDE54D9705AB21D699051FF208D6E /* OIDAuthorizationService+IOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 941AD521F14FAA2F448D64B39A173F72 /* OIDAuthorizationService+IOS.m */; };
+		728041B6CCAB782342F6114F46788340 /* GTMAppAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C355507A42ADACE1EC5B7863C3C5A76 /* GTMAppAuth.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		73B44CF0EF098BCDBF40D10E9481A587 /* OIDServiceDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C1BF3594183E8412B33802F819B6CB /* OIDServiceDiscovery.m */; };
+		746AC8C3C5FE2D7AFBF645E8027D3E4C /* AppAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 22CE7F4C67B8BD295CC4B8B8510EA1A3 /* AppAuth.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		774B22683E6D64B7C113BFA192533CFF /* OIDAuthorizationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0222CBE8959CA0D49B0C9F2653EB297D /* OIDAuthorizationResponse.m */; };
+		7B004EFF5E0369DB2D498B21F9A67C52 /* GTMAppAuthFetcherAuthorization+Keychain.h in Headers */ = {isa = PBXBuildFile; fileRef = E7DCF81A229D141C2A9AC0BA3DA025BC /* GTMAppAuthFetcherAuthorization+Keychain.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7C6C30320ED520E1B763142B84AC69CE /* OIDExternalUserAgentIOSCustomBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = AD34F0EB6749018BE32FAD1AF463787C /* OIDExternalUserAgentIOSCustomBrowser.m */; };
+		7C89756B58D9AFD312C58A0B29B91DC8 /* OIDError.m in Sources */ = {isa = PBXBuildFile; fileRef = C05724D5E1F0D841A4B22E0F723BE779 /* OIDError.m */; };
+		803D1DD273F47E3F09B4FC7F75A3B195 /* GTMMIMEDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD6A31BB0D41EDEFC3FD32DEA7FABCC /* GTMMIMEDocument.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		849D6D6CBDF67B89CF899661FF9522A4 /* OIDAuthorizationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A89593E56E50E5E3FD7BBF6032D2D49 /* OIDAuthorizationResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8784B4C9CB18FED65F3AE607027B80A4 /* Pods-Youtube-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7AEB4B7796DABB04F62D74194EFF9 /* Pods-Youtube-dummy.m */; };
+		89B99F37B589AC5F00C1B0B1BEFDBD11 /* OIDExternalUserAgentSession.h in Headers */ = {isa = PBXBuildFile; fileRef = E46022E7DAAACD05CAC5179D1A0990B3 /* OIDExternalUserAgentSession.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8B65B67F7EFBC7042A8B1A4F2C133261 /* OIDTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = FFC83FAA0A7DF12A1688A46DB0362944 /* OIDTokenResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8FA2677CC39A1E1D7CA01B7A176CD257 /* OIDAuthState.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BED40E0F4E2800B50307E24B0BA432F /* OIDAuthState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		90F746C285B0567933E2B81347A454CD /* GTMAppAuthFetcherAuthorization.h in Headers */ = {isa = PBXBuildFile; fileRef = A26D6AE78BE04990F3C8389D8F31258C /* GTMAppAuthFetcherAuthorization.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		92DEE77A6C3DB65AEEAD7F202585E922 /* OIDEndSessionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4658AC851392C2BFBBED3EB209D6733 /* OIDEndSessionRequest.m */; };
+		932DFBE82888E3A89719BE2899D5A3EC /* GTMSessionFetcherService.h in Headers */ = {isa = PBXBuildFile; fileRef = 4088BE701C30DEA650846F464F8805AA /* GTMSessionFetcherService.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		96F286D25F19C86FCE048C03A1B503BF /* OIDScopes.m in Sources */ = {isa = PBXBuildFile; fileRef = F02737972CA9B61AF9C34DF871AC50CE /* OIDScopes.m */; };
+		985BA0963E67F8DFEE9AE82C31B18548 /* OIDRegistrationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2581D95D32A8CAE874460C1034E377 /* OIDRegistrationRequest.m */; };
+		9BB6373E6F2D0B2FEE1EDA7C683ADF62 /* OIDTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D31D1C8077AF4A42E4EA766905284E4A /* OIDTokenResponse.m */; };
+		9F1700CD5E28BD24268FDBEC950F9F71 /* OIDAuthorizationService+IOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C20E625BEFFCE0851534C87B5E589E48 /* OIDAuthorizationService+IOS.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A21F86796F3B89E82EF7EDD192B1630D /* GTMKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 21155AA75381880C2B9A7C9D6B16D2F2 /* GTMKeychain.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A8E2E2EC479B884C4D31FB1ABD5D9899 /* OIDTokenUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B797B13EBC00B331CEDA5B535FD41A3 /* OIDTokenUtilities.m */; };
+		AF33FD538D0A7AE82CFA6B31043E5FC0 /* GTMOAuth2KeychainCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC429D0ECA4A5198ACEBFCADFFEC0B5 /* GTMOAuth2KeychainCompatibility.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B7AA76270AC6EF44CF960C56A0E493C1 /* OIDExternalUserAgentIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E3203CDBC5920EB9999061969C08396C /* OIDExternalUserAgentIOS.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B9F3C757BB152EC0D36491D7DC534260 /* OIDExternalUserAgentCatalyst.m in Sources */ = {isa = PBXBuildFile; fileRef = E546180881CC12C6F043B5803FA237FD /* OIDExternalUserAgentCatalyst.m */; };
+		BC6846C1FAD633FDC9EF8AF5CF952E61 /* OIDAuthorizationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A7583E75C1D33C4D4DD9DC079011AC21 /* OIDAuthorizationRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BE65F0B1FD6F542EA5795F9DD65B2983 /* OIDClientMetadataParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309DB4AB1BC03E218FB8D7D6B7513DB /* OIDClientMetadataParameters.m */; };
+		C2D291E381C7788911E282424DB41BE9 /* OIDClientMetadataParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 477E32A16EFD6F4B9EDF5ECA38D3BD2A /* OIDClientMetadataParameters.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C859356B41B1895E24569DEA62F30A28 /* OIDExternalUserAgentIOSCustomBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B685B42075F20AE489A9B468823CAE5 /* OIDExternalUserAgentIOSCustomBrowser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CD8B32EE7981F00D7081C5F52B7B6ECA /* GTMAppAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC4BD1F3652CA415977CF88C6E6F16F /* GTMAppAuth-dummy.m */; };
+		CEB648BCB8FA1A689B8EA0E3535F23EE /* OIDGrantTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 01B466B81EC3759B9BCF5ACFD52C9183 /* OIDGrantTypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D05897572139A7A945233AE3890E7298 /* OIDURLQueryComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2206405A12AD8FE1F25121B8A90DC5E2 /* OIDURLQueryComponent.m */; };
+		D2872720DAE45D47B475207A656CBE87 /* OIDExternalUserAgentRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 570F90F6A9DFFE16E910A6C14F3E2A86 /* OIDExternalUserAgentRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D2B690A078535AEFD4B0CE9FC5A5FF24 /* OIDRegistrationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DA94093E1DC1BB018B75058ED133724 /* OIDRegistrationRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D51B110A1B250FC321824A4C0AF9E312 /* OIDResponseTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4106A7C5D25D1BCD811D2DD4F51BA2C5 /* OIDResponseTypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D54C1934DD18677894A647701360A6B9 /* OIDServiceConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 54938BCEDA2B51BA5CCB6E218A4127FC /* OIDServiceConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D5D88228D094B5282ED7CF7316A72654 /* OIDURLSessionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E17EFDE74BECC530D6DB709BA7EE45A /* OIDURLSessionProvider.m */; };
+		DBA343404AD6B627427CAEA7C0402087 /* YoutubePlayerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 276F04FC19AC214F27E19A6A12164BB6 /* YoutubePlayerView-dummy.m */; };
+		DCFB90928DA7D3E0363BAEF1FADC1A6D /* OIDScopeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F966B92B325D7B3A02C0CCC80F8E5B7B /* OIDScopeUtilities.m */; };
+		DD2C19E5FDBD953EAD957AA7622BD0C0 /* OIDExternalUserAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A89860940E1EBE66CD7DA1CD036B17 /* OIDExternalUserAgent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DEAECEC42C05837DB479E40FB812FCA1 /* OIDAuthState+IOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F53BE5C86B7D5DC75E822FD5B48B6540 /* OIDAuthState+IOS.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E4244B96C14310BE261635057FF9863A /* OIDURLQueryComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 493279FAE646E4B783691E2814CBBF00 /* OIDURLQueryComponent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E65FE16DDDCD62AD3B9E24190B0E1831 /* OIDRegistrationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F69D20D53539295F92FDA1AFCE6ABDAD /* OIDRegistrationResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E752C88BB3B9F00B819B0B704715849A /* OIDAuthStateChangeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FA2EF76375312CFCC97A57581D0BB1A /* OIDAuthStateChangeDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E77FC396CA62195FB99447A583128666 /* OIDTokenUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C2BEDFC186CF9A055B3808BBBD28D9DB /* OIDTokenUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E82DB4EF6F36AE53765FEF86DD5B377F /* OIDTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2120ACE2729790120B9B5E5AEBC68EC0 /* OIDTokenRequest.m */; };
+		E83A50563E2422FFF7A3D7E52B68BBAA /* GTMSessionUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A3AEA1BFF61CF82F8EB933248AC1BA /* GTMSessionUploadFetcher.m */; };
+		ED2CFF135959130D824412A9FE569C5E /* YoutubePlayerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07EECAF7A06E7991DF8E53E8B992DA2C /* YoutubePlayerView-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EF241F0F0FE69ADCEBE70C7EA7D840D3 /* OIDAuthState+IOS.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E8B8155826233F55D5B7D397041ECD /* OIDAuthState+IOS.m */; };
+		EF43B17BFB471608ABEF9D543051F247 /* GTMSessionFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 100059EFA329CEECAD20D42B97747B5B /* GTMSessionFetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EF651E5664A2BEB28D3D630E4A8AFAA3 /* GTMOAuth2KeychainCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 37FA8BCFBD41CC6E76CF859D9F361162 /* GTMOAuth2KeychainCompatibility.m */; };
+		F457CB799F2692B47E141775965C944E /* OIDFieldMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 358583E16CC5992C9626E78CC2C175B7 /* OIDFieldMapping.m */; };
+		FA5921AFF1FE1B731A6E92B903F32104 /* OIDServiceDiscovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F139193CCA8FCF946964C1D306B0BAC /* OIDServiceDiscovery.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FBAC3945C3C35BA221A473A74FAE780C /* GTMSessionFetcherLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 527E4358AFA36028A09E52CD8C65D647 /* GTMSessionFetcherLogging.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,7 +130,7 @@
 			remoteGlobalIDString = 5C642AA10FB29936669CC269F42079C6;
 			remoteInfo = AppAuth;
 		};
-		0FE230D8B6E05103C40BCBD3C6DD842E /* PBXContainerItemProxy */ = {
+		1DD647A02B43277C104A50B9B0FD165C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -143,12 +144,12 @@
 			remoteGlobalIDString = D676E21115185671D7258A56944ABE98;
 			remoteInfo = GTMSessionFetcher;
 		};
-		34D80376D47EC26BE3F0C1F899E2A9A7 /* PBXContainerItemProxy */ = {
+		27AF14E92C80F695142BDB734D5F9346 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CAD3534FC55B0333104E5117C0A9A324;
-			remoteInfo = GoogleSignIn;
+			remoteGlobalIDString = 11A6C3DFEE59C64FAB6952F7BC187505;
+			remoteInfo = YoutubePlayerView;
 		};
 		41595E0C2EE05A58FE54A80AF3C4C8F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -157,19 +158,19 @@
 			remoteGlobalIDString = D676E21115185671D7258A56944ABE98;
 			remoteInfo = GTMSessionFetcher;
 		};
-		64909984DC87308740618419E9BDCE74 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 17F91230987223F6C1350A655DC43689;
-			remoteInfo = "YouTubePlayer-Swift";
-		};
-		8A9DAB3B0C34ECA397360F8DF8257473 /* PBXContainerItemProxy */ = {
+		5821969360112F2B768444FFB2DFDEC8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8627999EF1D5E93E13DAFF580DA8CDCF;
 			remoteInfo = GTMAppAuth;
+		};
+		6C4B23662A325893E08517A95095455A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D676E21115185671D7258A56944ABE98;
+			remoteInfo = GTMSessionFetcher;
 		};
 		96C4B52CEBD25FE7612CDFAC4EBB56D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -178,6 +179,13 @@
 			remoteGlobalIDString = 5C642AA10FB29936669CC269F42079C6;
 			remoteInfo = AppAuth;
 		};
+		B52485CDE35CA7AE7D8FB757CA0D8CD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAD3534FC55B0333104E5117C0A9A324;
+			remoteInfo = GoogleSignIn;
+		};
 		CFBE3CB2F286EF0D95A2ACDEBE0C1014 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -185,138 +193,131 @@
 			remoteGlobalIDString = 8627999EF1D5E93E13DAFF580DA8CDCF;
 			remoteInfo = GTMAppAuth;
 		};
-		F62F929005BEF9848BAA3EBE3824BAA5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D676E21115185671D7258A56944ABE98;
-			remoteInfo = GTMSessionFetcher;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02F5330679125FEB786ECA490477C745 /* OIDAuthorizationService+IOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OIDAuthorizationService+IOS.m"; path = "Source/iOS/OIDAuthorizationService+IOS.m"; sourceTree = "<group>"; };
-		0672D3F5CE6B8E465CB485CD5F2EBAF1 /* OIDErrorUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDErrorUtilities.m; path = Source/OIDErrorUtilities.m; sourceTree = "<group>"; };
-		06780708C0238E22C5059006AA666C11 /* OIDEndSessionResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDEndSessionResponse.m; path = Source/OIDEndSessionResponse.m; sourceTree = "<group>"; };
-		0B888CD3CE48A6C8637E5192D638FDC8 /* GTMAppAuth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTMAppAuth.xcconfig; sourceTree = "<group>"; };
-		0BBAE4743D76800897DCB5E8565BD3AE /* OIDAuthorizationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationRequest.m; path = Source/OIDAuthorizationRequest.m; sourceTree = "<group>"; };
-		13128FD5DB032740B626FB8EECD7E686 /* OIDAuthorizationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationResponse.m; path = Source/OIDAuthorizationResponse.m; sourceTree = "<group>"; };
-		14B3191833A1F7EA43F08705BE5538A4 /* OIDURLSessionProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDURLSessionProvider.m; path = Source/OIDURLSessionProvider.m; sourceTree = "<group>"; };
-		14D95ACA0D1A2DDA2565580FF30068EA /* YouTubePlayer-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouTubePlayer-Swift-umbrella.h"; sourceTree = "<group>"; };
-		1EE158A3038F84D3BB1D73BDB936CBAC /* OIDClientMetadataParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDClientMetadataParameters.m; path = Source/OIDClientMetadataParameters.m; sourceTree = "<group>"; };
+		00FF58FB1FB89242761635090E89E951 /* OIDScopes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDScopes.h; path = Source/OIDScopes.h; sourceTree = "<group>"; };
+		01B466B81EC3759B9BCF5ACFD52C9183 /* OIDGrantTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDGrantTypes.h; path = Source/OIDGrantTypes.h; sourceTree = "<group>"; };
+		0222CBE8959CA0D49B0C9F2653EB297D /* OIDAuthorizationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationResponse.m; path = Source/OIDAuthorizationResponse.m; sourceTree = "<group>"; };
+		036CB2911603FD78703BEB9B9D77CD95 /* YoutubePlayerExtras.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoutubePlayerExtras.swift; path = YoutubePlayerView/Classes/YoutubePlayerExtras.swift; sourceTree = "<group>"; };
+		062EF99F5932013545027855354CC25D /* OIDAuthState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthState.m; path = Source/OIDAuthState.m; sourceTree = "<group>"; };
+		07EECAF7A06E7991DF8E53E8B992DA2C /* YoutubePlayerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoutubePlayerView-umbrella.h"; sourceTree = "<group>"; };
+		09CF743BA2AB7ACF100AC8A58EFC12ED /* OIDErrorUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDErrorUtilities.m; path = Source/OIDErrorUtilities.m; sourceTree = "<group>"; };
+		0A8495217424E7ED6FF65A313B5650E4 /* GTMAppAuth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTMAppAuth.xcconfig; sourceTree = "<group>"; };
+		0A89593E56E50E5E3FD7BBF6032D2D49 /* OIDAuthorizationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationResponse.h; path = Source/OIDAuthorizationResponse.h; sourceTree = "<group>"; };
+		0CBB35B0770FD855571A9AD50C931A8C /* GTMMIMEDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMMIMEDocument.m; path = Source/GTMMIMEDocument.m; sourceTree = "<group>"; };
+		0F139193CCA8FCF946964C1D306B0BAC /* OIDServiceDiscovery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDServiceDiscovery.h; path = Source/OIDServiceDiscovery.h; sourceTree = "<group>"; };
+		100059EFA329CEECAD20D42B97747B5B /* GTMSessionFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcher.h; path = Source/GTMSessionFetcher.h; sourceTree = "<group>"; };
+		10C265A1A5B70450B65FFF7FADCF7DF6 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = Resources/GoogleSignIn.bundle; sourceTree = "<group>"; };
+		12B30919684A31F3450238EBDE80479E /* YoutubePlayerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YoutubePlayerView.xcconfig; sourceTree = "<group>"; };
+		149301B8058E9EF691D3EB14ECE22776 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = Frameworks/GoogleSignIn.framework; sourceTree = "<group>"; };
+		152B2221CE025B9DEAF62EDE8414DBA9 /* GTMKeychain_iOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMKeychain_iOS.m; path = Source/iOS/GTMKeychain_iOS.m; sourceTree = "<group>"; };
 		20B7AEB4B7796DABB04F62D74194EFF9 /* Pods-Youtube-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Youtube-dummy.m"; sourceTree = "<group>"; };
 		20C2C0534AD9011752915C0F3A96744C /* Pods-Youtube.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Youtube.modulemap"; sourceTree = "<group>"; };
-		221373102F9D6BBF720E701EA7DC082C /* GTMAppAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMAppAuth-prefix.pch"; sourceTree = "<group>"; };
-		269968CAB7F53948C3F77F1BDB54D056 /* OIDExternalUserAgentIOSCustomBrowser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDExternalUserAgentIOSCustomBrowser.m; path = Source/iOS/OIDExternalUserAgentIOSCustomBrowser.m; sourceTree = "<group>"; };
-		27C0A1532C60AA2E7912D8687996AAB3 /* OIDAuthStateErrorDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateErrorDelegate.h; path = Source/OIDAuthStateErrorDelegate.h; sourceTree = "<group>"; };
-		2A13262366BF19294C9EE3F2022F1F3A /* OIDFieldMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDFieldMapping.m; path = Source/OIDFieldMapping.m; sourceTree = "<group>"; };
-		2B62F413EA79C998A7C0AAA6E255CC36 /* OIDAuthorizationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationService.h; path = Source/OIDAuthorizationService.h; sourceTree = "<group>"; };
-		2B92EFE564C6DAB0F6DF1CCB7A0903B1 /* libYouTubePlayer-Swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libYouTubePlayer-Swift.a"; path = "libYouTubePlayer-Swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21155AA75381880C2B9A7C9D6B16D2F2 /* GTMKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMKeychain.h; path = Source/GTMKeychain.h; sourceTree = "<group>"; };
+		2120ACE2729790120B9B5E5AEBC68EC0 /* OIDTokenRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenRequest.m; path = Source/OIDTokenRequest.m; sourceTree = "<group>"; };
+		2206405A12AD8FE1F25121B8A90DC5E2 /* OIDURLQueryComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDURLQueryComponent.m; path = Source/OIDURLQueryComponent.m; sourceTree = "<group>"; };
+		22CE7F4C67B8BD295CC4B8B8510EA1A3 /* AppAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppAuth.h; path = Source/AppAuth.h; sourceTree = "<group>"; };
+		276F04FC19AC214F27E19A6A12164BB6 /* YoutubePlayerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YoutubePlayerView-dummy.m"; sourceTree = "<group>"; };
 		2BF48459197F908EF8826F255574D270 /* libPods-Youtube.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Youtube.a"; path = "libPods-Youtube.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C355507A42ADACE1EC5B7863C3C5A76 /* GTMAppAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMAppAuth.h; path = Source/GTMAppAuth.h; sourceTree = "<group>"; };
 		2CF21D1004ADE8BEB1B68D09E12586E3 /* Pods-Youtube-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Youtube-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2D452F13F3D6943B6A37116AF00851F3 /* OIDRegistrationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDRegistrationRequest.m; path = Source/OIDRegistrationRequest.m; sourceTree = "<group>"; };
-		2DC6AA396A13E4732AF3FDD7298CAD2D /* GTMKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMKeychain.h; path = Source/GTMKeychain.h; sourceTree = "<group>"; };
-		3318EE96AD9212A3248F6DCCE8F12D4D /* OIDAuthState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthState.h; path = Source/OIDAuthState.h; sourceTree = "<group>"; };
-		33395F47BD66B776D9943C110E92FAD7 /* AppAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppAuth-prefix.pch"; sourceTree = "<group>"; };
-		34716B2ECAD584DD3502D0DF1A0185BD /* GTMAppAuthFetcherAuthorization+Keychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMAppAuthFetcherAuthorization+Keychain.m"; path = "Source/GTMAppAuthFetcherAuthorization+Keychain.m"; sourceTree = "<group>"; };
-		34BC83E981733AE8D677BFFF41F5A782 /* OIDResponseTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDResponseTypes.m; path = Source/OIDResponseTypes.m; sourceTree = "<group>"; };
-		369209106C8A7AA4E96FCE5D03AA8F75 /* OIDAuthorizationService+IOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OIDAuthorizationService+IOS.h"; path = "Source/iOS/OIDAuthorizationService+IOS.h"; sourceTree = "<group>"; };
+		358583E16CC5992C9626E78CC2C175B7 /* OIDFieldMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDFieldMapping.m; path = Source/OIDFieldMapping.m; sourceTree = "<group>"; };
+		35DB9C36AFF98FD4FB316F7CDE1950B1 /* GoogleSignIn.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleSignIn.xcconfig; sourceTree = "<group>"; };
+		37FA8BCFBD41CC6E76CF859D9F361162 /* GTMOAuth2KeychainCompatibility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2KeychainCompatibility.m; path = Source/GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.m; sourceTree = "<group>"; };
 		397E840F33AF7826802A0A52B34F6681 /* Pods-Youtube-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Youtube-umbrella.h"; sourceTree = "<group>"; };
-		39A8C111B5B186D90C177A12D903DC59 /* OIDExternalUserAgentIOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentIOS.h; path = Source/iOS/OIDExternalUserAgentIOS.h; sourceTree = "<group>"; };
-		3E689BEED9F2A682AABDE8EE9B4D168C /* OIDAuthorizationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationResponse.h; path = Source/OIDAuthorizationResponse.h; sourceTree = "<group>"; };
+		3E17EFDE74BECC530D6DB709BA7EE45A /* OIDURLSessionProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDURLSessionProvider.m; path = Source/OIDURLSessionProvider.m; sourceTree = "<group>"; };
+		3FA2EF76375312CFCC97A57581D0BB1A /* OIDAuthStateChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateChangeDelegate.h; path = Source/OIDAuthStateChangeDelegate.h; sourceTree = "<group>"; };
 		3FD1B4C1246D643E9476438C28048FA8 /* libAppAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAppAuth.a; path = libAppAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		40092A4C55DFFD12E5C630B9AECF30D5 /* OIDExternalUserAgentCatalyst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDExternalUserAgentCatalyst.m; path = Source/iOS/OIDExternalUserAgentCatalyst.m; sourceTree = "<group>"; };
+		4088BE701C30DEA650846F464F8805AA /* GTMSessionFetcherService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherService.h; path = Source/GTMSessionFetcherService.h; sourceTree = "<group>"; };
 		40E876F537F14CB4814A4765DA8573BA /* Pods-Youtube-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Youtube-acknowledgements.plist"; sourceTree = "<group>"; };
-		46014914E21D98C874410D1794FE72DC /* OIDScopeUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDScopeUtilities.h; path = Source/OIDScopeUtilities.h; sourceTree = "<group>"; };
-		49A1945F4EF1C6C67BF5ECE76BDD5A91 /* GTMAppAuthFetcherAuthorization+Keychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMAppAuthFetcherAuthorization+Keychain.h"; path = "Source/GTMAppAuthFetcherAuthorization+Keychain.h"; sourceTree = "<group>"; };
-		4AE6DEF78CFB5F279EDA172629E85993 /* OIDTokenUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenUtilities.m; path = Source/OIDTokenUtilities.m; sourceTree = "<group>"; };
-		4E53AB923F3F88685E61AB83E001FC0A /* OIDTokenRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenRequest.m; path = Source/OIDTokenRequest.m; sourceTree = "<group>"; };
-		4EBEDF5F1EAEBD0FE547D7085A078D01 /* OIDClientMetadataParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDClientMetadataParameters.h; path = Source/OIDClientMetadataParameters.h; sourceTree = "<group>"; };
-		4FCB4D05FF94218653B003500DF21DD3 /* GTMAppAuthFetcherAuthorization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMAppAuthFetcherAuthorization.h; path = Source/GTMAppAuthFetcherAuthorization.h; sourceTree = "<group>"; };
-		51D874EAD18252188F6034704BF41F7D /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = Frameworks/GoogleSignIn.framework; sourceTree = "<group>"; };
-		529A6C2C09DBC9D0BBA477E4D020133D /* OIDEndSessionRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDEndSessionRequest.m; path = Source/OIDEndSessionRequest.m; sourceTree = "<group>"; };
+		4106A7C5D25D1BCD811D2DD4F51BA2C5 /* OIDResponseTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDResponseTypes.h; path = Source/OIDResponseTypes.h; sourceTree = "<group>"; };
+		46AB5C0322DE8C295ED648D737380009 /* GTMSessionFetcherService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherService.m; path = Source/GTMSessionFetcherService.m; sourceTree = "<group>"; };
+		477E32A16EFD6F4B9EDF5ECA38D3BD2A /* OIDClientMetadataParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDClientMetadataParameters.h; path = Source/OIDClientMetadataParameters.h; sourceTree = "<group>"; };
+		493279FAE646E4B783691E2814CBBF00 /* OIDURLQueryComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDURLQueryComponent.h; path = Source/OIDURLQueryComponent.h; sourceTree = "<group>"; };
+		4AD407562EDEE59D41E71068DE4F4357 /* YoutubePlayerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YoutubePlayerView.modulemap; sourceTree = "<group>"; };
+		4BED40E0F4E2800B50307E24B0BA432F /* OIDAuthState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthState.h; path = Source/OIDAuthState.h; sourceTree = "<group>"; };
+		4DA94093E1DC1BB018B75058ED133724 /* OIDRegistrationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDRegistrationRequest.h; path = Source/OIDRegistrationRequest.h; sourceTree = "<group>"; };
+		4EA1C38D6D141F91F71CB279F1CCEF09 /* YoutubePlayerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoutubePlayerView-prefix.pch"; sourceTree = "<group>"; };
+		527E4358AFA36028A09E52CD8C65D647 /* GTMSessionFetcherLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherLogging.h; path = Source/GTMSessionFetcherLogging.h; sourceTree = "<group>"; };
+		52A3F0FDC22340E2175D1F90779A3024 /* OIDAuthorizationService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationService.m; path = Source/OIDAuthorizationService.m; sourceTree = "<group>"; };
 		543D87F2F4CA83C2DD375DA59BC5A008 /* Pods-Youtube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Youtube.release.xcconfig"; sourceTree = "<group>"; };
+		54938BCEDA2B51BA5CCB6E218A4127FC /* OIDServiceConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDServiceConfiguration.h; path = Source/OIDServiceConfiguration.h; sourceTree = "<group>"; };
+		570F90F6A9DFFE16E910A6C14F3E2A86 /* OIDExternalUserAgentRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentRequest.h; path = Source/OIDExternalUserAgentRequest.h; sourceTree = "<group>"; };
+		5A9926B47F4A4ED50CC3A9EE4FB32448 /* GTMReadMonitorInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMReadMonitorInputStream.h; path = Source/GTMReadMonitorInputStream.h; sourceTree = "<group>"; };
+		5B685B42075F20AE489A9B468823CAE5 /* OIDExternalUserAgentIOSCustomBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentIOSCustomBrowser.h; path = Source/iOS/OIDExternalUserAgentIOSCustomBrowser.h; sourceTree = "<group>"; };
+		5B790AE5FF6C1DE814F0181E5287FF33 /* GTMReadMonitorInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMReadMonitorInputStream.m; path = Source/GTMReadMonitorInputStream.m; sourceTree = "<group>"; };
+		5C61504957CBD184275FB431E37AB763 /* OIDAuthorizationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationRequest.m; path = Source/OIDAuthorizationRequest.m; sourceTree = "<group>"; };
 		5EFBED8667765F5DC62320A1AB620860 /* Pods-Youtube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Youtube.debug.xcconfig"; sourceTree = "<group>"; };
-		5F276206B04130CA43A04CFE90C1791C /* GTMReadMonitorInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMReadMonitorInputStream.m; path = Source/GTMReadMonitorInputStream.m; sourceTree = "<group>"; };
-		67A5D628CBD59B3DD9293EDDF10B08B8 /* OIDAuthState+IOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OIDAuthState+IOS.m"; path = "Source/iOS/OIDAuthState+IOS.m"; sourceTree = "<group>"; };
-		691C3C6997CC64BED980F5EBEA0477FF /* OIDIDToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDIDToken.m; path = Source/OIDIDToken.m; sourceTree = "<group>"; };
-		6925214893F6E8551ADFBFEC4B5F972D /* GTMOAuth2KeychainCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMOAuth2KeychainCompatibility.h; path = Source/GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.h; sourceTree = "<group>"; };
-		6A0FFBD02E6CE5E9D24BEE2A12145303 /* GTMAppAuthFetcherAuthorization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMAppAuthFetcherAuthorization.m; path = Source/GTMAppAuthFetcherAuthorization.m; sourceTree = "<group>"; };
-		6FB13DC37E0F32DD2A3A09F54350AF73 /* OIDDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDDefines.h; path = Source/OIDDefines.h; sourceTree = "<group>"; };
+		60BA4EAF037D773049D4BCA215DD9C0B /* OIDExternalUserAgentCatalyst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentCatalyst.h; path = Source/iOS/OIDExternalUserAgentCatalyst.h; sourceTree = "<group>"; };
+		61F100081E6A67E5AC8647EE88101BC5 /* YoutubePlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoutubePlayerView.swift; path = YoutubePlayerView/Classes/YoutubePlayerView.swift; sourceTree = "<group>"; };
+		6309DB4AB1BC03E218FB8D7D6B7513DB /* OIDClientMetadataParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDClientMetadataParameters.m; path = Source/OIDClientMetadataParameters.m; sourceTree = "<group>"; };
+		638AEE5EC7479EB011755D6059203435 /* GTMAppAuthFetcherAuthorization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMAppAuthFetcherAuthorization.m; path = Source/GTMAppAuthFetcherAuthorization.m; sourceTree = "<group>"; };
+		63F7226D0F58711BBFA2A1C2218EF2A7 /* OIDEndSessionResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDEndSessionResponse.h; path = Source/OIDEndSessionResponse.h; sourceTree = "<group>"; };
+		69C1BF3594183E8412B33802F819B6CB /* OIDServiceDiscovery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDServiceDiscovery.m; path = Source/OIDServiceDiscovery.m; sourceTree = "<group>"; };
+		6B2581D95D32A8CAE874460C1034E377 /* OIDRegistrationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDRegistrationRequest.m; path = Source/OIDRegistrationRequest.m; sourceTree = "<group>"; };
 		6FD122EA0AB9AB2A8FFA5F676C795DF0 /* libGTMAppAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libGTMAppAuth.a; path = libGTMAppAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7190AA871E8988CF248421200838EBF3 /* OIDScopeUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDScopeUtilities.m; path = Source/OIDScopeUtilities.m; sourceTree = "<group>"; };
-		721F68AB7A73053670FC1D96A1481F23 /* GTMSessionFetcherLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherLogging.m; path = Source/GTMSessionFetcherLogging.m; sourceTree = "<group>"; };
-		74CB36648E5682E054A94554C745BA42 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = Resources/GoogleSignIn.bundle; sourceTree = "<group>"; };
-		7617FFB91E7F688D62FEA8221A90091D /* OIDServiceConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDServiceConfiguration.h; path = Source/OIDServiceConfiguration.h; sourceTree = "<group>"; };
-		78FAB8B74526F6342585C27E9FDB8EF0 /* GTMSessionFetcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTMSessionFetcher.xcconfig; sourceTree = "<group>"; };
-		7E38D9D9BF3F01A593C33427DFAA3DAF /* OIDEndSessionRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDEndSessionRequest.h; path = Source/OIDEndSessionRequest.h; sourceTree = "<group>"; };
-		7FE0C9632C2BEC1EC136BA8668EE79AE /* GTMKeychain_iOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMKeychain_iOS.m; path = Source/iOS/GTMKeychain_iOS.m; sourceTree = "<group>"; };
-		7FFC452E88A9B755E9A6E77E1365D064 /* YouTubePlayer-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouTubePlayer-Swift-prefix.pch"; sourceTree = "<group>"; };
-		80D5467B4BBA44881560C02D72CDFAC9 /* OIDIDToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDIDToken.h; path = Source/OIDIDToken.h; sourceTree = "<group>"; };
-		84840AAC48EE7C8788AC81D3497FFF48 /* GTMGatherInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMGatherInputStream.h; path = Source/GTMGatherInputStream.h; sourceTree = "<group>"; };
-		86D0BF26E5739B460C5FBDC913AADBE9 /* YouTubePlayer-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "YouTubePlayer-Swift.modulemap"; sourceTree = "<group>"; };
-		87BFB096DF363C4DCC5AA5C68D7C8A0B /* GTMMIMEDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMMIMEDocument.m; path = Source/GTMMIMEDocument.m; sourceTree = "<group>"; };
-		887418930CF06065B366CF914AFF8F3C /* GTMSessionFetcherService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherService.m; path = Source/GTMSessionFetcherService.m; sourceTree = "<group>"; };
-		8E022BFCE7736F8ABDFF503C859EFF55 /* YTPlayer.html */ = {isa = PBXFileReference; includeInIndex = 1; name = YTPlayer.html; path = YouTubePlayer/YouTubePlayer/YTPlayer.html; sourceTree = "<group>"; };
+		778906E29B2A4CCE3B30300CF5BFF161 /* GTMAppAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMAppAuth-prefix.pch"; sourceTree = "<group>"; };
+		78A4ACC363EB34AD1224E7DC5A5D6D12 /* GTMSessionFetcherLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherLogging.m; path = Source/GTMSessionFetcherLogging.m; sourceTree = "<group>"; };
+		7C91CC41F962A761B422402B86AB3D3B /* GTMAppAuthFetcherAuthorization+Keychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMAppAuthFetcherAuthorization+Keychain.m"; path = "Source/GTMAppAuthFetcherAuthorization+Keychain.m"; sourceTree = "<group>"; };
+		82BF3ABF6DC9C66D0E3034A37649F915 /* GTMGatherInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMGatherInputStream.m; path = Source/GTMGatherInputStream.m; sourceTree = "<group>"; };
+		8689225A7FFC46D6AD37E8C314770B8F /* GTMGatherInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMGatherInputStream.h; path = Source/GTMGatherInputStream.h; sourceTree = "<group>"; };
+		88AE780A58EC58CA532D623C35095E04 /* OIDErrorUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDErrorUtilities.h; path = Source/OIDErrorUtilities.h; sourceTree = "<group>"; };
 		924C122A3D69FAB2D79C80CCA928D101 /* Pods-Youtube-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Youtube-resources.sh"; sourceTree = "<group>"; };
-		9272AA4CCA18DE372B52935D14DFFDD5 /* GTMSessionFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcher.h; path = Source/GTMSessionFetcher.h; sourceTree = "<group>"; };
-		93AD7A5F14792EFBF6467A2FBCFD2A31 /* GTMSessionFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcher.m; path = Source/GTMSessionFetcher.m; sourceTree = "<group>"; };
-		94FA7AE0B21BDE651B8A4049F52BC753 /* OIDExternalUserAgentRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentRequest.h; path = Source/OIDExternalUserAgentRequest.h; sourceTree = "<group>"; };
-		966EECE0A439B024CEC7E5811DF7A43D /* OIDTokenResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenResponse.m; path = Source/OIDTokenResponse.m; sourceTree = "<group>"; };
-		9B97B53F6CB385DABD52B08455545FA7 /* OIDScopes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDScopes.h; path = Source/OIDScopes.h; sourceTree = "<group>"; };
-		9C77859D73E6E2617B694C5958962442 /* OIDGrantTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDGrantTypes.m; path = Source/OIDGrantTypes.m; sourceTree = "<group>"; };
+		941AD521F14FAA2F448D64B39A173F72 /* OIDAuthorizationService+IOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OIDAuthorizationService+IOS.m"; path = "Source/iOS/OIDAuthorizationService+IOS.m"; sourceTree = "<group>"; };
+		94BFC81ADDD5EABDC505EE90CB4F623F /* OIDExternalUserAgentIOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDExternalUserAgentIOS.m; path = Source/iOS/OIDExternalUserAgentIOS.m; sourceTree = "<group>"; };
+		9B3597C9923BF7C1F2F368440E0024C4 /* OIDDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDDefines.h; path = Source/OIDDefines.h; sourceTree = "<group>"; };
+		9B797B13EBC00B331CEDA5B535FD41A3 /* OIDTokenUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenUtilities.m; path = Source/OIDTokenUtilities.m; sourceTree = "<group>"; };
+		9CD04C4AAC52C4C68C41B2ECDF966917 /* OIDEndSessionResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDEndSessionResponse.m; path = Source/OIDEndSessionResponse.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D9E4C10B69788E05F8B4D068415A007 /* OIDURLQueryComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDURLQueryComponent.h; path = Source/OIDURLQueryComponent.h; sourceTree = "<group>"; };
-		9F814E0123349E7482918483FD3C8016 /* GTMSessionFetcherLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherLogging.h; path = Source/GTMSessionFetcherLogging.h; sourceTree = "<group>"; };
-		A1DB9EFA6026EDC07D559B9863FC0307 /* GoogleSignIn.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleSignIn.xcconfig; sourceTree = "<group>"; };
-		A2665AEBF9AB7F11BD2EC703012C51ED /* GTMGatherInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMGatherInputStream.m; path = Source/GTMGatherInputStream.m; sourceTree = "<group>"; };
-		A2DE1DBC6AD07080828620A452467327 /* GTMSessionUploadFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionUploadFetcher.m; path = Source/GTMSessionUploadFetcher.m; sourceTree = "<group>"; };
-		A5EB52813A8013E8830EFB6D727FB2C0 /* GTMSessionFetcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMSessionFetcher-dummy.m"; sourceTree = "<group>"; };
-		A76FA4FCEBD483DE4A3EAF38655DE426 /* OIDEndSessionResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDEndSessionResponse.h; path = Source/OIDEndSessionResponse.h; sourceTree = "<group>"; };
-		AE01332E277764A4093BBEF0ECC747E9 /* OIDExternalUserAgentSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentSession.h; path = Source/OIDExternalUserAgentSession.h; sourceTree = "<group>"; };
-		AE1B2454549CB5C273169EFDB08BCC6D /* OIDURLSessionProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDURLSessionProvider.h; path = Source/OIDURLSessionProvider.h; sourceTree = "<group>"; };
-		AE281A166B6470DFCEE97D16CE296AD4 /* GTMOAuth2KeychainCompatibility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2KeychainCompatibility.m; path = Source/GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.m; sourceTree = "<group>"; };
-		AFA95738BC54CC73624C9461AFBEAC83 /* AppAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppAuth.h; path = Source/AppAuth.h; sourceTree = "<group>"; };
-		B0350D25F4DE8CD7183D26FA51DD409C /* OIDScopes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDScopes.m; path = Source/OIDScopes.m; sourceTree = "<group>"; };
-		B0AEF909D299A8B5857C1FB5F91904E6 /* VideoPlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoPlayerView.swift; path = YouTubePlayer/YouTubePlayer/VideoPlayerView.swift; sourceTree = "<group>"; };
-		B255DD60A3BC997039BF4BEDC001D65F /* GTMSessionFetcherService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherService.h; path = Source/GTMSessionFetcherService.h; sourceTree = "<group>"; };
-		B587ED808DB16E42C11072346DE5B4E4 /* OIDExternalUserAgent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgent.h; path = Source/OIDExternalUserAgent.h; sourceTree = "<group>"; };
-		B71E8CFAA73BCAB93BB4161D324DADEC /* OIDErrorUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDErrorUtilities.h; path = Source/OIDErrorUtilities.h; sourceTree = "<group>"; };
-		BA1B78D2AF00936CE0D7C90793358F2C /* OIDExternalUserAgentIOSCustomBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentIOSCustomBrowser.h; path = Source/iOS/OIDExternalUserAgentIOSCustomBrowser.h; sourceTree = "<group>"; };
-		BA9077F9EBB7A2234A761C3B9BC462CE /* GTMAppAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMAppAuth-dummy.m"; sourceTree = "<group>"; };
-		BB934B4B2C62BF6A08A4E89FEB07E175 /* OIDRegistrationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDRegistrationResponse.h; path = Source/OIDRegistrationResponse.h; sourceTree = "<group>"; };
-		BCFE22F616183C41B8DC956C960160F3 /* OIDServiceConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDServiceConfiguration.m; path = Source/OIDServiceConfiguration.m; sourceTree = "<group>"; };
-		BDC32E570AFFAEDC541D1B559782D562 /* OIDAuthorizationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationRequest.h; path = Source/OIDAuthorizationRequest.h; sourceTree = "<group>"; };
-		BF6364A62EFA33F5F6FB10AF1E540E43 /* OIDFieldMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDFieldMapping.h; path = Source/OIDFieldMapping.h; sourceTree = "<group>"; };
-		BFC0A6382A0402FE0C254874F756AFB1 /* GTMAppAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMAppAuth.h; path = Source/GTMAppAuth.h; sourceTree = "<group>"; };
-		BFF5047B07DD5F5575E683D405F34D52 /* OIDError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDError.m; path = Source/OIDError.m; sourceTree = "<group>"; };
+		A26D6AE78BE04990F3C8389D8F31258C /* GTMAppAuthFetcherAuthorization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMAppAuthFetcherAuthorization.h; path = Source/GTMAppAuthFetcherAuthorization.h; sourceTree = "<group>"; };
+		A5A89860940E1EBE66CD7DA1CD036B17 /* OIDExternalUserAgent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgent.h; path = Source/OIDExternalUserAgent.h; sourceTree = "<group>"; };
+		A64A68BFA604FB4A09852DA203C41948 /* AppAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppAuth-prefix.pch"; sourceTree = "<group>"; };
+		A7583E75C1D33C4D4DD9DC079011AC21 /* OIDAuthorizationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationRequest.h; path = Source/OIDAuthorizationRequest.h; sourceTree = "<group>"; };
+		A8D3BDAD9E48F2EAB5004138B261B3F6 /* GTMSessionFetcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMSessionFetcher-dummy.m"; sourceTree = "<group>"; };
+		ABD6A31BB0D41EDEFC3FD32DEA7FABCC /* GTMMIMEDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMMIMEDocument.h; path = Source/GTMMIMEDocument.h; sourceTree = "<group>"; };
+		AD34F0EB6749018BE32FAD1AF463787C /* OIDExternalUserAgentIOSCustomBrowser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDExternalUserAgentIOSCustomBrowser.m; path = Source/iOS/OIDExternalUserAgentIOSCustomBrowser.m; sourceTree = "<group>"; };
+		AE8D531B64F592E416D23CC13588F52F /* OIDIDToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDIDToken.h; path = Source/OIDIDToken.h; sourceTree = "<group>"; };
+		AF9385ABA896226EB84EC5D36032EB86 /* libYoutubePlayerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYoutubePlayerView.a; path = libYoutubePlayerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0D5423F113BA4A1075D787CFF54EC26 /* GTMSessionFetcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-prefix.pch"; sourceTree = "<group>"; };
+		B366754A1575874B0D84A6615EF76547 /* OIDEndSessionRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDEndSessionRequest.h; path = Source/OIDEndSessionRequest.h; sourceTree = "<group>"; };
+		B63C113FFBEE9E00B90947DB1115673E /* OIDFieldMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDFieldMapping.h; path = Source/OIDFieldMapping.h; sourceTree = "<group>"; };
+		BA08B26C2DD0ACF3D0E405BA2DB38D55 /* OIDError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDError.h; path = Source/OIDError.h; sourceTree = "<group>"; };
+		BC9E563F4385229660784E50672BD306 /* AppAuthCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppAuthCore.h; path = Source/AppAuthCore.h; sourceTree = "<group>"; };
+		BCC429D0ECA4A5198ACEBFCADFFEC0B5 /* GTMOAuth2KeychainCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMOAuth2KeychainCompatibility.h; path = Source/GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.h; sourceTree = "<group>"; };
+		BD6F8BC63F8C51B9D6FCEFE9CE01584D /* OIDIDToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDIDToken.m; path = Source/OIDIDToken.m; sourceTree = "<group>"; };
+		BFB8F4E8C47903550AB9804B2AB480B1 /* OIDURLSessionProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDURLSessionProvider.h; path = Source/OIDURLSessionProvider.h; sourceTree = "<group>"; };
+		C05724D5E1F0D841A4B22E0F723BE779 /* OIDError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDError.m; path = Source/OIDError.m; sourceTree = "<group>"; };
 		C1998E0D8085221AD87F89B614C10E52 /* libGTMSessionFetcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libGTMSessionFetcher.a; path = libGTMSessionFetcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C32B873A927169F7277DB495B485F2AB /* AppAuthCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppAuthCore.h; path = Source/AppAuthCore.h; sourceTree = "<group>"; };
-		C5BAC0FAEC0950BB4215184198E0E4BC /* OIDExternalUserAgentCatalyst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentCatalyst.h; path = Source/iOS/OIDExternalUserAgentCatalyst.h; sourceTree = "<group>"; };
-		C5E87363C8700484759F0D217A47765E /* OIDAuthStateChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateChangeDelegate.h; path = Source/OIDAuthStateChangeDelegate.h; sourceTree = "<group>"; };
-		C6DE785FD3D76F7026DD74873B532B30 /* YouTubePlayer-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YouTubePlayer-Swift-dummy.m"; sourceTree = "<group>"; };
-		C98E9F0CCD26CA2715A68922C8A991E8 /* GTMMIMEDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMMIMEDocument.h; path = Source/GTMMIMEDocument.h; sourceTree = "<group>"; };
-		CAC77F84711FAA8A87E43075EBC67664 /* OIDRegistrationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDRegistrationRequest.h; path = Source/OIDRegistrationRequest.h; sourceTree = "<group>"; };
-		CFC509169EBE64D4B0C97BCEB3B666F7 /* OIDTokenUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenUtilities.h; path = Source/OIDTokenUtilities.h; sourceTree = "<group>"; };
-		D12FB3CE82DE1514B30D0F0F2BDF2370 /* OIDGrantTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDGrantTypes.h; path = Source/OIDGrantTypes.h; sourceTree = "<group>"; };
-		D52FDAD158D72047756CFBED04E8AC4F /* GTMSessionFetcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-prefix.pch"; sourceTree = "<group>"; };
-		D64AE442792DB2996B77794B3E142C86 /* OIDAuthState+IOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OIDAuthState+IOS.h"; path = "Source/iOS/OIDAuthState+IOS.h"; sourceTree = "<group>"; };
-		DC9954482F49FD5B40DF4AC6D438F6F0 /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionUploadFetcher.h; path = Source/GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
-		DD987310507D1FDC90E3B25698F073DE /* OIDError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDError.h; path = Source/OIDError.h; sourceTree = "<group>"; };
-		DFCBB846F31B937C1BF5E710F6B5F228 /* OIDServiceDiscovery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDServiceDiscovery.m; path = Source/OIDServiceDiscovery.m; sourceTree = "<group>"; };
-		E22F53274572CCDB79068C5189878F43 /* OIDTokenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenRequest.h; path = Source/OIDTokenRequest.h; sourceTree = "<group>"; };
-		E5D33D51EC3A759EEDBA2604A0C5D608 /* OIDExternalUserAgentIOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDExternalUserAgentIOS.m; path = Source/iOS/OIDExternalUserAgentIOS.m; sourceTree = "<group>"; };
-		EC04FC586E506BE7E651A18FB027BB1A /* AppAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AppAuth-dummy.m"; sourceTree = "<group>"; };
-		EC19CE776768CE6C1AA1774072187050 /* AppAuth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppAuth.xcconfig; sourceTree = "<group>"; };
-		ED06B5246EC6378FE403481DEE5553A6 /* YouTubePlayer-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "YouTubePlayer-Swift.xcconfig"; sourceTree = "<group>"; };
-		EED268FBC2EC4A06541A481F613C58F5 /* GTMReadMonitorInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMReadMonitorInputStream.h; path = Source/GTMReadMonitorInputStream.h; sourceTree = "<group>"; };
-		F00B5126BF6202451E7BB63DAEBCA778 /* OIDURLQueryComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDURLQueryComponent.m; path = Source/OIDURLQueryComponent.m; sourceTree = "<group>"; };
-		F21ABD6B0C301EBA83667E7599375B1F /* OIDAuthorizationService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationService.m; path = Source/OIDAuthorizationService.m; sourceTree = "<group>"; };
-		F2917F359147A743EA7890D7DD3AFC2D /* OIDServiceDiscovery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDServiceDiscovery.h; path = Source/OIDServiceDiscovery.h; sourceTree = "<group>"; };
-		F6C10FD67CCD75F5DA3980F5D5672F90 /* OIDRegistrationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDRegistrationResponse.m; path = Source/OIDRegistrationResponse.m; sourceTree = "<group>"; };
-		F6FD477567F30EA492E2CE21BA573FB4 /* OIDTokenResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenResponse.h; path = Source/OIDTokenResponse.h; sourceTree = "<group>"; };
-		F9AF03C39DB13ED8D685D0391DAB6080 /* OIDResponseTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDResponseTypes.h; path = Source/OIDResponseTypes.h; sourceTree = "<group>"; };
-		FE1D2B3339AAED7A5327C5D377C215AF /* OIDAuthState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthState.m; path = Source/OIDAuthState.m; sourceTree = "<group>"; };
+		C20E625BEFFCE0851534C87B5E589E48 /* OIDAuthorizationService+IOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OIDAuthorizationService+IOS.h"; path = "Source/iOS/OIDAuthorizationService+IOS.h"; sourceTree = "<group>"; };
+		C2BEDFC186CF9A055B3808BBBD28D9DB /* OIDTokenUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenUtilities.h; path = Source/OIDTokenUtilities.h; sourceTree = "<group>"; };
+		C526FD516FF23EBFA015788038A8603A /* AppAuth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppAuth.xcconfig; sourceTree = "<group>"; };
+		C8E23D449BFE1FC85DC269A29D5867CB /* OIDResponseTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDResponseTypes.m; path = Source/OIDResponseTypes.m; sourceTree = "<group>"; };
+		CDA6AC7BD4FD36E9D6C59534BB32B2ED /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionUploadFetcher.h; path = Source/GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
+		D305AEAC07B25146CF2385242BDB96FF /* OIDGrantTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDGrantTypes.m; path = Source/OIDGrantTypes.m; sourceTree = "<group>"; };
+		D31D1C8077AF4A42E4EA766905284E4A /* OIDTokenResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenResponse.m; path = Source/OIDTokenResponse.m; sourceTree = "<group>"; };
+		D5E09E3935AB64AD9057EA7F2524C9D7 /* OIDScopeUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDScopeUtilities.h; path = Source/OIDScopeUtilities.h; sourceTree = "<group>"; };
+		D830517930EA641140BA04ECAEA80F2C /* OIDAuthorizationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationService.h; path = Source/OIDAuthorizationService.h; sourceTree = "<group>"; };
+		DB187153428CE9D919A465A3E4835F6B /* OIDAuthStateErrorDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateErrorDelegate.h; path = Source/OIDAuthStateErrorDelegate.h; sourceTree = "<group>"; };
+		DED3160FF72E5CF9747B960A89D5B972 /* OIDServiceConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDServiceConfiguration.m; path = Source/OIDServiceConfiguration.m; sourceTree = "<group>"; };
+		E07ABE3BA69756B4CA8BA9D6D6CA353A /* GTMSessionFetcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTMSessionFetcher.xcconfig; sourceTree = "<group>"; };
+		E3203CDBC5920EB9999061969C08396C /* OIDExternalUserAgentIOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentIOS.h; path = Source/iOS/OIDExternalUserAgentIOS.h; sourceTree = "<group>"; };
+		E46022E7DAAACD05CAC5179D1A0990B3 /* OIDExternalUserAgentSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentSession.h; path = Source/OIDExternalUserAgentSession.h; sourceTree = "<group>"; };
+		E4E58B04D3E641B840D0196072F280E3 /* AppAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AppAuth-dummy.m"; sourceTree = "<group>"; };
+		E546180881CC12C6F043B5803FA237FD /* OIDExternalUserAgentCatalyst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDExternalUserAgentCatalyst.m; path = Source/iOS/OIDExternalUserAgentCatalyst.m; sourceTree = "<group>"; };
+		E7DCF81A229D141C2A9AC0BA3DA025BC /* GTMAppAuthFetcherAuthorization+Keychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMAppAuthFetcherAuthorization+Keychain.h"; path = "Source/GTMAppAuthFetcherAuthorization+Keychain.h"; sourceTree = "<group>"; };
+		E7E8B8155826233F55D5B7D397041ECD /* OIDAuthState+IOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OIDAuthState+IOS.m"; path = "Source/iOS/OIDAuthState+IOS.m"; sourceTree = "<group>"; };
+		EBB92538DE02AF62D4C77A69D5034134 /* OIDTokenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenRequest.h; path = Source/OIDTokenRequest.h; sourceTree = "<group>"; };
+		EEC4BD1F3652CA415977CF88C6E6F16F /* GTMAppAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMAppAuth-dummy.m"; sourceTree = "<group>"; };
+		F02737972CA9B61AF9C34DF871AC50CE /* OIDScopes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDScopes.m; path = Source/OIDScopes.m; sourceTree = "<group>"; };
+		F4658AC851392C2BFBBED3EB209D6733 /* OIDEndSessionRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDEndSessionRequest.m; path = Source/OIDEndSessionRequest.m; sourceTree = "<group>"; };
+		F4C7976DBAAEBB1A420ADE5F33D9950B /* GTMSessionFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcher.m; path = Source/GTMSessionFetcher.m; sourceTree = "<group>"; };
+		F53BE5C86B7D5DC75E822FD5B48B6540 /* OIDAuthState+IOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OIDAuthState+IOS.h"; path = "Source/iOS/OIDAuthState+IOS.h"; sourceTree = "<group>"; };
+		F69D20D53539295F92FDA1AFCE6ABDAD /* OIDRegistrationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDRegistrationResponse.h; path = Source/OIDRegistrationResponse.h; sourceTree = "<group>"; };
+		F6A3AEA1BFF61CF82F8EB933248AC1BA /* GTMSessionUploadFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionUploadFetcher.m; path = Source/GTMSessionUploadFetcher.m; sourceTree = "<group>"; };
+		F966B92B325D7B3A02C0CCC80F8E5B7B /* OIDScopeUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDScopeUtilities.m; path = Source/OIDScopeUtilities.m; sourceTree = "<group>"; };
+		FF1BD17B5734C341B383895926144DF8 /* OIDRegistrationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDRegistrationResponse.m; path = Source/OIDRegistrationResponse.m; sourceTree = "<group>"; };
+		FFC83FAA0A7DF12A1688A46DB0362944 /* OIDTokenResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenResponse.h; path = Source/OIDTokenResponse.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,7 +328,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47345370F8639E946D130DBD78ECF966 /* Frameworks */ = {
+		0EBE7A1FCF6BECF2E222F529D1B4418A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11D4A773600E0E811986E06E81BEA653 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -348,128 +356,79 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF8735D387290219F60647F3D0610BA5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05DB8ABEEA1D25AEAF45F076C2282970 /* GTMAppAuth */ = {
+		1553C48054433A682D7A200616093C54 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BFC0A6382A0402FE0C254874F756AFB1 /* GTMAppAuth.h */,
-				4FCB4D05FF94218653B003500DF21DD3 /* GTMAppAuthFetcherAuthorization.h */,
-				6A0FFBD02E6CE5E9D24BEE2A12145303 /* GTMAppAuthFetcherAuthorization.m */,
-				49A1945F4EF1C6C67BF5ECE76BDD5A91 /* GTMAppAuthFetcherAuthorization+Keychain.h */,
-				34716B2ECAD584DD3502D0DF1A0185BD /* GTMAppAuthFetcherAuthorization+Keychain.m */,
-				2DC6AA396A13E4732AF3FDD7298CAD2D /* GTMKeychain.h */,
-				7FE0C9632C2BEC1EC136BA8668EE79AE /* GTMKeychain_iOS.m */,
-				6925214893F6E8551ADFBFEC4B5F972D /* GTMOAuth2KeychainCompatibility.h */,
-				AE281A166B6470DFCEE97D16CE296AD4 /* GTMOAuth2KeychainCompatibility.m */,
-				51624EC3B5F9CC940A5FD0FF684B5E62 /* Support Files */,
-			);
-			name = GTMAppAuth;
-			path = GTMAppAuth;
-			sourceTree = "<group>";
-		};
-		06E5A5CDC4D3407748BFA94C6CC2559E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				404B61CA414CE1A559E27DFD13650376 /* AppAuth */,
-				86F0E3CE28DA5C0201CFEAD4162A4AE0 /* GoogleSignIn */,
-				05DB8ABEEA1D25AEAF45F076C2282970 /* GTMAppAuth */,
-				69B7FA7DC979722DDC0F60CC8C1DC279 /* GTMSessionFetcher */,
-				985E3ABFB5C008A9D54DE265A4630868 /* YouTubePlayer-Swift */,
+				D31F3819E5FB004E6B9745C67E2F838F /* AppAuth */,
+				8803C6D48E3C8FDC54BC6E527E4F6ECF /* GoogleSignIn */,
+				774689CD93BBF4C0838943898ABB2D5C /* GTMAppAuth */,
+				62CC57D4A5B68C72F8FBCB605526DA3D /* GTMSessionFetcher */,
+				8C6A0AC49052D0C1D7885B70D62BC450 /* YoutubePlayerView */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		0C2288DC47544CD917D23795400DE710 /* Core */ = {
+		1651E6BDD3C2C39D1C3A3D5AE6F57EF2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C32B873A927169F7277DB495B485F2AB /* AppAuthCore.h */,
-				BDC32E570AFFAEDC541D1B559782D562 /* OIDAuthorizationRequest.h */,
-				0BBAE4743D76800897DCB5E8565BD3AE /* OIDAuthorizationRequest.m */,
-				3E689BEED9F2A682AABDE8EE9B4D168C /* OIDAuthorizationResponse.h */,
-				13128FD5DB032740B626FB8EECD7E686 /* OIDAuthorizationResponse.m */,
-				2B62F413EA79C998A7C0AAA6E255CC36 /* OIDAuthorizationService.h */,
-				F21ABD6B0C301EBA83667E7599375B1F /* OIDAuthorizationService.m */,
-				3318EE96AD9212A3248F6DCCE8F12D4D /* OIDAuthState.h */,
-				FE1D2B3339AAED7A5327C5D377C215AF /* OIDAuthState.m */,
-				C5E87363C8700484759F0D217A47765E /* OIDAuthStateChangeDelegate.h */,
-				27C0A1532C60AA2E7912D8687996AAB3 /* OIDAuthStateErrorDelegate.h */,
-				4EBEDF5F1EAEBD0FE547D7085A078D01 /* OIDClientMetadataParameters.h */,
-				1EE158A3038F84D3BB1D73BDB936CBAC /* OIDClientMetadataParameters.m */,
-				6FB13DC37E0F32DD2A3A09F54350AF73 /* OIDDefines.h */,
-				7E38D9D9BF3F01A593C33427DFAA3DAF /* OIDEndSessionRequest.h */,
-				529A6C2C09DBC9D0BBA477E4D020133D /* OIDEndSessionRequest.m */,
-				A76FA4FCEBD483DE4A3EAF38655DE426 /* OIDEndSessionResponse.h */,
-				06780708C0238E22C5059006AA666C11 /* OIDEndSessionResponse.m */,
-				DD987310507D1FDC90E3B25698F073DE /* OIDError.h */,
-				BFF5047B07DD5F5575E683D405F34D52 /* OIDError.m */,
-				B71E8CFAA73BCAB93BB4161D324DADEC /* OIDErrorUtilities.h */,
-				0672D3F5CE6B8E465CB485CD5F2EBAF1 /* OIDErrorUtilities.m */,
-				B587ED808DB16E42C11072346DE5B4E4 /* OIDExternalUserAgent.h */,
-				94FA7AE0B21BDE651B8A4049F52BC753 /* OIDExternalUserAgentRequest.h */,
-				AE01332E277764A4093BBEF0ECC747E9 /* OIDExternalUserAgentSession.h */,
-				BF6364A62EFA33F5F6FB10AF1E540E43 /* OIDFieldMapping.h */,
-				2A13262366BF19294C9EE3F2022F1F3A /* OIDFieldMapping.m */,
-				D12FB3CE82DE1514B30D0F0F2BDF2370 /* OIDGrantTypes.h */,
-				9C77859D73E6E2617B694C5958962442 /* OIDGrantTypes.m */,
-				80D5467B4BBA44881560C02D72CDFAC9 /* OIDIDToken.h */,
-				691C3C6997CC64BED980F5EBEA0477FF /* OIDIDToken.m */,
-				CAC77F84711FAA8A87E43075EBC67664 /* OIDRegistrationRequest.h */,
-				2D452F13F3D6943B6A37116AF00851F3 /* OIDRegistrationRequest.m */,
-				BB934B4B2C62BF6A08A4E89FEB07E175 /* OIDRegistrationResponse.h */,
-				F6C10FD67CCD75F5DA3980F5D5672F90 /* OIDRegistrationResponse.m */,
-				F9AF03C39DB13ED8D685D0391DAB6080 /* OIDResponseTypes.h */,
-				34BC83E981733AE8D677BFFF41F5A782 /* OIDResponseTypes.m */,
-				9B97B53F6CB385DABD52B08455545FA7 /* OIDScopes.h */,
-				B0350D25F4DE8CD7183D26FA51DD409C /* OIDScopes.m */,
-				46014914E21D98C874410D1794FE72DC /* OIDScopeUtilities.h */,
-				7190AA871E8988CF248421200838EBF3 /* OIDScopeUtilities.m */,
-				7617FFB91E7F688D62FEA8221A90091D /* OIDServiceConfiguration.h */,
-				BCFE22F616183C41B8DC956C960160F3 /* OIDServiceConfiguration.m */,
-				F2917F359147A743EA7890D7DD3AFC2D /* OIDServiceDiscovery.h */,
-				DFCBB846F31B937C1BF5E710F6B5F228 /* OIDServiceDiscovery.m */,
-				E22F53274572CCDB79068C5189878F43 /* OIDTokenRequest.h */,
-				4E53AB923F3F88685E61AB83E001FC0A /* OIDTokenRequest.m */,
-				F6FD477567F30EA492E2CE21BA573FB4 /* OIDTokenResponse.h */,
-				966EECE0A439B024CEC7E5811DF7A43D /* OIDTokenResponse.m */,
-				CFC509169EBE64D4B0C97BCEB3B666F7 /* OIDTokenUtilities.h */,
-				4AE6DEF78CFB5F279EDA172629E85993 /* OIDTokenUtilities.m */,
-				9D9E4C10B69788E05F8B4D068415A007 /* OIDURLQueryComponent.h */,
-				F00B5126BF6202451E7BB63DAEBCA778 /* OIDURLQueryComponent.m */,
-				AE1B2454549CB5C273169EFDB08BCC6D /* OIDURLSessionProvider.h */,
-				14B3191833A1F7EA43F08705BE5538A4 /* OIDURLSessionProvider.m */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		37CB95E4C63E61F64A077F1D22313106 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				78FAB8B74526F6342585C27E9FDB8EF0 /* GTMSessionFetcher.xcconfig */,
-				A5EB52813A8013E8830EFB6D727FB2C0 /* GTMSessionFetcher-dummy.m */,
-				D52FDAD158D72047756CFBED04E8AC4F /* GTMSessionFetcher-prefix.pch */,
+				35DB9C36AFF98FD4FB316F7CDE1950B1 /* GoogleSignIn.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/GTMSessionFetcher";
+			path = "../Target Support Files/GoogleSignIn";
 			sourceTree = "<group>";
 		};
-		404B61CA414CE1A559E27DFD13650376 /* AppAuth */ = {
+		2AAE2AE14A317631F38429FA95197238 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0C2288DC47544CD917D23795400DE710 /* Core */,
-				844293B6CE0A94A81486754D370F4E4A /* ExternalUserAgent */,
-				6E68BC035B07DF0EF20A2493D16012CB /* Support Files */,
+				0A8495217424E7ED6FF65A313B5650E4 /* GTMAppAuth.xcconfig */,
+				EEC4BD1F3652CA415977CF88C6E6F16F /* GTMAppAuth-dummy.m */,
+				778906E29B2A4CCE3B30300CF5BFF161 /* GTMAppAuth-prefix.pch */,
 			);
-			name = AppAuth;
-			path = AppAuth;
+			name = "Support Files";
+			path = "../Target Support Files/GTMAppAuth";
+			sourceTree = "<group>";
+		};
+		2E3A0BE15C6BB423691FA3B4DDE939CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FD1B4C1246D643E9476438C28048FA8 /* libAppAuth.a */,
+				6FD122EA0AB9AB2A8FFA5F676C795DF0 /* libGTMAppAuth.a */,
+				C1998E0D8085221AD87F89B614C10E52 /* libGTMSessionFetcher.a */,
+				2BF48459197F908EF8826F255574D270 /* libPods-Youtube.a */,
+				AF9385ABA896226EB84EC5D36032EB86 /* libYoutubePlayerView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		332F23E990A5D287E41AECAEF50C306F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AD407562EDEE59D41E71068DE4F4357 /* YoutubePlayerView.modulemap */,
+				12B30919684A31F3450238EBDE80479E /* YoutubePlayerView.xcconfig */,
+				276F04FC19AC214F27E19A6A12164BB6 /* YoutubePlayerView-dummy.m */,
+				4EA1C38D6D141F91F71CB279F1CCEF09 /* YoutubePlayerView-prefix.pch */,
+				07EECAF7A06E7991DF8E53E8B992DA2C /* YoutubePlayerView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YoutubePlayerView";
+			sourceTree = "<group>";
+		};
+		435362F3C6E1591B481BDF68CFE9927D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				100059EFA329CEECAD20D42B97747B5B /* GTMSessionFetcher.h */,
+				F4C7976DBAAEBB1A420ADE5F33D9950B /* GTMSessionFetcher.m */,
+				527E4358AFA36028A09E52CD8C65D647 /* GTMSessionFetcherLogging.h */,
+				78A4ACC363EB34AD1224E7DC5A5D6D12 /* GTMSessionFetcherLogging.m */,
+				4088BE701C30DEA650846F464F8805AA /* GTMSessionFetcherService.h */,
+				46AB5C0322DE8C295ED648D737380009 /* GTMSessionFetcherService.m */,
+				CDA6AC7BD4FD36E9D6C59534BB32B2ED /* GTMSessionUploadFetcher.h */,
+				F6A3AEA1BFF61CF82F8EB933248AC1BA /* GTMSessionUploadFetcher.m */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		4A9A59E9525AE6B450B4E5D2E9194B34 /* Pods-Youtube */ = {
@@ -488,151 +447,102 @@
 			path = "Target Support Files/Pods-Youtube";
 			sourceTree = "<group>";
 		};
-		51624EC3B5F9CC940A5FD0FF684B5E62 /* Support Files */ = {
+		62CC57D4A5B68C72F8FBCB605526DA3D /* GTMSessionFetcher */ = {
 			isa = PBXGroup;
 			children = (
-				0B888CD3CE48A6C8637E5192D638FDC8 /* GTMAppAuth.xcconfig */,
-				BA9077F9EBB7A2234A761C3B9BC462CE /* GTMAppAuth-dummy.m */,
-				221373102F9D6BBF720E701EA7DC082C /* GTMAppAuth-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GTMAppAuth";
-			sourceTree = "<group>";
-		};
-		5B3B675E175A639338A9F2CAD334121A /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				9272AA4CCA18DE372B52935D14DFFDD5 /* GTMSessionFetcher.h */,
-				93AD7A5F14792EFBF6467A2FBCFD2A31 /* GTMSessionFetcher.m */,
-				9F814E0123349E7482918483FD3C8016 /* GTMSessionFetcherLogging.h */,
-				721F68AB7A73053670FC1D96A1481F23 /* GTMSessionFetcherLogging.m */,
-				B255DD60A3BC997039BF4BEDC001D65F /* GTMSessionFetcherService.h */,
-				887418930CF06065B366CF914AFF8F3C /* GTMSessionFetcherService.m */,
-				DC9954482F49FD5B40DF4AC6D438F6F0 /* GTMSessionUploadFetcher.h */,
-				A2DE1DBC6AD07080828620A452467327 /* GTMSessionUploadFetcher.m */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		69B6BD18DE72201F6464020B33DCBABE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A1DB9EFA6026EDC07D559B9863FC0307 /* GoogleSignIn.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GoogleSignIn";
-			sourceTree = "<group>";
-		};
-		69B7FA7DC979722DDC0F60CC8C1DC279 /* GTMSessionFetcher */ = {
-			isa = PBXGroup;
-			children = (
-				5B3B675E175A639338A9F2CAD334121A /* Core */,
-				90512F9B0389A5EF2A49573452F50B22 /* Full */,
-				37CB95E4C63E61F64A077F1D22313106 /* Support Files */,
+				435362F3C6E1591B481BDF68CFE9927D /* Core */,
+				8F7C0EFF52ACEA000F441BC74EE73681 /* Full */,
+				FDDF5AE2041A2A59F3AEF0AE7CEE7313 /* Support Files */,
 			);
 			name = GTMSessionFetcher;
 			path = GTMSessionFetcher;
 			sourceTree = "<group>";
 		};
-		6E68BC035B07DF0EF20A2493D16012CB /* Support Files */ = {
+		6EFA063FBA99BC1873BB383F512545E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EC19CE776768CE6C1AA1774072187050 /* AppAuth.xcconfig */,
-				EC04FC586E506BE7E651A18FB027BB1A /* AppAuth-dummy.m */,
-				33395F47BD66B776D9943C110E92FAD7 /* AppAuth-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AppAuth";
-			sourceTree = "<group>";
-		};
-		6E7B14EA6F5476D7E8755540D10ABE1E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				51D874EAD18252188F6034704BF41F7D /* GoogleSignIn.framework */,
+				149301B8058E9EF691D3EB14ECE22776 /* GoogleSignIn.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		717CBEBDF7698C8ABA98445D63A11C43 /* Resources */ = {
+		774689CD93BBF4C0838943898ABB2D5C /* GTMAppAuth */ = {
 			isa = PBXGroup;
 			children = (
-				8E022BFCE7736F8ABDFF503C859EFF55 /* YTPlayer.html */,
+				2C355507A42ADACE1EC5B7863C3C5A76 /* GTMAppAuth.h */,
+				A26D6AE78BE04990F3C8389D8F31258C /* GTMAppAuthFetcherAuthorization.h */,
+				638AEE5EC7479EB011755D6059203435 /* GTMAppAuthFetcherAuthorization.m */,
+				E7DCF81A229D141C2A9AC0BA3DA025BC /* GTMAppAuthFetcherAuthorization+Keychain.h */,
+				7C91CC41F962A761B422402B86AB3D3B /* GTMAppAuthFetcherAuthorization+Keychain.m */,
+				21155AA75381880C2B9A7C9D6B16D2F2 /* GTMKeychain.h */,
+				152B2221CE025B9DEAF62EDE8414DBA9 /* GTMKeychain_iOS.m */,
+				BCC429D0ECA4A5198ACEBFCADFFEC0B5 /* GTMOAuth2KeychainCompatibility.h */,
+				37FA8BCFBD41CC6E76CF859D9F361162 /* GTMOAuth2KeychainCompatibility.m */,
+				2AAE2AE14A317631F38429FA95197238 /* Support Files */,
+			);
+			name = GTMAppAuth;
+			path = GTMAppAuth;
+			sourceTree = "<group>";
+		};
+		84AB1DA9F09A40857493340C5CFE6E1A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10C265A1A5B70450B65FFF7FADCF7DF6 /* GoogleSignIn.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		75DFA3837AD08DFBD61A337BE624630F /* Resources */ = {
+		8803C6D48E3C8FDC54BC6E527E4F6ECF /* GoogleSignIn */ = {
 			isa = PBXGroup;
 			children = (
-				74CB36648E5682E054A94554C745BA42 /* GoogleSignIn.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		794793288D42FB29B8588A80D08B87E3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				86D0BF26E5739B460C5FBDC913AADBE9 /* YouTubePlayer-Swift.modulemap */,
-				ED06B5246EC6378FE403481DEE5553A6 /* YouTubePlayer-Swift.xcconfig */,
-				C6DE785FD3D76F7026DD74873B532B30 /* YouTubePlayer-Swift-dummy.m */,
-				7FFC452E88A9B755E9A6E77E1365D064 /* YouTubePlayer-Swift-prefix.pch */,
-				14D95ACA0D1A2DDA2565580FF30068EA /* YouTubePlayer-Swift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/YouTubePlayer-Swift";
-			sourceTree = "<group>";
-		};
-		844293B6CE0A94A81486754D370F4E4A /* ExternalUserAgent */ = {
-			isa = PBXGroup;
-			children = (
-				AFA95738BC54CC73624C9461AFBEAC83 /* AppAuth.h */,
-				369209106C8A7AA4E96FCE5D03AA8F75 /* OIDAuthorizationService+IOS.h */,
-				02F5330679125FEB786ECA490477C745 /* OIDAuthorizationService+IOS.m */,
-				D64AE442792DB2996B77794B3E142C86 /* OIDAuthState+IOS.h */,
-				67A5D628CBD59B3DD9293EDDF10B08B8 /* OIDAuthState+IOS.m */,
-				C5BAC0FAEC0950BB4215184198E0E4BC /* OIDExternalUserAgentCatalyst.h */,
-				40092A4C55DFFD12E5C630B9AECF30D5 /* OIDExternalUserAgentCatalyst.m */,
-				39A8C111B5B186D90C177A12D903DC59 /* OIDExternalUserAgentIOS.h */,
-				E5D33D51EC3A759EEDBA2604A0C5D608 /* OIDExternalUserAgentIOS.m */,
-				BA1B78D2AF00936CE0D7C90793358F2C /* OIDExternalUserAgentIOSCustomBrowser.h */,
-				269968CAB7F53948C3F77F1BDB54D056 /* OIDExternalUserAgentIOSCustomBrowser.m */,
-			);
-			name = ExternalUserAgent;
-			sourceTree = "<group>";
-		};
-		86F0E3CE28DA5C0201CFEAD4162A4AE0 /* GoogleSignIn */ = {
-			isa = PBXGroup;
-			children = (
-				6E7B14EA6F5476D7E8755540D10ABE1E /* Frameworks */,
-				75DFA3837AD08DFBD61A337BE624630F /* Resources */,
-				69B6BD18DE72201F6464020B33DCBABE /* Support Files */,
+				6EFA063FBA99BC1873BB383F512545E2 /* Frameworks */,
+				84AB1DA9F09A40857493340C5CFE6E1A /* Resources */,
+				1651E6BDD3C2C39D1C3A3D5AE6F57EF2 /* Support Files */,
 			);
 			name = GoogleSignIn;
 			path = GoogleSignIn;
 			sourceTree = "<group>";
 		};
-		90512F9B0389A5EF2A49573452F50B22 /* Full */ = {
+		8C6A0AC49052D0C1D7885B70D62BC450 /* YoutubePlayerView */ = {
 			isa = PBXGroup;
 			children = (
-				84840AAC48EE7C8788AC81D3497FFF48 /* GTMGatherInputStream.h */,
-				A2665AEBF9AB7F11BD2EC703012C51ED /* GTMGatherInputStream.m */,
-				C98E9F0CCD26CA2715A68922C8A991E8 /* GTMMIMEDocument.h */,
-				87BFB096DF363C4DCC5AA5C68D7C8A0B /* GTMMIMEDocument.m */,
-				EED268FBC2EC4A06541A481F613C58F5 /* GTMReadMonitorInputStream.h */,
-				5F276206B04130CA43A04CFE90C1791C /* GTMReadMonitorInputStream.m */,
+				036CB2911603FD78703BEB9B9D77CD95 /* YoutubePlayerExtras.swift */,
+				61F100081E6A67E5AC8647EE88101BC5 /* YoutubePlayerView.swift */,
+				332F23E990A5D287E41AECAEF50C306F /* Support Files */,
+			);
+			name = YoutubePlayerView;
+			path = YoutubePlayerView;
+			sourceTree = "<group>";
+		};
+		8F7C0EFF52ACEA000F441BC74EE73681 /* Full */ = {
+			isa = PBXGroup;
+			children = (
+				8689225A7FFC46D6AD37E8C314770B8F /* GTMGatherInputStream.h */,
+				82BF3ABF6DC9C66D0E3034A37649F915 /* GTMGatherInputStream.m */,
+				ABD6A31BB0D41EDEFC3FD32DEA7FABCC /* GTMMIMEDocument.h */,
+				0CBB35B0770FD855571A9AD50C931A8C /* GTMMIMEDocument.m */,
+				5A9926B47F4A4ED50CC3A9EE4FB32448 /* GTMReadMonitorInputStream.h */,
+				5B790AE5FF6C1DE814F0181E5287FF33 /* GTMReadMonitorInputStream.m */,
 			);
 			name = Full;
 			sourceTree = "<group>";
 		};
-		985E3ABFB5C008A9D54DE265A4630868 /* YouTubePlayer-Swift */ = {
+		AAAF89E51CA8F272183398BDE9DDE088 /* ExternalUserAgent */ = {
 			isa = PBXGroup;
 			children = (
-				B0AEF909D299A8B5857C1FB5F91904E6 /* VideoPlayerView.swift */,
-				717CBEBDF7698C8ABA98445D63A11C43 /* Resources */,
-				794793288D42FB29B8588A80D08B87E3 /* Support Files */,
+				22CE7F4C67B8BD295CC4B8B8510EA1A3 /* AppAuth.h */,
+				C20E625BEFFCE0851534C87B5E589E48 /* OIDAuthorizationService+IOS.h */,
+				941AD521F14FAA2F448D64B39A173F72 /* OIDAuthorizationService+IOS.m */,
+				F53BE5C86B7D5DC75E822FD5B48B6540 /* OIDAuthState+IOS.h */,
+				E7E8B8155826233F55D5B7D397041ECD /* OIDAuthState+IOS.m */,
+				60BA4EAF037D773049D4BCA215DD9C0B /* OIDExternalUserAgentCatalyst.h */,
+				E546180881CC12C6F043B5803FA237FD /* OIDExternalUserAgentCatalyst.m */,
+				E3203CDBC5920EB9999061969C08396C /* OIDExternalUserAgentIOS.h */,
+				94BFC81ADDD5EABDC505EE90CB4F623F /* OIDExternalUserAgentIOS.m */,
+				5B685B42075F20AE489A9B468823CAE5 /* OIDExternalUserAgentIOSCustomBrowser.h */,
+				AD34F0EB6749018BE32FAD1AF463787C /* OIDExternalUserAgentIOSCustomBrowser.m */,
 			);
-			name = "YouTubePlayer-Swift";
-			path = "YouTubePlayer-Swift";
+			name = ExternalUserAgent;
 			sourceTree = "<group>";
 		};
 		ACC05941B62B796891FFD2B79FB0BFA8 /* Targets Support Files */ = {
@@ -643,16 +553,66 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B4D884B207847F872F7AD4CC3253DF95 /* Products */ = {
+		CCEA08DBD04AAA63CF0CB8CC8803BF7C /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				3FD1B4C1246D643E9476438C28048FA8 /* libAppAuth.a */,
-				6FD122EA0AB9AB2A8FFA5F676C795DF0 /* libGTMAppAuth.a */,
-				C1998E0D8085221AD87F89B614C10E52 /* libGTMSessionFetcher.a */,
-				2BF48459197F908EF8826F255574D270 /* libPods-Youtube.a */,
-				2B92EFE564C6DAB0F6DF1CCB7A0903B1 /* libYouTubePlayer-Swift.a */,
+				BC9E563F4385229660784E50672BD306 /* AppAuthCore.h */,
+				A7583E75C1D33C4D4DD9DC079011AC21 /* OIDAuthorizationRequest.h */,
+				5C61504957CBD184275FB431E37AB763 /* OIDAuthorizationRequest.m */,
+				0A89593E56E50E5E3FD7BBF6032D2D49 /* OIDAuthorizationResponse.h */,
+				0222CBE8959CA0D49B0C9F2653EB297D /* OIDAuthorizationResponse.m */,
+				D830517930EA641140BA04ECAEA80F2C /* OIDAuthorizationService.h */,
+				52A3F0FDC22340E2175D1F90779A3024 /* OIDAuthorizationService.m */,
+				4BED40E0F4E2800B50307E24B0BA432F /* OIDAuthState.h */,
+				062EF99F5932013545027855354CC25D /* OIDAuthState.m */,
+				3FA2EF76375312CFCC97A57581D0BB1A /* OIDAuthStateChangeDelegate.h */,
+				DB187153428CE9D919A465A3E4835F6B /* OIDAuthStateErrorDelegate.h */,
+				477E32A16EFD6F4B9EDF5ECA38D3BD2A /* OIDClientMetadataParameters.h */,
+				6309DB4AB1BC03E218FB8D7D6B7513DB /* OIDClientMetadataParameters.m */,
+				9B3597C9923BF7C1F2F368440E0024C4 /* OIDDefines.h */,
+				B366754A1575874B0D84A6615EF76547 /* OIDEndSessionRequest.h */,
+				F4658AC851392C2BFBBED3EB209D6733 /* OIDEndSessionRequest.m */,
+				63F7226D0F58711BBFA2A1C2218EF2A7 /* OIDEndSessionResponse.h */,
+				9CD04C4AAC52C4C68C41B2ECDF966917 /* OIDEndSessionResponse.m */,
+				BA08B26C2DD0ACF3D0E405BA2DB38D55 /* OIDError.h */,
+				C05724D5E1F0D841A4B22E0F723BE779 /* OIDError.m */,
+				88AE780A58EC58CA532D623C35095E04 /* OIDErrorUtilities.h */,
+				09CF743BA2AB7ACF100AC8A58EFC12ED /* OIDErrorUtilities.m */,
+				A5A89860940E1EBE66CD7DA1CD036B17 /* OIDExternalUserAgent.h */,
+				570F90F6A9DFFE16E910A6C14F3E2A86 /* OIDExternalUserAgentRequest.h */,
+				E46022E7DAAACD05CAC5179D1A0990B3 /* OIDExternalUserAgentSession.h */,
+				B63C113FFBEE9E00B90947DB1115673E /* OIDFieldMapping.h */,
+				358583E16CC5992C9626E78CC2C175B7 /* OIDFieldMapping.m */,
+				01B466B81EC3759B9BCF5ACFD52C9183 /* OIDGrantTypes.h */,
+				D305AEAC07B25146CF2385242BDB96FF /* OIDGrantTypes.m */,
+				AE8D531B64F592E416D23CC13588F52F /* OIDIDToken.h */,
+				BD6F8BC63F8C51B9D6FCEFE9CE01584D /* OIDIDToken.m */,
+				4DA94093E1DC1BB018B75058ED133724 /* OIDRegistrationRequest.h */,
+				6B2581D95D32A8CAE874460C1034E377 /* OIDRegistrationRequest.m */,
+				F69D20D53539295F92FDA1AFCE6ABDAD /* OIDRegistrationResponse.h */,
+				FF1BD17B5734C341B383895926144DF8 /* OIDRegistrationResponse.m */,
+				4106A7C5D25D1BCD811D2DD4F51BA2C5 /* OIDResponseTypes.h */,
+				C8E23D449BFE1FC85DC269A29D5867CB /* OIDResponseTypes.m */,
+				00FF58FB1FB89242761635090E89E951 /* OIDScopes.h */,
+				F02737972CA9B61AF9C34DF871AC50CE /* OIDScopes.m */,
+				D5E09E3935AB64AD9057EA7F2524C9D7 /* OIDScopeUtilities.h */,
+				F966B92B325D7B3A02C0CCC80F8E5B7B /* OIDScopeUtilities.m */,
+				54938BCEDA2B51BA5CCB6E218A4127FC /* OIDServiceConfiguration.h */,
+				DED3160FF72E5CF9747B960A89D5B972 /* OIDServiceConfiguration.m */,
+				0F139193CCA8FCF946964C1D306B0BAC /* OIDServiceDiscovery.h */,
+				69C1BF3594183E8412B33802F819B6CB /* OIDServiceDiscovery.m */,
+				EBB92538DE02AF62D4C77A69D5034134 /* OIDTokenRequest.h */,
+				2120ACE2729790120B9B5E5AEBC68EC0 /* OIDTokenRequest.m */,
+				FFC83FAA0A7DF12A1688A46DB0362944 /* OIDTokenResponse.h */,
+				D31D1C8077AF4A42E4EA766905284E4A /* OIDTokenResponse.m */,
+				C2BEDFC186CF9A055B3808BBBD28D9DB /* OIDTokenUtilities.h */,
+				9B797B13EBC00B331CEDA5B535FD41A3 /* OIDTokenUtilities.m */,
+				493279FAE646E4B783691E2814CBBF00 /* OIDURLQueryComponent.h */,
+				2206405A12AD8FE1F25121B8A90DC5E2 /* OIDURLQueryComponent.m */,
+				BFB8F4E8C47903550AB9804B2AB480B1 /* OIDURLSessionProvider.h */,
+				3E17EFDE74BECC530D6DB709BA7EE45A /* OIDURLSessionProvider.m */,
 			);
-			name = Products;
+			name = Core;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -660,10 +620,32 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				06E5A5CDC4D3407748BFA94C6CC2559E /* Pods */,
-				B4D884B207847F872F7AD4CC3253DF95 /* Products */,
+				1553C48054433A682D7A200616093C54 /* Pods */,
+				2E3A0BE15C6BB423691FA3B4DDE939CB /* Products */,
 				ACC05941B62B796891FFD2B79FB0BFA8 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D293E4223BCC2D815BF9121F75229A3C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C526FD516FF23EBFA015788038A8603A /* AppAuth.xcconfig */,
+				E4E58B04D3E641B840D0196072F280E3 /* AppAuth-dummy.m */,
+				A64A68BFA604FB4A09852DA203C41948 /* AppAuth-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AppAuth";
+			sourceTree = "<group>";
+		};
+		D31F3819E5FB004E6B9745C67E2F838F /* AppAuth */ = {
+			isa = PBXGroup;
+			children = (
+				CCEA08DBD04AAA63CF0CB8CC8803BF7C /* Core */,
+				AAAF89E51CA8F272183398BDE9DDE088 /* ExternalUserAgent */,
+				D293E4223BCC2D815BF9121F75229A3C /* Support Files */,
+			);
+			name = AppAuth;
+			path = AppAuth;
 			sourceTree = "<group>";
 		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
@@ -673,14 +655,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FDDF5AE2041A2A59F3AEF0AE7CEE7313 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E07ABE3BA69756B4CA8BA9D6D6CA353A /* GTMSessionFetcher.xcconfig */,
+				A8D3BDAD9E48F2EAB5004138B261B3F6 /* GTMSessionFetcher-dummy.m */,
+				B0D5423F113BA4A1075D787CFF54EC26 /* GTMSessionFetcher-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GTMSessionFetcher";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0FFABD7BADFDB7D83D9C8FC2A6E7A124 /* Headers */ = {
+		116F5F5C72275742DA4390852B338D0E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A44AEE785D945C71048565C18163B58A /* YouTubePlayer-Swift-umbrella.h in Headers */,
+				5DC90E84D5947AE22DEE7A1241B83C49 /* Pods-Youtube-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A15A5A105F64D2114274F63E5DABD21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED2CFF135959130D824412A9FE569C5E /* YoutubePlayerView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,14 +743,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C38619522EBF1BCA1BAD198CB33E7FEA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A7150A149E51BE01BCA75D37FF05E745 /* Pods-Youtube-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D20BCFDFC424D08898AFB20835D0996D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -765,22 +758,22 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		17F91230987223F6C1350A655DC43689 /* YouTubePlayer-Swift */ = {
+		11A6C3DFEE59C64FAB6952F7BC187505 /* YoutubePlayerView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14A3763CB310856A46330F05F46E62DA /* Build configuration list for PBXNativeTarget "YouTubePlayer-Swift" */;
+			buildConfigurationList = 39A5F9AE28A2E151FA23F9CDAE5A4BB4 /* Build configuration list for PBXNativeTarget "YoutubePlayerView" */;
 			buildPhases = (
-				0FFABD7BADFDB7D83D9C8FC2A6E7A124 /* Headers */,
-				A3E60966B3CD240BCBC5BBCA1A532E11 /* Sources */,
-				47345370F8639E946D130DBD78ECF966 /* Frameworks */,
-				3A7AA05F8866A01D920EF3DF7E154C99 /* Copy generated compatibility header */,
+				1A15A5A105F64D2114274F63E5DABD21 /* Headers */,
+				6FAB4FE1E76FF3A9ADAA9EF5330D2764 /* Sources */,
+				0EBE7A1FCF6BECF2E222F529D1B4418A /* Frameworks */,
+				829BDE6148468BB73B5B21BBA0406A07 /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "YouTubePlayer-Swift";
-			productName = "YouTubePlayer-Swift";
-			productReference = 2B92EFE564C6DAB0F6DF1CCB7A0903B1 /* libYouTubePlayer-Swift.a */;
+			name = YoutubePlayerView;
+			productName = YoutubePlayerView;
+			productReference = AF9385ABA896226EB84EC5D36032EB86 /* libYoutubePlayerView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		5C642AA10FB29936669CC269F42079C6 /* AppAuth */ = {
@@ -821,20 +814,20 @@
 		};
 		B0893E48BB40257B282FB5DC8739B020 /* Pods-Youtube */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA2A60C7EF1904D4F4B45D5624C1FBE5 /* Build configuration list for PBXNativeTarget "Pods-Youtube" */;
+			buildConfigurationList = 713AF53C8ACF3F55FC9851CA19324580 /* Build configuration list for PBXNativeTarget "Pods-Youtube" */;
 			buildPhases = (
-				C38619522EBF1BCA1BAD198CB33E7FEA /* Headers */,
-				830612F4B2E3C657745E48201BF759B0 /* Sources */,
-				EF8735D387290219F60647F3D0610BA5 /* Frameworks */,
+				116F5F5C72275742DA4390852B338D0E /* Headers */,
+				3B53CFE68901EF88BB773D22ED3505D3 /* Sources */,
+				11D4A773600E0E811986E06E81BEA653 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				429F2D134A17F122B60413BB4EBBE518 /* PBXTargetDependency */,
-				EBB722F621A95BF821F94039655D6293 /* PBXTargetDependency */,
-				00994D956F348E39DC49C6C8232FC654 /* PBXTargetDependency */,
-				2BFEBFE862CB39647E6796D5B2E6316E /* PBXTargetDependency */,
-				9587AEC0252369710AB19E93F3D49DEE /* PBXTargetDependency */,
+				BDEED9E9B1971D9194D55DD1F0A68F2A /* PBXTargetDependency */,
+				62EE2C48240CDDD6E71FB40D37AB5C1F /* PBXTargetDependency */,
+				5DBA700635BCAB68682325B18FA3218E /* PBXTargetDependency */,
+				53B8536B074CD0003A6CCF56D9BFC533 /* PBXTargetDependency */,
+				2B5642D42A04033058A0C5DB048DEF99 /* PBXTargetDependency */,
 			);
 			name = "Pods-Youtube";
 			productName = "Pods-Youtube";
@@ -876,7 +869,7 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = B4D884B207847F872F7AD4CC3253DF95 /* Products */;
+			productRefGroup = 2E3A0BE15C6BB423691FA3B4DDE939CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -885,13 +878,13 @@
 				8627999EF1D5E93E13DAFF580DA8CDCF /* GTMAppAuth */,
 				D676E21115185671D7258A56944ABE98 /* GTMSessionFetcher */,
 				B0893E48BB40257B282FB5DC8739B020 /* Pods-Youtube */,
-				17F91230987223F6C1350A655DC43689 /* YouTubePlayer-Swift */,
+				11A6C3DFEE59C64FAB6952F7BC187505 /* YoutubePlayerView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3A7AA05F8866A01D920EF3DF7E154C99 /* Copy generated compatibility header */ = {
+		829BDE6148468BB73B5B21BBA0406A07 /* Copy generated compatibility header */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -900,29 +893,39 @@
 			);
 			inputPaths = (
 				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
-				"${PODS_ROOT}/Headers/Public/YouTubePlayer_Swift/YouTubePlayer-Swift.modulemap",
-				"${PODS_ROOT}/Headers/Public/YouTubePlayer_Swift/YouTubePlayer-Swift-umbrella.h",
+				"${PODS_ROOT}/Headers/Public/YoutubePlayerView/YoutubePlayerView.modulemap",
+				"${PODS_ROOT}/Headers/Public/YoutubePlayerView/YoutubePlayerView-umbrella.h",
 			);
 			name = "Copy generated compatibility header";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
-				"${BUILT_PRODUCTS_DIR}/YouTubePlayer-Swift-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/YoutubePlayerView-umbrella.h",
 				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/YouTubePlayer_Swift/YouTubePlayer-Swift.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/YouTubePlayer_Swift/YouTubePlayer-Swift-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/YoutubePlayerView/YoutubePlayerView.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/YoutubePlayerView/YoutubePlayerView-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		830612F4B2E3C657745E48201BF759B0 /* Sources */ = {
+		3B53CFE68901EF88BB773D22ED3505D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48E7B52A255DFE8AE87B988E5037796F /* Pods-Youtube-dummy.m in Sources */,
+				8784B4C9CB18FED65F3AE607027B80A4 /* Pods-Youtube-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FAB4FE1E76FF3A9ADAA9EF5330D2764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C44B5C5B2AE102BF7534DDCCDA9445 /* YoutubePlayerExtras.swift in Sources */,
+				DBA343404AD6B627427CAEA7C0402087 /* YoutubePlayerView-dummy.m in Sources */,
+				57EF564B146853DA6A67EF800C7375E5 /* YoutubePlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -963,15 +966,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3E60966B3CD240BCBC5BBCA1A532E11 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2958817A1E275653AC50CAFBEEEF76E5 /* VideoPlayerView.swift in Sources */,
-				09A3ED1B6761DC4666C55A32DC9222E5 /* YouTubePlayer-Swift-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E12610D2EB3FA99C807711C5868BBEFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1002,12 +996,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00994D956F348E39DC49C6C8232FC654 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GTMSessionFetcher;
-			target = D676E21115185671D7258A56944ABE98 /* GTMSessionFetcher */;
-			targetProxy = F62F929005BEF9848BAA3EBE3824BAA5 /* PBXContainerItemProxy */;
-		};
 		17F95C18E3EFF34AD53094C236880907 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AppAuth;
@@ -1020,11 +1008,11 @@
 			target = 5C642AA10FB29936669CC269F42079C6 /* AppAuth */;
 			targetProxy = 96C4B52CEBD25FE7612CDFAC4EBB56D6 /* PBXContainerItemProxy */;
 		};
-		2BFEBFE862CB39647E6796D5B2E6316E /* PBXTargetDependency */ = {
+		2B5642D42A04033058A0C5DB048DEF99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = GoogleSignIn;
-			target = CAD3534FC55B0333104E5117C0A9A324 /* GoogleSignIn */;
-			targetProxy = 34D80376D47EC26BE3F0C1F899E2A9A7 /* PBXContainerItemProxy */;
+			name = YoutubePlayerView;
+			target = 11A6C3DFEE59C64FAB6952F7BC187505 /* YoutubePlayerView */;
+			targetProxy = 27AF14E92C80F695142BDB734D5F9346 /* PBXContainerItemProxy */;
 		};
 		314A9E36FBEA4C73491669F15EA30E5F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1032,11 +1020,23 @@
 			target = 8627999EF1D5E93E13DAFF580DA8CDCF /* GTMAppAuth */;
 			targetProxy = CFBE3CB2F286EF0D95A2ACDEBE0C1014 /* PBXContainerItemProxy */;
 		};
-		429F2D134A17F122B60413BB4EBBE518 /* PBXTargetDependency */ = {
+		53B8536B074CD0003A6CCF56D9BFC533 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = AppAuth;
-			target = 5C642AA10FB29936669CC269F42079C6 /* AppAuth */;
-			targetProxy = 0FE230D8B6E05103C40BCBD3C6DD842E /* PBXContainerItemProxy */;
+			name = GoogleSignIn;
+			target = CAD3534FC55B0333104E5117C0A9A324 /* GoogleSignIn */;
+			targetProxy = B52485CDE35CA7AE7D8FB757CA0D8CD9 /* PBXContainerItemProxy */;
+		};
+		5DBA700635BCAB68682325B18FA3218E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTMSessionFetcher;
+			target = D676E21115185671D7258A56944ABE98 /* GTMSessionFetcher */;
+			targetProxy = 6C4B23662A325893E08517A95095455A /* PBXContainerItemProxy */;
+		};
+		62EE2C48240CDDD6E71FB40D37AB5C1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTMAppAuth;
+			target = 8627999EF1D5E93E13DAFF580DA8CDCF /* GTMAppAuth */;
+			targetProxy = 5821969360112F2B768444FFB2DFDEC8 /* PBXContainerItemProxy */;
 		};
 		74F3D34B7F14020AE0A57D83A7889F98 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1044,11 +1044,11 @@
 			target = D676E21115185671D7258A56944ABE98 /* GTMSessionFetcher */;
 			targetProxy = 255C113C5B8CEBDE5DFD4788BBC6FC4B /* PBXContainerItemProxy */;
 		};
-		9587AEC0252369710AB19E93F3D49DEE /* PBXTargetDependency */ = {
+		BDEED9E9B1971D9194D55DD1F0A68F2A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "YouTubePlayer-Swift";
-			target = 17F91230987223F6C1350A655DC43689 /* YouTubePlayer-Swift */;
-			targetProxy = 64909984DC87308740618419E9BDCE74 /* PBXContainerItemProxy */;
+			name = AppAuth;
+			target = 5C642AA10FB29936669CC269F42079C6 /* AppAuth */;
+			targetProxy = 1DD647A02B43277C104A50B9B0FD165C /* PBXContainerItemProxy */;
 		};
 		E89E0382D716E97612D73AB1423F3C40 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1056,18 +1056,12 @@
 			target = D676E21115185671D7258A56944ABE98 /* GTMSessionFetcher */;
 			targetProxy = 41595E0C2EE05A58FE54A80AF3C4C8F4 /* PBXContainerItemProxy */;
 		};
-		EBB722F621A95BF821F94039655D6293 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GTMAppAuth;
-			target = 8627999EF1D5E93E13DAFF580DA8CDCF /* GTMAppAuth */;
-			targetProxy = 8A9DAB3B0C34ECA397360F8DF8257473 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0AC3A03BD0F7DCB02B5066BA84BAE7C0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B888CD3CE48A6C8637E5192D638FDC8 /* GTMAppAuth.xcconfig */;
+			baseConfigurationReference = 0A8495217424E7ED6FF65A313B5650E4 /* GTMAppAuth.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1089,6 +1083,31 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		11CE52E56CEC02A18925FF9E4BE95B16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12B30919684A31F3450238EBDE80479E /* YoutubePlayerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/YoutubePlayerView/YoutubePlayerView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/YoutubePlayerView/YoutubePlayerView.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YoutubePlayerView;
+				PRODUCT_NAME = YoutubePlayerView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1150,33 +1169,9 @@
 			};
 			name = Release;
 		};
-		14856751827F8561191FFEB5BEC5F08D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 543D87F2F4CA83C2DD375DA59BC5A008 /* Pods-Youtube.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Youtube/Pods-Youtube.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		40CEA192B27B4CB6E772C7D1C24C21AF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC19CE776768CE6C1AA1774072187050 /* AppAuth.xcconfig */;
+			baseConfigurationReference = C526FD516FF23EBFA015788038A8603A /* AppAuth.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1200,7 +1195,7 @@
 		};
 		429F946314FFB8A81AB2187E0E0323DB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B888CD3CE48A6C8637E5192D638FDC8 /* GTMAppAuth.xcconfig */;
+			baseConfigurationReference = 0A8495217424E7ED6FF65A313B5650E4 /* GTMAppAuth.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1224,7 +1219,7 @@
 		};
 		780AF4C52C53C0B72A801F37528ABDFC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1DB9EFA6026EDC07D559B9863FC0307 /* GoogleSignIn.xcconfig */;
+			baseConfigurationReference = 35DB9C36AFF98FD4FB316F7CDE1950B1 /* GoogleSignIn.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1239,57 +1234,35 @@
 			};
 			name = Release;
 		};
-		78572B18B731277DC0B39BE02E2D78A5 /* Debug */ = {
+		8054B14EC08BCF8F30D373277C8BA442 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED06B5246EC6378FE403481DEE5553A6 /* YouTubePlayer-Swift.xcconfig */;
+			baseConfigurationReference = 12B30919684A31F3450238EBDE80479E /* YoutubePlayerView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/YouTubePlayer-Swift/YouTubePlayer-Swift-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/YoutubePlayerView/YoutubePlayerView-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MODULEMAP_FILE = "Headers/Public/YouTubePlayer_Swift/YouTubePlayer-Swift.modulemap";
+				MODULEMAP_FILE = Headers/Public/YoutubePlayerView/YoutubePlayerView.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = YouTubePlayer_Swift;
-				PRODUCT_NAME = "YouTubePlayer-Swift";
+				PRODUCT_MODULE_NAME = YoutubePlayerView;
+				PRODUCT_NAME = YoutubePlayerView;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
-		};
-		7EE6419C293867476729449C44D21938 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EFBED8667765F5DC62320A1AB620860 /* Pods-Youtube.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Youtube/Pods-Youtube.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
+			name = Release;
 		};
 		80E42A87F8E90BB21ED40E26F8FB6F25 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1DB9EFA6026EDC07D559B9863FC0307 /* GoogleSignIn.xcconfig */;
+			baseConfigurationReference = 35DB9C36AFF98FD4FB316F7CDE1950B1 /* GoogleSignIn.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1305,7 +1278,7 @@
 		};
 		8E2445DA45E19E4B8BE9B2EE96D108F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78FAB8B74526F6342585C27E9FDB8EF0 /* GTMSessionFetcher.xcconfig */;
+			baseConfigurationReference = E07ABE3BA69756B4CA8BA9D6D6CA353A /* GTMSessionFetcher.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1329,7 +1302,7 @@
 		};
 		98332692789867F1C2D403C880F3BF9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78FAB8B74526F6342585C27E9FDB8EF0 /* GTMSessionFetcher.xcconfig */;
+			baseConfigurationReference = E07ABE3BA69756B4CA8BA9D6D6CA353A /* GTMSessionFetcher.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1352,9 +1325,56 @@
 			};
 			name = Release;
 		};
+		A061C9E2DEF43D307F8097AF61729E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 543D87F2F4CA83C2DD375DA59BC5A008 /* Pods-Youtube.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Youtube/Pods-Youtube.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2042434F5F9EC29322CCA38A2FF81DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EFBED8667765F5DC62320A1AB620860 /* Pods-Youtube.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Youtube/Pods-Youtube.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		DA2147A7256ABB01CC53AFCD9A4FBC3F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC19CE776768CE6C1AA1774072187050 /* AppAuth.xcconfig */;
+			baseConfigurationReference = C526FD516FF23EBFA015788038A8603A /* AppAuth.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1441,40 +1461,14 @@
 			};
 			name = Debug;
 		};
-		FADD9B7A2E7624796EED4BE3496F41D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED06B5246EC6378FE403481DEE5553A6 /* YouTubePlayer-Swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/YouTubePlayer-Swift/YouTubePlayer-Swift-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MODULEMAP_FILE = "Headers/Public/YouTubePlayer_Swift/YouTubePlayer-Swift.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = YouTubePlayer_Swift;
-				PRODUCT_NAME = "YouTubePlayer-Swift";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14A3763CB310856A46330F05F46E62DA /* Build configuration list for PBXNativeTarget "YouTubePlayer-Swift" */ = {
+		39A5F9AE28A2E151FA23F9CDAE5A4BB4 /* Build configuration list for PBXNativeTarget "YoutubePlayerView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				78572B18B731277DC0B39BE02E2D78A5 /* Debug */,
-				FADD9B7A2E7624796EED4BE3496F41D8 /* Release */,
+				11CE52E56CEC02A18925FF9E4BE95B16 /* Debug */,
+				8054B14EC08BCF8F30D373277C8BA442 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1493,6 +1487,15 @@
 			buildConfigurations = (
 				8E2445DA45E19E4B8BE9B2EE96D108F8 /* Debug */,
 				98332692789867F1C2D403C880F3BF9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		713AF53C8ACF3F55FC9851CA19324580 /* Build configuration list for PBXNativeTarget "Pods-Youtube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2042434F5F9EC29322CCA38A2FF81DD /* Debug */,
+				A061C9E2DEF43D307F8097AF61729E84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1520,15 +1523,6 @@
 			buildConfigurations = (
 				80E42A87F8E90BB21ED40E26F8FB6F25 /* Debug */,
 				780AF4C52C53C0B72A801F37528ABDFC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EA2A60C7EF1904D4F4B45D5624C1FBE5 /* Build configuration list for PBXNativeTarget "Pods-Youtube" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7EE6419C293867476729449C44D21938 /* Debug */,
-				14856751827F8561191FFEB5BEC5F08D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -16,11 +16,11 @@ PODS:
   - GTMSessionFetcher/Core (1.3.1)
   - GTMSessionFetcher/Full (1.3.1):
     - GTMSessionFetcher/Core (= 1.3.1)
-  - YouTubePlayer-Swift (1.0)
+  - YoutubePlayerView (1.1.0)
 
 DEPENDENCIES:
   - GoogleSignIn (~> 5.0)
-  - YouTubePlayer-Swift (~> 1.0)
+  - YoutubePlayerView (~> 1.1)
 
 SPEC REPOS:
   trunk:
@@ -28,15 +28,15 @@ SPEC REPOS:
     - GoogleSignIn
     - GTMAppAuth
     - GTMSessionFetcher
-    - YouTubePlayer-Swift
+    - YoutubePlayerView
 
 SPEC CHECKSUMS:
   AppAuth: 73574f3013a1e65b9601a3ddc8b3158cce68c09d
   GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
   GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
   GTMSessionFetcher: cea130bbfe5a7edc8d06d3f0d17288c32ffe9925
-  YouTubePlayer-Swift: ae82f4bcb504162a872b852596a9dc1fa3828c34
+  YoutubePlayerView: ceed1ec64d8debcc5a12a66ec128880ecd2bbb60
 
-PODFILE CHECKSUM: ca4bab5d84867fc806122b7a3cbb89b8459186b0
+PODFILE CHECKSUM: 7d5161512ddc57fe3531bef2d9078b1edd7f9727
 
 COCOAPODS: 1.8.4

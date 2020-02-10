@@ -1,0 +1,6 @@
+module YoutubePlayerView {
+  umbrella header "YoutubePlayerView-umbrella.h"
+
+  export *
+  module * { export * }
+}

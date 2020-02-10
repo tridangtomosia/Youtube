@@ -30,15 +30,15 @@ class NetWorkLayer {
         }
     }
     
-    func searchVideos(params: [String: String]?, completion: ((ServiceResult<[Video]>) -> ())?) {
+    func searchVideos(params: [String: String]?, withNumberOfFind number: Int, completion: ((ServiceResult<[Video]>) -> ())?) {
         let url = api + "search"
         var parameter = params
         if params == nil {
             parameter = [:]
         }
-        parameter?["maxResults"] = "30"
+        parameter?["maxResults"] = String(number)
         parameter?["key"] = googleKey
-        parameter?["part"] = "snippet,statistics"
+        parameter?["part"] = "snippet"
         ManagerAPI.shared.requestAPI(url: url, params: parameter, method: .get, header: nil) { (result) in
             switch result {
             case .success(let data):
@@ -54,20 +54,45 @@ class NetWorkLayer {
         }
     }
     
-    func findTrendVideo(params: [String: String]? , completion: ((ServiceResult<[Video]>) -> ())?) {
-        let url = api + "videoCategories"
+    func getStatistic(params: [String: String]?, id: String, completion: ((ServiceResult<[StatisticRequest]>) -> ())?) {
+        let url = api + "videos"
         var parameter = params
         if params == nil {
             parameter = [:]
         }
-        parameter?["maxResults"] = "30"
+        parameter?["id"] = id
         parameter?["key"] = googleKey
+        parameter?["part"] = "statistics"
+        ManagerAPI.shared.requestAPI(url: url, params: parameter, method: .get, header: nil) { (result) in
+            switch result {
+            case .success(let data):
+                if let items = data["items"] as? [[String: Any]] {
+                    let statistic = items.map { StatisticRequest(dictionary: $0)}
+                    completion?(.success(statistic))
+                } else {
+                    completion?(.failure(APIError.json))
+                }
+            case .failure(let error):
+                completion?(.failure(APIError.custom(error.localizedDescription)))
+            }
+        }
+    }
+    
+    func getTrendVideo(params: [String: String]? , completion: ((ServiceResult<[Video]>) -> ())?) {
+        let url = api + "videos"
+        var parameter = params
+        if params == nil {
+            parameter = [:]
+        }
+        parameter?["maxResults"] = "50"
+        parameter?["key"] = googleKey
+        parameter?["chart"] = "mostpopular"
         parameter?["part"] = "snippet,statistics"
         ManagerAPI.shared.requestAPI(url: url, params: parameter, method: .get, header: nil) { (result) in
             switch result {
             case .success(let data):
                 if let items = data["items"] as? [[String: Any]] {
-                    let videos = items.map { Video(dictionary: $0)}
+                    let videos = items.map { Video(dictionary: $0) }
                     completion?(.success(videos))
                 } else {
                     completion?(.failure(APIError.json))

@@ -5,8 +5,8 @@ class Video {
     var id = ""
     var snippet : Snippet?
     var videoId : Identification?
-    var image : ImageSize?
     var statistic: Statistic?
+    
     init(dictionary: [String:Any]) {
         self.id = dictionary["id"] as? String ?? ""
         if let statisticDic = dictionary["statistics"] as? [String: Any] {
@@ -17,9 +17,6 @@ class Video {
         }
         if let idDic = dictionary["id"] as? [String: Any] {
             self.videoId = Identification(dictionary: idDic)
-        }
-        if let imageDic = dictionary["thumbnails"] as? [String: Any] {
-            self.image = ImageSize(dictionary: imageDic)
         }
     }
 }

@@ -7,6 +7,10 @@ target 'Youtube' do
 
 #  pod 'YouTubePlayer', '~> 0.4'
 
-  pod 'YouTubePlayer-Swift', '~> 1.0'
+#  pod 'YouTubePlayer-Swift', '~> 1.0'
+
+   pod 'YoutubePlayerView', '~> 1.1'
+
+#  pod 'YoutubeKit'
 
 end

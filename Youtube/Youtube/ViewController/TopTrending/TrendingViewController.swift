@@ -1,4 +1,5 @@
 import UIKit
+import GoogleSignIn
 
 class TrendingViewController: BaseViewController {
 
@@ -43,7 +44,6 @@ class TrendingViewController: BaseViewController {
             }
         }
     }
-    
 }
 
 extension TrendingViewController: UITableViewDataSource {
@@ -54,6 +54,8 @@ extension TrendingViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as? TableViewCell {
             cell.setLocal(withVideo: listVideos[indexPath.row])
+//            UserDefaults.standard.removeObject(forKey: listVideos[indexPath.row].id)
+//            UserDefaults.standard.removeObject(forKey: listVideos[indexPath.row].videoId?.id ?? "")
             return cell
         }
         return TableViewCell()
@@ -63,6 +65,21 @@ extension TrendingViewController: UITableViewDataSource {
 extension TrendingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 300.scale
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var id = ""
+        if listVideos[indexPath.row].id == "" {
+            id = listVideos[indexPath.row].videoId?.id ?? ""
+        } else {
+            id = listVideos[indexPath.row].id
+        }
+        History.shared.saveId(withId: id)
+        let time = Date()
+        History.shared.saveModel(withModel: listVideos[indexPath.row], with: time.converseDatetoString())
+        let videoViewController = VideoViewController()
+        videoViewController.modalPresentationStyle = .fullScreen
+        videoViewController.video = listVideos[indexPath.row]
+        present(videoViewController, animated: true)
     }
 }
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		184B8AC823F0E7BB00413D64 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B8AC723F0E7BB00413D64 /* CGRect.swift */; };
+		185A662823F299B40029BD49 /* HistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A662723F299B30029BD49 /* HistoryManager.swift */; };
+		185A662C23F3ECF40029BD49 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A662B23F3ECF40029BD49 /* Date.swift */; };
 		186045D623E7C1B700285A86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186045D523E7C1B700285A86 /* AppDelegate.swift */; };
 		186045DF23E7C1BA00285A86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186045DE23E7C1BA00285A86 /* Assets.xcassets */; };
 		186045E223E7C1BA00285A86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186045E023E7C1BA00285A86 /* LaunchScreen.storyboard */; };
@@ -56,6 +58,8 @@
 /* Begin PBXFileReference section */
 		14EE470038169E0D4A8868EC /* libPods-Youtube.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Youtube.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		184B8AC723F0E7BB00413D64 /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		185A662723F299B30029BD49 /* HistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryManager.swift; sourceTree = "<group>"; };
+		185A662B23F3ECF40029BD49 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		186045D223E7C1B700285A86 /* Youtube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Youtube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186045D523E7C1B700285A86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		186045DE23E7C1BA00285A86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -205,6 +209,7 @@
 				18690C8823EFAA4C004CCC9F /* Array.swift */,
 				184B8AC723F0E7BB00413D64 /* CGRect.swift */,
 				18F04C1523ED65CF00C09B45 /* Int.swift */,
+				185A662B23F3ECF40029BD49 /* Date.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 				18BA423123EA67F00088E0C1 /* ManagerAPI.swift */,
 				18BA423723EA9DBB0088E0C1 /* NetWorkLayer.swift */,
 				18F04C1123ED649F00C09B45 /* LoadImage.swift */,
+				185A662723F299B30029BD49 /* HistoryManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -465,6 +471,7 @@
 				1860462323E7DF0000285A86 /* ProfileViewController.swift in Sources */,
 				1860461F23E7DE9B00285A86 /* HomeViewController.swift in Sources */,
 				18BA423623EA7C320088E0C1 /* BaseTableViewCell.swift in Sources */,
+				185A662C23F3ECF40029BD49 /* Date.swift in Sources */,
 				18F04C1223ED649F00C09B45 /* LoadImage.swift in Sources */,
 				18A46D3223EE8C690001A990 /* UIImageView.swift in Sources */,
 				18F04C1423ED659100C09B45 /* UIView.swift in Sources */,
@@ -472,6 +479,7 @@
 				18BA423023EA66C90088E0C1 /* Dictionary.swift in Sources */,
 				1860461723E7DE5F00285A86 /* HistoryViewController.swift in Sources */,
 				18BA423223EA67F00088E0C1 /* ManagerAPI.swift in Sources */,
+				185A662823F299B40029BD49 /* HistoryManager.swift in Sources */,
 				18BA423823EA9DBB0088E0C1 /* NetWorkLayer.swift in Sources */,
 				18BA424223ED232C0088E0C1 /* Identification.swift in Sources */,
 				18F04C1623ED65CF00C09B45 /* Int.swift in Sources */,

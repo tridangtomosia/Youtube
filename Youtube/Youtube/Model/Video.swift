@@ -1,12 +1,13 @@
 
 import UIKit
 
-class Video {
-    var id = ""
+class Video: Codable {
+    var id : String
     var snippet : Snippet?
     var videoId : Identification?
     var statistic: Statistic?
-    
+    var time = ""
+
     init(dictionary: [String:Any]) {
         self.id = dictionary["id"] as? String ?? ""
         if let statisticDic = dictionary["statistics"] as? [String: Any] {
@@ -20,5 +21,3 @@ class Video {
         }
     }
 }
-
-

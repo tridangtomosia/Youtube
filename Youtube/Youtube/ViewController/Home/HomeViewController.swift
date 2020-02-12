@@ -1,5 +1,6 @@
 
 import UIKit
+import GoogleSignIn
 
 class HomeViewController: BaseViewController {
     @IBOutlet weak var topView: UIView!
@@ -53,6 +54,8 @@ extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as? TableViewCell {
             cell.setLocal(withVideo: listVideos[indexPath.row])
+//            UserDefaults.standard.removeObject(forKey: listVideos[indexPath.row].id)
+//            UserDefaults.standard.removeObject(forKey: listVideos[indexPath.row].videoId?.id ?? "")
             return cell
         }
         return TableViewCell()
@@ -65,10 +68,19 @@ extension HomeViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let time = Date()
+        var id = ""
+        if listVideos[indexPath.row].id == "" {
+            id = listVideos[indexPath.row].videoId?.id ?? ""
+        } else {
+            id = listVideos[indexPath.row].id
+        }
+        History.shared.saveId(withId: id)
+        History.shared.saveModel(withModel: listVideos[indexPath.row], with: time.converseDatetoString() )
         let videoViewController = VideoViewController()
-        videoViewController.modalPresentationStyle = .fullScreen
-        videoViewController.video = listVideos[indexPath.row]
-        present(videoViewController, animated: true) { }
+        videoViewController.modalPresentationStyle = .overFullScreen
+        videoViewController.video = self.listVideos[indexPath.row]
+        self.present(videoViewController, animated: true)
     }
 }
 

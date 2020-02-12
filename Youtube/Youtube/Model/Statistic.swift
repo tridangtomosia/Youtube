@@ -1,9 +1,14 @@
 
 import Foundation
 
-class Statistic {
+class Statistic : Codable {
     var view = ""
     var like = ""
+    var love = ""
+    
+    static var supportsSecureCoding: Bool {
+        return false
+    }
     
     init(dictionary: [String: Any]) {
         self.view = dictionary["viewCount"] as? String ?? ""
@@ -19,4 +24,5 @@ class StatisticRequest {
             self.statistic = Statistic(dictionary: statisticDic)
         }
     }
+    
 }

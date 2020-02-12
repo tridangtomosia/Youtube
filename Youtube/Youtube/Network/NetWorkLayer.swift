@@ -4,7 +4,7 @@ import UIKit
 class NetWorkLayer {
     
     let api = "https://www.googleapis.com/youtube/v3/"
-    let googleKey = "AIzaSyBWfw678OSge9ugRQbMnx4LQtPfcg_20AM"
+    let googleKey = "AIzaSyAMbElh4mHvZpEzBsI_HweoPvSuvs6qvng"
 
     func getVideos(params: [String: String]?, completion: ((ServiceResult<[Video]>) -> ())?) {
         let url = api + "videos"
@@ -17,15 +17,15 @@ class NetWorkLayer {
         parameter?["part"] = "snippet,statistics"
         ManagerAPI.shared.requestAPI(url: url, params: parameter, method: .get, header: nil) { (result) in
             switch result {
-            case .success(let data):
-                if let items = data["items"] as? [[String: Any]] {
-                    let videos = items.map { Video(dictionary: $0) }
-                    completion?(.success(videos))
-                } else {
-                    completion?(.failure(APIError.json))
-                }
-            case .failure(let error):
-                completion?(.failure(APIError.custom(error.localizedDescription)))
+                case .success(let data):
+                    if let items = data["items"] as? [[String: Any]] {
+                        let videos = items.map { Video(dictionary: $0) }
+                        completion?(.success(videos))
+                    } else {
+                        completion?(.failure(APIError.json))
+                    }
+                case .failure(let error):
+                    completion?(.failure(APIError.custom(error.localizedDescription)))
             }
         }
     }
@@ -41,15 +41,15 @@ class NetWorkLayer {
         parameter?["part"] = "snippet"
         ManagerAPI.shared.requestAPI(url: url, params: parameter, method: .get, header: nil) { (result) in
             switch result {
-            case .success(let data):
-                if let items = data["items"] as? [[String: Any]] {
-                    let videos = items.map { Video(dictionary: $0)}
-                    completion?(.success(videos))
-                } else {
-                    completion?(.failure(APIError.json))
-                }
-            case .failure(let error):
-                completion?(.failure(APIError.custom(error.localizedDescription)))
+                case .success(let data):
+                    if let items = data["items"] as? [[String: Any]] {
+                        let videos = items.map { Video(dictionary: $0)}
+                        completion?(.success(videos))
+                    } else {
+                        completion?(.failure(APIError.json))
+                    }
+                case .failure(let error):
+                    completion?(.failure(APIError.custom(error.localizedDescription)))
             }
         }
     }
@@ -65,15 +65,15 @@ class NetWorkLayer {
         parameter?["part"] = "statistics"
         ManagerAPI.shared.requestAPI(url: url, params: parameter, method: .get, header: nil) { (result) in
             switch result {
-            case .success(let data):
-                if let items = data["items"] as? [[String: Any]] {
-                    let statistic = items.map { StatisticRequest(dictionary: $0)}
-                    completion?(.success(statistic))
-                } else {
-                    completion?(.failure(APIError.json))
-                }
-            case .failure(let error):
-                completion?(.failure(APIError.custom(error.localizedDescription)))
+                case .success(let data):
+                    if let items = data["items"] as? [[String: Any]] {
+                        let statistic = items.map { StatisticRequest(dictionary: $0)}
+                        completion?(.success(statistic))
+                    } else {
+                        completion?(.failure(APIError.json))
+                    }
+                case .failure(let error):
+                    completion?(.failure(APIError.custom(error.localizedDescription)))
             }
         }
     }
@@ -90,15 +90,15 @@ class NetWorkLayer {
         parameter?["part"] = "snippet,statistics"
         ManagerAPI.shared.requestAPI(url: url, params: parameter, method: .get, header: nil) { (result) in
             switch result {
-            case .success(let data):
-                if let items = data["items"] as? [[String: Any]] {
-                    let videos = items.map { Video(dictionary: $0) }
-                    completion?(.success(videos))
-                } else {
-                    completion?(.failure(APIError.json))
-                }
-            case .failure(let error):
-                completion?(.failure(APIError.custom(error.localizedDescription)))
+                case .success(let data):
+                    if let items = data["items"] as? [[String: Any]] {
+                        let videos = items.map { Video(dictionary: $0) }
+                        completion?(.success(videos))
+                    } else {
+                        completion?(.failure(APIError.json))
+                    }
+                case .failure(let error):
+                    completion?(.failure(APIError.custom(error.localizedDescription)))
             }
         }
     }

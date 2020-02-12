@@ -623,9 +623,9 @@ This application makes use of the following third party libraries:
 
 Copyright 2019 Google
 
-## YoutubePlayerView
+## YoutubeKit
 
-Copyright (c) 2018 Mukesh Yadav <mails4ymukesh@gmail.com>
+Copyright (c) 2017 rinov <rinov@rinov.jp>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

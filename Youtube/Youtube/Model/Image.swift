@@ -3,14 +3,15 @@ import Foundation
 
 typealias JSON = [String:Any]
 
-class Image {
+class Image : Codable {
     var urlImage = ""
+
     init(dictionary: [String: Any]) {
         self.urlImage = dictionary["url"] as? String ?? ""
     }
 }
 
-class ImageSize {
+class ImageSize : Codable {
     var imageSizeDefault : Image?
     var imageSizeMedium : Image?
     var imageSizehigh : Image?

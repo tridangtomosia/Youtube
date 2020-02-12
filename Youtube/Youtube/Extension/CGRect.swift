@@ -1,10 +1,3 @@
-//
-//  CGRect.swift
-//  Youtube
-//
-//  Created by apple on 2/10/20.
-//  Copyright © 2020 apple. All rights reserved.
-//
 
 import UIKit
 

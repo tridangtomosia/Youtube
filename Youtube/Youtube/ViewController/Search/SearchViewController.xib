@@ -42,7 +42,7 @@
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="byc-7Y-Too" secondAttribute="height" id="4kk-d6-G6C"/>
                             </constraints>
-                            <state key="normal" title="Button" image="ico_left"/>
+                            <state key="normal" title="Button" image="back"/>
                             <connections>
                                 <action selector="didTapCloseWithSender:" destination="-1" eventType="touchUpInside" id="9pv-Rw-B9z"/>
                             </connections>
@@ -83,7 +83,7 @@
         </view>
     </objects>
     <resources>
-        <image name="ico_left" width="30" height="30"/>
+        <image name="back" width="25" height="25"/>
         <image name="ico_search" width="25" height="25"/>
     </resources>
 </document>

@@ -1,7 +1,7 @@
 
 import Foundation
 
-class Snippet {
+class Snippet: Codable {
     var title = ""
     var nameChannel = ""
     var imageSize: ImageSize?

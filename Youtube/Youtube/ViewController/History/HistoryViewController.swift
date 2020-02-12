@@ -1,5 +1,6 @@
 
 import UIKit
+import GoogleSignIn
 
 class HistoryViewController: BaseViewController {
 
@@ -13,6 +14,7 @@ class HistoryViewController: BaseViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    var listVideos : [Video] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,21 +28,32 @@ class HistoryViewController: BaseViewController {
         headerView.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
+        tableView.register(UINib(nibName: "VideoTableViewCell", bundle: nil), forCellReuseIdentifier: "VideoTableViewCell")
+        listVideos = History.shared.getVideos()
+//        UserDefaults.standard.removeObject(forKey: UserID.shared.userId())
     }
 }
 
 extension HistoryViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let videoViewController = VideoViewController()
+        videoViewController.modalPresentationStyle = .fullScreen
+        videoViewController.video = listVideos[indexPath.row]
+        present(videoViewController, animated: true)
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 130.scale
+    }
 }
 
 extension HistoryViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+        return listVideos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as? TableViewCell {
+        if let cell = self.tableView.dequeueReusableCell(withIdentifier: "VideoTableViewCell") as? VideoTableViewCell {
+            cell.setLocal(withVideo: listVideos[indexPath.row])
             return cell
         }
         return TableViewCell()

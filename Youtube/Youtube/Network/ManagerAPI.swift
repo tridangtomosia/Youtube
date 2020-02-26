@@ -1,5 +1,6 @@
 
 import UIKit
+import SVProgressHUD
 
 enum Method: String {
     case get
@@ -15,7 +16,7 @@ enum APIError: Error {
     
     var localizedDescription: String {
         switch self {
-        case .json: return "JSON format has error"
+        case .json: return "No data"
         case .network: return "The network connection was lost"
         case .custom(let message): return message
         }
@@ -36,14 +37,18 @@ class ManagerAPI {
     static var shared = ManagerAPI()
     var dequeue = DispatchQueue(label: "API", qos: .background)
     
-    func requestAPI(url: String, params: [String: String]?, method : Method , header: [String: String]?, completion: @escaping (APIResult) -> ()) {
+    func requestAPI(url: String, params: [String: String]?, method : Method , header: [String: String]?,
+                    completion: @escaping (APIResult) -> ()) {
         var urlQuery = ""
+        
         if method == .get, let params = params {
             urlQuery = "?" + params.urlQuery()
         }
+        
         guard let url = URL(string: (url + urlQuery)) else { return }
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method.rawValue.uppercased()
+        
         if var header = header {
             header["Content-Type"] = "application/json"
             urlRequest.allHTTPHeaderFields = header
@@ -54,9 +59,11 @@ class ManagerAPI {
         if let params = params, method != .get {
             urlRequest.httpBody = try? JSONEncoder().encode(params)
         }
-
+        
         let task = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
-            if let data = data, let dictionnary = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] {
+            if let data = data, let dictionnary =
+                try? JSONSerialization.jsonObject(with: data,
+                                                  options: .allowFragments) as? JSON {
                 DispatchQueue.main.async {
                     completion(APIResult.success(dictionnary))
                 }

@@ -1,4 +1,4 @@
-module YoutubeKit {
+framework module YoutubeKit {
   umbrella header "YoutubeKit-umbrella.h"
 
   export *

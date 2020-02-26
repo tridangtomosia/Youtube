@@ -4,13 +4,8 @@ import Foundation
 class Statistic : Codable {
     var view = ""
     var like = ""
-    var love = ""
     
-    static var supportsSecureCoding: Bool {
-        return false
-    }
-    
-    init(dictionary: [String: Any]) {
+    init(dictionary: JSON) {
         self.view = dictionary["viewCount"] as? String ?? ""
         self.like = dictionary["likeCount"] as? String ?? ""
     }
@@ -19,8 +14,8 @@ class Statistic : Codable {
 class StatisticRequest {
     var statistic: Statistic?
     
-    init(dictionary: [String: Any]) {
-        if let statisticDic = dictionary["statistics"] as? [String: Any] {
+    init(dictionary: JSON) {
+        if let statisticDic = dictionary["statistics"] as? JSON {
             self.statistic = Statistic(dictionary: statisticDic)
         }
     }

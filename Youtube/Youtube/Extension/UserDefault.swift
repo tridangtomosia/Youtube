@@ -2,7 +2,6 @@
 import Foundation
 
 extension UserDefaults {
-    
     static func getIsLogin() -> Bool {
         return UserDefaults.standard.bool(forKey: "isLogin")
     }

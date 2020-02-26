@@ -3,140 +3,274 @@ import UIKit
 import YoutubeKit
 import GoogleSignIn
 
-public struct Configuration {
-    static let heightForCell: CGFloat = 120
-}
-
 class VideoViewController: BaseViewController {
-    
+    @IBOutlet weak var titleView: UIView!
     @IBOutlet weak var playView : UIView!
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var videoTableView: UITableView!
     @IBOutlet weak var nameChanelLabel: UILabel!
     @IBOutlet weak var viewCountLabel: UILabel!
     @IBOutlet weak var nameVideoLabel: UILabel!
     @IBOutlet weak var avatarImageView: UIImageView!
-    
-    var video: Video?
-    var network = NetWorkLayer()
-    var listVideos: [Video] = []
-    var listStatistics: [StatisticRequest] = []
+    @IBOutlet weak var hiddenView: UIView!
+    @IBOutlet weak var miniView: UIView!
+
     private var player : YTSwiftyPlayer!
-//    var nextVideo : ((Video)->())?
+    var videos: [Video] = []
+    var statistics: [StatisticRequest] = []
+    var comments: [Comment] = []
+    let dispatchGroup = DispatchGroup()
+    var network = NetworkLayer()
+    var video: Video?
+    var height = CGPoint(x: 0, y: 0)
+    var isComplete = false
+    var beganPoint: CGPoint = .zero
+    var lastPoint: CGPoint = .zero
+    
+    var minTransatonY: CGFloat {
+        return (AppDelegate.shared?.window?.bounds.height ?? 0 ) * 0.8
+    }
+    
+    var mainBounds: CGRect {
+        return AppDelegate.shared?.window?.bounds ?? .zero
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        playView.addSubview(player)
+        player.swapConstrain(equalToView: playView)
+        avatarImageView.boundView(cornerRadius: avatarImageView.bounds.halfHeight,
+                                  borderWidth: 0.5,
+                                  borderColor: UIColor.rgb(red: 51, green: 51, blue: 51).cgColor,
+                                  maskToBound: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(UINib(nibName: "VideoTableViewCell", bundle: nil),
-                           forCellReuseIdentifier: "VideoTableViewCell")
-        setLocal(withVideo: video)
+        videoTableView.delegate = self
+        videoTableView.dataSource = self
+        videoTableView.register(UINib(nibName: "VideoTableViewCell", bundle: nil), forCellReuseIdentifier: "VideoTableViewCell")
+        videoTableView.register(UINib(nibName: "CommentTableViewCell", bundle: nil), forCellReuseIdentifier: "CommentTableViewCell")
+        player = YTSwiftyPlayer(playerVars: [.videoID(video?.identification ?? ""), .playsInline(true)])
+        player.loadPlayer()
         addDragGesturePlayView()
+        setLocal()
+        requestAPI()
     }
+    
+    func addSwipeGestureRecognizer() {
+         let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture(swipe:)))
+         swipeUp.direction = .up
+         playView.addGestureRecognizer(swipeUp)
+         let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture(swipe:)))
+         swipeDown.direction = .down
+         playView.addGestureRecognizer(swipeDown)
+     }
+     
+     @objc func handleGesture(swipe: UISwipeGestureRecognizer) {
+         if swipe.direction == .up {
+             view.superview?.frame = AppDelegate.shared?.window?.frame ?? CGRect()
+             player.removeFromSuperview()
+             player.frame = playView.bounds
+             playView.addSubview(player)
+             videoTableView.alpha = 1
+             titleView.alpha = 1
+             let gestures = playView.gestureRecognizers
+             for gesture in gestures ?? [] {
+                 playView.removeGestureRecognizer(gesture)
+             }
+             addDragGesturePlayView()
+         }
+         if swipe.direction == .down {
+             dismiss(animated: true)
+         }
+     }
     
     func addDragGesturePlayView() {
         let gesture = UIPanGestureRecognizer(target: self, action: #selector(dragPlayView(gesture:)))
         playView.addGestureRecognizer(gesture)
+        
     }
     
     @objc func dragPlayView(gesture: UIPanGestureRecognizer) {
-        dismiss(animated: true)
-    }
-
-    func setLocal(withVideo video: Video?) {
-        guard let video = video else { return }
-        var id = ""
-        if video.id == "" {
-            id = video.videoId?.id ?? ""
-        } else {
-            id = video.id
+        let location = gesture.location(in: AppDelegate.shared?.window!)
+        
+        switch gesture.state {
+        case .began:
+            print("Began")
+            beganPoint = location
+        case .changed:
+            if lastPoint.y < location.y {
+                if location.y > minTransatonY {
+                    UIView.animate(withDuration: 0.5) {
+                        self.view.superview?.frame = CGRect(x: 100,
+                                                            y: self.mainBounds.height - 250,
+                                                            width: self.mainBounds.width - 100,
+                                                            height: 150)
+                        self.player.frame = self.view.bounds
+                    }
+                    addSwipeGestureRecognizer()
+                } else {
+                    let distance = location.y - beganPoint.y
+                    view.superview?.frame.origin.y = distance
+                    view.superview?.frame.size.height = mainBounds.height - distance
+                    self.titleView.alpha = 1 - location.y/300
+                    self.videoTableView.alpha = 1 - location.y/300
+                }
+            } else {
+                let distance = location.y - beganPoint.y
+                view.superview?.frame.origin.y = distance
+                view.superview?.frame.size.height = mainBounds.height + distance
+                self.titleView.alpha = 1 - location.y/300
+                self.videoTableView.alpha = 1 - location.y/300
+            }
+        case .ended:
+            if location.y > mainBounds.halfHeight {
+                UIView.animate(withDuration: 0.5) {
+                    self.view.superview?.frame = CGRect(x: 100,
+                                                        y: self.mainBounds.height - 250,
+                                                        width: self.mainBounds.width - 100,
+                                                        height: 150)
+                    self.player.frame = self.view.bounds
+                }
+            } else {
+                UIView.animate(withDuration: 0.3) {
+                    self.view.superview?.frame = self.mainBounds
+                    self.videoTableView.alpha = 1
+                    self.titleView.alpha = 1
+                }
+            }
+        default:
+            print("Default")
         }
-        if History.shared.getId(withId: id) == UserID.shared.userId() {
-            nameVideoLabel.textColor = .yellow
-        } else {
-            nameVideoLabel.textColor = .black
-        }
-        player = YTSwiftyPlayer(playerVars: [.videoID(id), .playsInline(true)])
-        playView.addSubview(player)
-        NSLayoutConstraint.activate([
-            player.topAnchor.constraint(equalTo: playView.topAnchor), player.bottomAnchor.constraint(equalTo: playView.bottomAnchor), player.leftAnchor.constraint(equalTo: playView.leftAnchor), player.rightAnchor.constraint(equalTo: playView.rightAnchor)])
-        player.autoplay = true
-        player.loadPlayer()
-        avatarImageView.load(url: video.snippet?.imageSizeMedium ?? "")
-        avatarImageView.boundView(cornerRadius: avatarImageView.bounds.halfHeight, borderWidth: 0.5, borderColor: UIColor.rgb(red: 51, green: 51, blue: 51).cgColor, maskToBound: true)
-        viewCountLabel.text = "View :" + (video.statistic?.view ?? "")
-        nameVideoLabel.text = video.snippet?.title
-        nameChanelLabel.text = video.snippet?.nameChannel
-        getVideo(withNameChanel: video.snippet?.nameChannel ?? "")
+        lastPoint = location
     }
     
-    func getVideo(withNameChanel name:String) {
-        network.searchVideos(params: ["id": name], withNumberOfFind: 10) { [weak self] (results) in
+    func setLocal() {
+        guard let video = video else { return }
+        player.loadVideo(videoID: video.identification)
+        player.autoplay = true
+        avatarImageView.loadImageUrl(withUrl: video.imageMedium)
+        viewCountLabel.text = video.viewCount.abridgedNumber()
+        nameVideoLabel.text = video.nameVideo
+        nameChanelLabel.text = video.nameChanel
+    }
+    
+    func requestAPI() {
+        guard let video = video else { return }
+        if video.nameChanel == "" {
+            getVideo(withNameChanel: video.nameVideo, group: dispatchGroup)
+        } else {
+            getVideo(withNameChanel: video.nameChanel, group: dispatchGroup)
+        }
+        getComments(withId: video.identification, group: dispatchGroup)
+        dispatchGroup.notify(queue: .main) {
+            self.videoTableView.reloadData()
+        }
+    }
+    
+    func getVideo(withNameChanel text: String?, group: DispatchGroup?) {
+        group?.enter()
+        self.showLoading()
+        network.searchVideos(params: ["q": text ?? ""], withNumberOfFind: 10) { [weak self] (results) in
             guard let self = self else { return }
             switch results {
-                case .success(let videos):
-                    self.listVideos = videos
-                    let ids = videos.map { $0.videoId?.id ?? "" }
-                    let idString = ids.comportId()
-                    self.getStatistics(identification: idString)
-                case .failure(let error):
-                    self.alert(withTitle: "Error", withMessage: error.localizedDescription)
+            case .success(let videos):
+                self.videos = videos
+                self.getStatisics(videos: self.videos, group: group)
+            case .failure(let error):
+                self.alert(withTitle: "Error", withMessage: error.localizedDescription)
             }
+            group?.leave()
         }
     }
     
-    func getStatistics(identification: String) {
-        self.network.getStatistic(params: nil, id: identification) { [weak self] (staticResults) in
+    func getStatisics(videos: [Video], group: DispatchGroup?) {
+        group?.enter()
+        let arrayId = videos.map { $0.identification }
+        let stringId = arrayId.comportId()
+        self.network.getStatistic(params: nil, id: stringId) { [weak self] (statisticResults) in
             guard let self = self else { return }
-            switch staticResults {
-                case .success(let statistics):
-                    self.listStatistics = statistics
-                    self.tableView.reloadData()
-                case .failure(let error):
-                    self.alert(withTitle: "Error",
+            self.hideLoading()
+            switch statisticResults {
+            case .success(let statistic):
+                zip(self.videos, statistic).forEach { $0.0.statistic = $0.1.statistic }
+            case .failure(let error):
+                self.alert(withTitle: "Error",
                            withMessage: error.localizedDescription)
             }
+            group?.leave()
         }
     }
     
+    func getComments(withId id: String, group: DispatchGroup?) {
+        group?.enter()
+        self.showLoading()
+        self.network.getComment(params: ["videoId": id]) { [weak self] (results) in
+            guard let self = self else { return }
+            self.hideLoading()
+            switch results {
+            case .success(let comments):
+                self.comments = comments
+            case .failure(let error):
+                self.alert(withTitle: "warring", withMessage: error.localizedDescription)
+            }
+            group?.leave()
+        }
+    }
 }
 
 extension VideoViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return Configuration.heightForCell
+        if indexPath.section == 0 {
+            return Configuration.heightForCell
+        } else {
+            return UITableView.automaticDimension
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var id = ""
-        if listVideos[indexPath.row].id == "" {
-            id = listVideos[indexPath.row].videoId?.id ?? ""
-        } else {
-            id = listVideos[indexPath.row].id
+        if indexPath.section == 0 {
+            tableView.deselectRow(at: indexPath, animated: true)
+            HistoryManager.shared.saveHistory(withID: videos[indexPath.row].identification,
+                                              withModel: videos[indexPath.row])
+            self.player.autoplay = false
+            self.player.stopVideo()
+            self.video = videos[indexPath.item]
+            setLocal()
         }
-        History.shared.saveId(withId: id)
-        let time = Date()
-        History.shared.saveModel(withModel: listVideos[indexPath.row], with: time.converseDatetoString())
-        self.player.autoplay = false
-        self.player.stopVideo()
-        setLocal(withVideo: listVideos[indexPath.row])
     }
 }
 
 extension VideoViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listVideos.count
+        if section == 0 {
+            return videos.count
+        } else {
+            return comments.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = self.tableView.dequeueReusableCell(withIdentifier: "VideoTableViewCell") as? VideoTableViewCell {
-            listVideos[indexPath.row].statistic = listStatistics[indexPath.row].statistic
-            cell.setLocal(withVideo: listVideos[indexPath.row])
-//            UserDefaults.standard.removeObject(forKey: listVideos[indexPath.row].id)
-//            UserDefaults.standard.removeObject(forKey: listVideos[indexPath.row].videoId?.id ?? "")
-            return cell
+        if indexPath.section == 0 {
+            if let cell = self.videoTableView.dequeueReusableCell(withIdentifier: "VideoTableViewCell")
+                as? VideoTableViewCell {
+                cell.setLocal(withVideo: videos[indexPath.row])
+                return cell
+            }
+        } else {
+            if let cell = self.videoTableView.dequeueReusableCell(withIdentifier: "CommentTableViewCell")
+                as? CommentTableViewCell{
+                cell.setLocal(withComment: comments[indexPath.row])
+                return cell
+            }
         }
-        return VideoTableViewCell()
+        return UITableViewCell()
     }
-    
-    
 }
 

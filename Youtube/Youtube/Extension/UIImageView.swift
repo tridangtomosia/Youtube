@@ -1,11 +1,9 @@
 
 import UIKit
+import moa
 
 extension UIImageView {
-    func load(url: String) {
-        LoadImage.shared.downLoad(urlString: url) { [weak self] (image) in
-            guard let self = self else { return }
-            self.image = image
-        }
+    func loadImageUrl(withUrl url: String) {
+        self.moa.url = url
     }
 }

@@ -1,4 +1,4 @@
-module Pods_Youtube {
+framework module Pods_Youtube {
   umbrella header "Pods-Youtube-umbrella.h"
 
   export *

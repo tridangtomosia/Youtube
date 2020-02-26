@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "061AEBDE957EC6584860213B1BEB14B3"
-               BuildableName = "libYoutubeKit.a"
+               BuildableName = "YoutubeKit.framework"
                BlueprintName = "YoutubeKit"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

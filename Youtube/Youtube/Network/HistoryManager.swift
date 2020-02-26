@@ -2,55 +2,80 @@
 import Foundation
 import GoogleSignIn
 
-class History {
-    static var shared = History()
+class HistoryManager {
+    static var shared = HistoryManager()
     var quere = DispatchQueue(label: "History", qos: .unspecified)
     
-    func saveModel(withModel model: Video, with time: String) {
-        if let _ = UserDefaults.standard.data(forKey: UserID.shared.userId()) {
-            model.time = time
+    func saveModel(withModel model: Video, with time: TimeInterval) {
+        if let _ = UserDefaults.standard.data(forKey: UserID.shared.id) {
             var newHistories = getVideos()
-            for i in 0..<newHistories.count {
-                if newHistories[i].id == model.id && newHistories[i].videoId?.id == model.videoId?.id {
-                    newHistories[i].time = time
+            for history in newHistories where history.identification == model.identification {
+                history.time = time
+                if let data = try? PropertyListEncoder().encode(newHistories) {
+                    let archive = try? NSKeyedArchiver.archivedData(withRootObject: data,
+                                                                    requiringSecureCoding: false)
+                    UserDefaults.standard.set(archive, forKey: UserID.shared.id)
                 }
+                return
             }
-            newHistories = getVideos() + [model]
+            
+            newHistories += [model]
             if let data = try? PropertyListEncoder().encode(newHistories) {
                 let archive = try? NSKeyedArchiver.archivedData(withRootObject: data,
                                                                 requiringSecureCoding: false)
-                UserDefaults.standard.set(archive, forKey: UserID.shared.userId())
+                UserDefaults.standard.set(archive, forKey: UserID.shared.id)
             }
         } else {
             model.time = time
             if let data = try? PropertyListEncoder().encode([model]) {
                 let archive = try? NSKeyedArchiver.archivedData(withRootObject: data,
                                                                 requiringSecureCoding: false)
-                UserDefaults.standard.set(archive, forKey: UserID.shared.userId())
+                UserDefaults.standard.set(archive, forKey: UserID.shared.id)
             }
         }
         UserDefaults.standard.synchronize()
-        
     }
     
     func getVideos() -> [Video] {
-        if let data = UserDefaults.standard.data(forKey: UserID.shared.userId()) {
+        if let data = UserDefaults.standard.data(forKey: UserID.shared.id) {
             if let unarchive = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? Data {
                 let histories = try? PropertyListDecoder().decode([Video].self, from: unarchive)
-                
                 return histories ?? []
             }
-            return []
         }
         return []
     }
     
     func saveId(withId id: String) {
-        UserDefaults.standard.set(UserID.shared.userId(), forKey: id)
+        if let dic = UserDefaults.standard.dictionary(forKey: UserID.shared.id + "last view")
+            as? [String: Bool] {
+            var addDic = dic
+            addDic[id] = true
+            UserDefaults.standard.set(addDic, forKey: UserID.shared.id + "last view")
+            return
+        }
+        UserDefaults.standard.set([id: true], forKey: UserID.shared.id + "last view")
     }
     
-    func getId(withId id:String)-> String {
-        return UserDefaults.standard.string(forKey: id) ?? ""
+    func getId(withId id:String)-> Bool {
+        if let dic = UserDefaults.standard.dictionary(forKey: UserID.shared.id + "last view")
+            as? [String: Bool] {
+            return dic[id] ?? false
+        }
+        return false
     }
     
+    func removeAll() {
+        UserDefaults.standard.removeObject(forKey: UserID.shared.id)
+        UserDefaults.standard.removeObject(forKey: UserID.shared.id + "last view")
+        UserDefaults.standard.synchronize()
+    }
+    
+    func saveHistory(withID id: String, withModel model: Video) {
+        let time = Date()
+        model.time =  time.timeIntervalSince1970
+        saveId(withId: id)
+        saveModel(withModel: model, with: time.timeIntervalSince1970)
+    }
 }
+

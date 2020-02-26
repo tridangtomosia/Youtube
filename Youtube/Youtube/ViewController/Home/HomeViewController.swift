@@ -1,30 +1,25 @@
 
 import UIKit
-import GoogleSignIn
 
 class HomeViewController: BaseViewController {
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var tableView: UITableView!
+    var videos: [Video] = []
+    let network = NetworkLayer()
     
-    lazy var headerView : HeaderView = {
-        guard let view = Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)?.first as? HeaderView else {
-            return HeaderView()
-        }
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    var listVideos: [Video] = []
-    let network = NetWorkLayer()
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self,selector: #selector(deleteHistory(_:)),
+                                               name: NSNotification.Name ("remove"), object: nil)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
+        let headerView = HeaderView.loadView()
+        headerView.translatesAutoresizingMaskIntoConstraints = false
         topView.addSubview(headerView)
-        NSLayoutConstraint.activate([
-            headerView.topAnchor.constraint(equalTo: topView.topAnchor),
-            headerView.bottomAnchor.constraint(equalTo: topView.bottomAnchor),
-            headerView.rightAnchor.constraint(equalTo: topView.rightAnchor),
-            headerView.leftAnchor.constraint(equalTo: topView.leftAnchor)])
+        headerView.swapConstrain(equalToView: topView)
         headerView.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
@@ -32,15 +27,23 @@ class HomeViewController: BaseViewController {
         getVideos()
     }
     
+    @objc func deleteHistory(_ notification: Notification) {
+        if notification.userInfo?["Yes"] as? Bool ?? false == true {
+            tableView.reloadData()
+        }
+    }
+    
     func getVideos() {
+        showLoading()
         network.getVideos(params: ["chart" : "mostpopular"]) { [weak self] (result) in
             guard let self = self else { return }
+            self.hideLoading()
             switch result {
-                case .success(let videos):
-                    self.listVideos = videos
-                    self.tableView.reloadData()
-                case .failure(let error):
-                    self.alert(withTitle: "Error", withMessage: error.localizedDescription)
+            case .success(let videos):
+                self.videos = videos
+                self.tableView.reloadData()
+            case .failure(let error):
+                self.alert(withTitle: "Error", withMessage: error.localizedDescription)
             }
         }
     }
@@ -48,53 +51,65 @@ class HomeViewController: BaseViewController {
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listVideos.count
+        return videos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as? TableViewCell {
-            cell.setLocal(withVideo: listVideos[indexPath.row])
-//            UserDefaults.standard.removeObject(forKey: listVideos[indexPath.row].id)
-//            UserDefaults.standard.removeObject(forKey: listVideos[indexPath.row].videoId?.id ?? "")
+        if let cell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell")
+            as? TableViewCell {
+            cell.delegate = self
+            cell.setLocal(withVideo: videos[indexPath.row])
+            cell.selectionStyle = UITableViewCell.SelectionStyle.blue
             return cell
         }
-        return TableViewCell()
+        return UITableViewCell()
     }
 }
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 330
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 330.scale
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let time = Date()
-        var id = ""
-        if listVideos[indexPath.row].id == "" {
-            id = listVideos[indexPath.row].videoId?.id ?? ""
-        } else {
-            id = listVideos[indexPath.row].id
-        }
-        History.shared.saveId(withId: id)
-        History.shared.saveModel(withModel: listVideos[indexPath.row], with: time.converseDatetoString() )
-        let videoViewController = VideoViewController()
-        videoViewController.modalPresentationStyle = .overFullScreen
-        videoViewController.video = self.listVideos[indexPath.row]
-        self.present(videoViewController, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
+        self.goToVideoView(playWithVideo: videos[indexPath.row])
+        tableView.reloadData()
     }
 }
 
 extension HomeViewController: HeaderViewDelegate {
     func headerViewDidSelecButton(view: HeaderView, action: SelectedAcction) {
         switch action {
-            case .search:
-                let searchViewController = SearchViewController()
-                searchViewController.modalPresentationStyle = .fullScreen
-                present(searchViewController, animated: true) { }
-            default:
-                let profileViewController = ProfileViewController()
-                profileViewController.modalPresentationStyle = .fullScreen
-                present(profileViewController, animated: true) { }
+        case .search:
+            let searchViewController = SearchViewController()
+            searchViewController.modalPresentationStyle = .overFullScreen
+            if self.presentedViewController != nil {
+                self.presentedViewController?.present(searchViewController, animated: true)
+            } else {
+                present(searchViewController, animated: true)
+            }
+            
+        default:
+            let profileViewController = ProfileViewController()
+            profileViewController.modalPresentationStyle = .overFullScreen
+            if self.presentedViewController != nil {
+                self.presentedViewController?.present(profileViewController, animated: true)
+            } else {
+                present(profileViewController, animated: true)
+            }
         }
+    }
+}
+
+extension HomeViewController: tableViewCellDelegate {
+    func didTapAvatarTableViewCell(view: TableViewCell, withTapAtChanel chanel: String) {
+        let searchViewController = SearchViewController()
+        searchViewController.requestAPI(textSearch: chanel)
+        navigationController?.pushViewController(searchViewController, animated: true)
     }
 }

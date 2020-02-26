@@ -17,7 +17,15 @@ class User {
 class UserID {
     static var shared = UserID()
     
-    func userId() -> String {
-       return GIDSignIn.sharedInstance()?.currentUser.userID ?? ""
+    var id : String {
+       return GIDSignIn.sharedInstance()?.currentUser?.userID ?? ""
+    }
+    
+    var name: String {
+        return GIDSignIn.sharedInstance()?.currentUser.profile.name ?? ""
+    }
+    
+    var email: String {
+        return GIDSignIn.sharedInstance()?.currentUser.profile.email ?? ""
     }
 }

@@ -6,3 +6,4 @@ extension Array where Element == String {
         return self.joined(separator: ",")
     }
 }
+

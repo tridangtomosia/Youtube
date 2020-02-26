@@ -6,20 +6,10 @@ class Snippet: Codable {
     var nameChannel = ""
     var imageSize: ImageSize?
     
-    var imageSizeDefault : String {
-        return imageSize?.imageSizeDefault?.urlImage ?? ""
-    }
-    var imageSizeMedium : String {
-        return imageSize?.imageSizeMedium?.urlImage ?? ""
-    }
-    var imageSizeHigh : String {
-        return imageSize?.imageSizehigh?.urlImage ?? ""
-    }
-    
-    init(dictionary: [String: Any]) {
+    init(dictionary: JSON) {
         self.title = dictionary["title"] as? String ?? ""
         self.nameChannel = dictionary["channelTitle"] as? String ?? ""
-        if let highImageDic = dictionary["thumbnails"] as? [String: Any] {
+        if let highImageDic = dictionary["thumbnails"] as? JSON {
             self.imageSize = ImageSize(dictionary: highImageDic)
         }
     }

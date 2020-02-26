@@ -2,7 +2,7 @@
 # platform :ios, '9.0'
 
 target 'Youtube' do
-	
+	use_frameworks!
   pod 'GoogleSignIn', '~> 5.0'
 
 #  pod 'YouTubePlayer', '~> 0.4'
@@ -13,4 +13,7 @@ target 'Youtube' do
 
    pod 'YoutubeKit'
 
+   pod 'SVProgressHUD'
+
+   pod 'moa', '~> 12.0'
 end

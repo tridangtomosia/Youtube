@@ -1,46 +1,54 @@
 
 import UIKit
-import GoogleSignIn
 
 class HistoryViewController: BaseViewController {
-
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var topView: UIView!
-
-    lazy var headerView : HeaderView = {
-        guard let view = Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)?.first as? HeaderView else {
-            return HeaderView()
-        }
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    var listVideos : [Video] = []
-
+    var videos : [Video] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let headerView = HeaderView.loadView()
+        headerView.translatesAutoresizingMaskIntoConstraints = false
         navigationController?.navigationBar.isHidden = true
         topView.addSubview(headerView)
-        NSLayoutConstraint.activate([
-            headerView.topAnchor.constraint(equalTo: topView.topAnchor),
-            headerView.bottomAnchor.constraint(equalTo: topView.bottomAnchor),
-            headerView.rightAnchor.constraint(equalTo: topView.rightAnchor),
-            headerView.leftAnchor.constraint(equalTo: topView.leftAnchor)])
+        headerView.swapConstrain(equalToView: topView)
         headerView.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "VideoTableViewCell", bundle: nil), forCellReuseIdentifier: "VideoTableViewCell")
-        listVideos = History.shared.getVideos()
-//        UserDefaults.standard.removeObject(forKey: UserID.shared.userId())
+        NotificationCenter.default.addObserver(self,selector: #selector(deleteHistory(_:)),
+                                               name: NSNotification.Name ("remove"), object: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let list = HistoryManager.shared.getVideos()
+        videos = list.sorted { (first, second) -> Bool in
+            first.time > second.time
+        }
+        tableView.reloadData()
+    }
+    
+    @objc func deleteHistory(_ notification: Notification) {
+        if notification.userInfo?["Yes"] as? Bool ?? false == true {
+            HistoryManager.shared.removeAll()
+            videos = HistoryManager.shared.getVideos()
+            tableView.reloadData()
+        }
+    }
+    
+    deinit {
+        NotificationCenter.default
+            .removeObserver(self, name:  NSNotification.Name("remove"), object: nil)
     }
 }
 
 extension HistoryViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let videoViewController = VideoViewController()
-        videoViewController.modalPresentationStyle = .fullScreen
-        videoViewController.video = listVideos[indexPath.row]
-        present(videoViewController, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
+        self.goToVideoView(playWithVideo: videos[indexPath.row])
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 130.scale
     }
@@ -48,30 +56,38 @@ extension HistoryViewController: UITableViewDelegate {
 
 extension HistoryViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listVideos.count
+        return videos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = self.tableView.dequeueReusableCell(withIdentifier: "VideoTableViewCell") as? VideoTableViewCell {
-            cell.setLocal(withVideo: listVideos[indexPath.row])
+        if let cell = self.tableView.dequeueReusableCell(withIdentifier: "VideoTableViewCell")
+            as? VideoTableViewCell {
+            cell.setLocal(withVideo: videos[indexPath.row])
             return cell
         }
-        return TableViewCell()
+        return UITableViewCell()
     }
 }
 
 extension HistoryViewController: HeaderViewDelegate {
     func headerViewDidSelecButton(view: HeaderView, action: SelectedAcction) {
         switch action {
-            case .search:
-                let searchViewController = SearchViewController()
-                searchViewController.modalPresentationStyle = .fullScreen
-                present(searchViewController, animated: true) { }
-            default:
-                let profileViewController = ProfileViewController()
-                profileViewController.modalPresentationStyle = .fullScreen
-                present(profileViewController, animated: true) {
-                }
+        case .search:
+            let searchViewController = SearchViewController()
+            searchViewController.modalPresentationStyle = .overFullScreen
+            if self.presentedViewController != nil {
+                self.presentedViewController?.present(searchViewController, animated: true)
+            } else {
+                present(searchViewController, animated: true)
+            }
+        default:
+            let profileViewController = ProfileViewController()
+            profileViewController.modalPresentationStyle = .overFullScreen
+            if self.presentedViewController != nil {
+                self.presentedViewController?.present(profileViewController, animated: true)
+            } else {
+                present(profileViewController, animated: true)
+            }
         }
     }
 }

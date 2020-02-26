@@ -35,7 +35,7 @@
 		1860463923E90B1C00285A86 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860463823E90B1C00285A86 /* Video.swift */; };
 		18690C8923EFAA4C004CCC9F /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18690C8823EFAA4C004CCC9F /* Array.swift */; };
 		1876B18724038E060070DD88 /* CommentSnippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876B18624038E060070DD88 /* CommentSnippet.swift */; };
-		1876B18924038E390070DD88 /* TopComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876B18824038E390070DD88 /* TopComment.swift */; };
+		1876B18924038E390070DD88 /* SnippetComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876B18824038E390070DD88 /* SnippetComment.swift */; };
 		1876B18B24038E610070DD88 /* CommentVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876B18A24038E610070DD88 /* CommentVariable.swift */; };
 		18A46D3223EE8C690001A990 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A46D3123EE8C690001A990 /* UIImageView.swift */; };
 		18A46D3523EE906E0001A990 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A46D3323EE906E0001A990 /* VideoViewController.swift */; };
@@ -91,7 +91,7 @@
 		1860463823E90B1C00285A86 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		18690C8823EFAA4C004CCC9F /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		1876B18624038E060070DD88 /* CommentSnippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentSnippet.swift; sourceTree = "<group>"; };
-		1876B18824038E390070DD88 /* TopComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopComment.swift; sourceTree = "<group>"; };
+		1876B18824038E390070DD88 /* SnippetComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetComment.swift; sourceTree = "<group>"; };
 		1876B18A24038E610070DD88 /* CommentVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentVariable.swift; sourceTree = "<group>"; };
 		18A46D3123EE8C690001A990 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		18A46D3323EE906E0001A990 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
@@ -208,7 +208,7 @@
 				18BA424323ED235E0088E0C1 /* Snippet.swift */,
 				18549CA423FA3AAA00480710 /* Comment.swift */,
 				1876B18624038E060070DD88 /* CommentSnippet.swift */,
-				1876B18824038E390070DD88 /* TopComment.swift */,
+				1876B18824038E390070DD88 /* SnippetComment.swift */,
 				1876B18A24038E610070DD88 /* CommentVariable.swift */,
 			);
 			path = Model;
@@ -503,7 +503,7 @@
 				1860462C23E80E7A00285A86 /* TableViewCell.swift in Sources */,
 				18BA423E23ED228D0088E0C1 /* Image.swift in Sources */,
 				18BA424023ED22C20088E0C1 /* User.swift in Sources */,
-				1876B18924038E390070DD88 /* TopComment.swift in Sources */,
+				1876B18924038E390070DD88 /* SnippetComment.swift in Sources */,
 				18BA424423ED235E0088E0C1 /* Snippet.swift in Sources */,
 				18690C8923EFAA4C004CCC9F /* Array.swift in Sources */,
 				185A662E23F50CB20029BD49 /* String.swift in Sources */,

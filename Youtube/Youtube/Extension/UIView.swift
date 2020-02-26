@@ -36,20 +36,20 @@ extension UIView {
         self.layer.masksToBounds = maskToBound
     }
     
-    func gradientStyle(withStyle: GradientStyle, firstColor: UIColor, endColor: UIColor) {
+    func gradientStyle(withStyle: GradientStyle, firstColor: UIColor, lastColor: UIColor) {
         switch withStyle {
         case .diagonalTop:
             gradientLayer(starPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 1, y: 1),
-                          locations: [0,1], colors: [firstColor.cgColor, endColor.cgColor])
+                          locations: [0,1], colors: [firstColor.cgColor, lastColor.cgColor])
         case .diagonalBot:
             gradientLayer(starPoint: CGPoint(x: 0, y: 1), endPoint: CGPoint(x: 1, y: 0),
-                          locations: [0,1], colors: [firstColor.cgColor, endColor.cgColor])
+                          locations: [0,1], colors: [firstColor.cgColor, lastColor.cgColor])
         case .horizontal:
             gradientLayer(starPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 1, y: 0),
-                          locations: [0,1], colors: [firstColor.cgColor, endColor.cgColor])
+                          locations: [0,1], colors: [firstColor.cgColor, lastColor.cgColor])
         case .vertical:
             gradientLayer(starPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 0, y: 1),
-                          locations: [0,1], colors: [firstColor.cgColor, endColor.cgColor])
+                          locations: [0,1], colors: [firstColor.cgColor, lastColor.cgColor])
         }
     }
     
@@ -68,22 +68,14 @@ extension UIView {
         self.layer.insertSublayer(gradient, at: 0)
     }
     
-    func swapConstrain(equalToView view: UIView) {
+    func constraintLayout(equalToView view: UIView) {
         NSLayoutConstraint.activate([
             self.topAnchor.constraint(equalTo: view.topAnchor),
             self.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             self.rightAnchor.constraint(equalTo: view.rightAnchor),
             self.leftAnchor.constraint(equalTo: view.leftAnchor),
-                                    self.widthAnchor.constraint(equalToConstant: view.bounds.width),
-                                    self.heightAnchor.constraint(equalToConstant: view.bounds.height)])
-    }
-    
-    func deSwapConstrain(fromView view: UIView) {
-        NSLayoutConstraint.deactivate([
-            self.topAnchor.constraint(equalTo: view.topAnchor),
-            self.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            self.rightAnchor.constraint(equalTo: view.rightAnchor),
-            self.leftAnchor.constraint(equalTo: view.leftAnchor)])
+            self.widthAnchor.constraint(equalToConstant: view.bounds.width),
+            self.heightAnchor.constraint(equalToConstant: view.bounds.height)])
     }
     
     class func loadView<T: UIView>(fromNib viewType: T.Type) -> T {

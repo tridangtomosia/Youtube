@@ -2,31 +2,31 @@
 import Foundation
 
 class Comment {
-    var commentModel : TopComment?
+    var snippet : SnippetComment?
     
     init(dictionary: JSON) {
         if let dic = dictionary["snippet"] as? JSON {
-            self.commentModel = TopComment(dictionary: dic)
+            self.snippet = SnippetComment(dictionary: dic)
         }
     }
     
     var name : String {
-        return commentModel?.topComment?.commentSnippet?.name ?? ""
+        return snippet?.topLevelComment?.snippet?.authorDisplayName ?? ""
     }
     
     var avatar: String {
-        return commentModel?.topComment?.commentSnippet?.avatar ?? ""
+        return snippet?.topLevelComment?.snippet?.authorProfileImageUrl ?? ""
     }
     
     var comment : String {
-        return commentModel?.topComment?.commentSnippet?.comment ?? ""
+        return snippet?.topLevelComment?.snippet?.textDisplay ?? ""
     }
     
     var time : String {
-        return commentModel?.topComment?.commentSnippet?.time ?? ""
+        return snippet?.topLevelComment?.snippet?.updatedAt ?? ""
     }
     
     var likeCout : Int {
-        return commentModel?.topComment?.commentSnippet?.likeCout ?? 0
+        return snippet?.topLevelComment?.snippet?.likeCout ?? 0
     }
 }

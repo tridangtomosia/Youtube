@@ -12,7 +12,7 @@ class HistoryViewController: BaseViewController {
         headerView.translatesAutoresizingMaskIntoConstraints = false
         navigationController?.navigationBar.isHidden = true
         topView.addSubview(headerView)
-        headerView.swapConstrain(equalToView: topView)
+        headerView.constraintLayout(equalToView: topView)
         headerView.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
@@ -22,6 +22,7 @@ class HistoryViewController: BaseViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         let list = HistoryManager.shared.getVideos()
         videos = list.sorted { (first, second) -> Bool in
             first.time > second.time
@@ -46,7 +47,7 @@ class HistoryViewController: BaseViewController {
 extension HistoryViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        self.goToVideoView(playWithVideo: videos[indexPath.row])
+        self.goToPlayView(playWithVideo: videos[indexPath.row])
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

@@ -8,6 +8,7 @@ class HomeViewController: BaseViewController {
     let network = NetworkLayer()
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         NotificationCenter.default.addObserver(self,selector: #selector(deleteHistory(_:)),
                                                name: NSNotification.Name ("remove"), object: nil)
         
@@ -19,7 +20,7 @@ class HomeViewController: BaseViewController {
         let headerView = HeaderView.loadView()
         headerView.translatesAutoresizingMaskIntoConstraints = false
         topView.addSubview(headerView)
-        headerView.swapConstrain(equalToView: topView)
+        headerView.constraintLayout(equalToView: topView)
         headerView.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
@@ -77,8 +78,7 @@ extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        self.goToVideoView(playWithVideo: videos[indexPath.row])
-        tableView.reloadData()
+        goToPlayView(playWithVideo: videos[indexPath.row])
     }
 }
 

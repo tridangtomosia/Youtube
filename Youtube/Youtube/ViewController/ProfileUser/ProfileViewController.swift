@@ -14,9 +14,9 @@ class ProfileViewController: BaseViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        saveButton.gradientStyle(withStyle: .diagonalTop, firstColor: .gray, endColor: .white)
-        clearHistoryButton.gradientStyle(withStyle: .diagonalTop, firstColor: .gray, endColor: .white)
-        signOutButton.gradientStyle(withStyle: .diagonalTop, firstColor: .gray, endColor: .white)
+        saveButton.gradientStyle(withStyle: .diagonalTop, firstColor: .gray, lastColor: .white)
+        clearHistoryButton.gradientStyle(withStyle: .diagonalTop, firstColor: .gray, lastColor: .white)
+        signOutButton.gradientStyle(withStyle: .diagonalTop, firstColor: .gray, lastColor: .white)
     }
     
     override func viewDidLoad() {

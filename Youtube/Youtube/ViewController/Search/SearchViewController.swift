@@ -87,7 +87,7 @@ extension SearchViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        goToVideoView(playWithVideo: videos[indexPath.row])
+        goToPlayView(playWithVideo: videos[indexPath.row])
     }
 }
 

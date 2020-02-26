@@ -2,6 +2,7 @@ import UIKit
 import SVProgressHUD
 
 class BaseViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -13,14 +14,16 @@ class BaseViewController: UIViewController {
         present(alertViewController, animated: true)
     }
     
-    func goToVideoView(playWithVideo video: Video) {
-        dismiss(animated: true)
+    func goToPlayView(playWithVideo video: Video) {
         HistoryManager.shared.saveHistory(withID: video.identification,
                                           withModel: video)
-        let videoViewController = VideoViewController()
-        videoViewController.modalPresentationStyle = .overFullScreen
-        videoViewController.video = video
-        present(videoViewController, animated: true)
+        if presentedViewController != nil {
+            AppDelegate.shared?.videoViewController.playNewVideo?(video)
+        } else {
+            AppDelegate.shared?.videoViewController.video = video
+            AppDelegate.shared?.videoViewController.modalPresentationStyle = .overFullScreen
+            present(AppDelegate.shared?.videoViewController ?? UIViewController(), animated: true)
+        }
     }
     
     func showLoading() {

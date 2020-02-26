@@ -17,6 +17,7 @@ class TrendingViewController: BaseViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         NotificationCenter.default.addObserver(self,selector: #selector(deleteHistory(_:)),
                                                name: NSNotification.Name ("remove"), object: nil)
     }
@@ -27,7 +28,7 @@ class TrendingViewController: BaseViewController {
         headerView.translatesAutoresizingMaskIntoConstraints = false
         navigationController?.navigationBar.isHidden = true
         topView.addSubview(headerView)
-        headerView.swapConstrain(equalToView: topView)
+        headerView.constraintLayout(equalToView: topView)
         headerView.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
@@ -79,7 +80,7 @@ extension TrendingViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        self.goToVideoView(playWithVideo: videos[indexPath.row])
+        self.goToPlayView(playWithVideo: videos[indexPath.row])
         tableView.reloadData()
     }
 }

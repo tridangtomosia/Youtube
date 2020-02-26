@@ -2,17 +2,17 @@
 import Foundation
 
 class CommentVariable {
-    var name = ""
-    var avatar = ""
-    var comment = ""
-    var time = ""
+    var authorDisplayName = ""
+    var authorProfileImageUrl = ""
+    var textDisplay = ""
+    var updatedAt = ""
     var likeCout = 0
     
     init(dictionary: JSON) {
-        self.name = dictionary["authorDisplayName"] as? String ?? ""
-        self.avatar = dictionary["authorProfileImageUrl"] as? String ?? ""
-        self.comment = dictionary["textDisplay"] as? String ?? ""
-        self.time = dictionary["updatedAt"] as? String ?? ""
+        self.authorDisplayName = dictionary["authorDisplayName"] as? String ?? ""
+        self.authorProfileImageUrl = dictionary["authorProfileImageUrl"] as? String ?? ""
+        self.textDisplay = dictionary["textDisplay"] as? String ?? ""
+        self.updatedAt = dictionary["updatedAt"] as? String ?? ""
         self.likeCout = dictionary["likeCount"] as? Int ?? 0
     }
 }

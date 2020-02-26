@@ -7,11 +7,12 @@ class LoginViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        view.gradientStyle(withStyle: .diagonalTop, firstColor: .blue, endColor: .white)
+        view.gradientStyle(withStyle: .diagonalTop, firstColor: .blue, lastColor: .white)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        GIDSignIn.sharedInstance()?.presentingViewController.modalPresentationStyle = .fullScreen
         GIDSignIn.sharedInstance().presentingViewController = self
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
     }

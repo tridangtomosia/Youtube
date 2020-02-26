@@ -1,12 +1,12 @@
 
 import Foundation
 
-class TopComment {
-    var topComment : CommentSnippet?
+class SnippetComment {
+    var topLevelComment : CommentSnippet?
     
     init(dictionary: JSON) {
         if let dic = dictionary["topLevelComment"] as? JSON {
-            self.topComment = CommentSnippet(dictionary: dic)
+            self.topLevelComment = CommentSnippet(dictionary: dic)
         }
     }
 }

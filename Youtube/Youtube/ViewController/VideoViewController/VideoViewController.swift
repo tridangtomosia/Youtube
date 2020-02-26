@@ -25,6 +25,7 @@ class VideoViewController: BaseViewController {
     var isComplete = false
     var beganPoint: CGPoint = .zero
     var lastPoint: CGPoint = .zero
+    var playNewVideo : ((Video?)->())?
     
     var minTransatonY: CGFloat {
         return (AppDelegate.shared?.window?.bounds.height ?? 0 ) * 0.8
@@ -37,11 +38,16 @@ class VideoViewController: BaseViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         playView.addSubview(player)
-        player.swapConstrain(equalToView: playView)
+        player.constraintLayout(equalToView: playView)
         avatarImageView.boundView(cornerRadius: avatarImageView.bounds.halfHeight,
                                   borderWidth: 0.5,
                                   borderColor: UIColor.rgb(red: 51, green: 51, blue: 51).cgColor,
                                   maskToBound: true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
     }
     
     override func viewDidLoad() {
@@ -55,6 +61,13 @@ class VideoViewController: BaseViewController {
         addDragGesturePlayView()
         setLocal()
         requestAPI()
+        playNewVideo = { (video) in
+            self.video = video
+            self.setLocal()
+            self.view.superview?.frame = self.mainBounds
+            self.videoTableView.alpha = 1
+            self.titleView.alpha = 1
+        }
     }
     
     func addSwipeGestureRecognizer() {

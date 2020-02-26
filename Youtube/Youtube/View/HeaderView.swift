@@ -16,7 +16,7 @@ class HeaderView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         self.gradientStyle(withStyle: .vertical, firstColor: .rgb(red: 69, green: 104, blue: 220),
-                           endColor: .rgb(red: 150, green: 100, blue: 150))
+                           lastColor: .rgb(red: 150, green: 100, blue: 150))
     }
     
     @IBAction func didTapSearch(sender: UIButton) {

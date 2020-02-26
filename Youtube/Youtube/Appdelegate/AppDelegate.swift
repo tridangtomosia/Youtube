@@ -8,7 +8,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window : UIWindow?
     let tabarController = BaseTabbarController()
-    
+    lazy var videoViewController : VideoViewController = { return VideoViewController() }()
+//    let videoViewController = VideoViewController()
     static var shared: AppDelegate? {
         return UIApplication.shared.delegate as? AppDelegate
     }
